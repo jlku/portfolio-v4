@@ -1,0 +1,34 @@
+<header class="grid header">
+    <div class="wrapper">
+        <!-- <div class="grid col-one-fourth header-logo-container">
+            <a class="grid col-one-half header-logo-link" href="/">
+        		<div class="header-logo">
+        			<div class="header-logo-circle"></div>
+        			<div class="header-logo-shim"></div>
+        			<div class="header-logo-square"></div>
+        			<div class="header-logo-triangle"></div>
+        		</div>
+        	</a>
+        </div> -->
+        <nav class="grid col-three-fourths header-navigation">
+            <ul class="header-navigation-list">
+                {% if page.title == "Home" %}
+                <li><a class="header-navigation-item header-navigation-item-active" href="/">Home</a></li>
+                {% else %}
+                <li><a class="header-navigation-item" href="/">Home</a></li>
+                {% endif %}
+                {% if page.title == "Work" or page.layout == "work-post" %}
+                <li><a class="header-navigation-item header-navigation-item-active" href="/work">Work</a></li>
+                {% else %}
+                <li><a class="header-navigation-item" href="/work">Work</a></li>
+                {% endif %}
+                <li><a class="header-navigation-item" href="">Dribbble</a></li>
+                {% if page.title == "About" %}
+                <li><a class="header-navigation-item header-navigation-item-active" href="/about">About</a></li>
+                {% else %}
+                <li><a class="header-navigation-item" href="/about">About</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</header>

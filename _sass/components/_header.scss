@@ -1,0 +1,48 @@
+.header {
+    height: 8em;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation {
+    float: right;
+}
+
+.header-logo-container {
+    float: left;
+}
+
+.header-navigation-list {
+    float: right;
+    @extend %clearfix;
+    > li {
+        display: block;
+        float: left;
+        margin-right: 1.5rem;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+.header-navigation-item {
+
+    @extend %clearfix;
+
+    font: $headingThree;
+    color: $copyLight;
+    transition: all .2s ease;
+
+    &:hover {
+        color: $copyDark;
+    }
+
+}
+
+.header-navigation-item-active {
+    color: $copyDark;
+}

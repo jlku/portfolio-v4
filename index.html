@@ -1,0 +1,40 @@
+---
+title: Home
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+    {% include header.html %}
+    <div class="wrapper wrapper-home">
+        <section class="grid col-one-half intro">
+            <h1 class="heading-one"><span class="intro-greeting">Hi there, I’m Adam.</span> I’m a Product Designer at Uber.</h1>
+            <p class="paragraph-light">I get giddy about prototyping in code, motion design, and illustrating all sorts of random things.</p>
+        </section>
+    </div>
+    <div id="scene" class="background">
+        <div class="layer background-container" data-depth=".05">
+            <div class="square-1 rotating"></div>
+            <div class="circle-1"></div>
+            <div class="triangle-1 rotating"></div>
+        </div>
+        <div class="layer background-container" data-depth=".1">
+            <div class="square-2 rotating"></div>
+            <div class="circle-2"></div>
+            <div class="triangle-2 rotating"></div>
+        </div>
+        <div class="layer background-container" data-depth=".15">
+            <div class="circle-3"></div>
+            <div class="triangle-3 rotating"></div>
+            <div class="square-3 rotating"></div>
+        </div>
+        <div class="layer background-container" data-depth=".2">
+            <div class="triangle-4 rotating"></div>
+            <div class="circle-4"></div>
+            <div class="square-4 rotating"></div>
+        </div>
+    </div>
+    <button class="button-nightmode">Click me</button>
+    {% include scripts.html %}
+</body>
+</html>

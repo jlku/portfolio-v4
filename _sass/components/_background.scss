@@ -1,0 +1,221 @@
+.button-nightmode {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -1;
+    transition: all 1.5s cubic-bezier(0,.2,.07,1);
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.square-1 {
+    height: 166px;
+    width: 166px;
+    background-color: $yellow;
+    bottom: 7%;
+    left: 7%;
+    z-index: -1;
+    position: absolute;
+
+    filter: grayscale(100%);
+    transition: all $colorChangeTime ease;
+}
+
+.square-2 {
+    height: 115px;
+    width: 115px;
+    background-color: $yellow;
+    top: -15%;
+    left: 30%;
+    z-index: -1;
+    position: absolute;
+
+    filter: grayscale(100%);
+    transition: all $colorChangeTime ease;
+}
+
+.square-3 {
+    height: 36px;
+    width: 36px;
+    background-color: $yellow;
+    bottom: 15%;
+    left: 40%;
+    z-index: -1;
+    position: absolute;
+
+    filter: grayscale(100%);
+    transition: all $colorChangeTime ease;
+}
+
+.square-4 {
+    height: 15px;
+    width: 15px;
+    background-color: $yellow;
+    top: 35%;
+    right: 20%;
+    z-index: -1;
+    position: absolute;
+
+    filter: grayscale(100%);
+    transition: all $colorChangeTime ease;
+}
+
+
+
+.triangle-1 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 108.5px 188.1px 108.5px;
+    border-color: transparent transparent $beige transparent;
+    top: 20%;
+    left: -100px;
+    z-index: -1;
+    position: absolute;
+
+    filter: grayscale(100%);
+    transition: all $colorChangeTime ease;
+}
+
+.triangle-2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 73px 126.56px 73px;
+    border-color: transparent transparent $beige transparent;
+    top: 60%;
+    right: 8%;
+    z-index: -1;
+    position: absolute;
+
+    filter: grayscale(100%);
+    transition: all $colorChangeTime ease;
+}
+
+.triangle-3 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 51px 88.42px 51px;
+    border-color: transparent transparent $beige transparent;
+    top: -5%;
+    left: 52%;
+    z-index: -1;
+    position: absolute;
+
+    filter: grayscale(100%);
+    transition: all $colorChangeTime ease;
+}
+
+.triangle-4 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7.5px 13px 7.5px;
+    border-color: transparent transparent $beige transparent;
+    top: 28%;
+    left: 30%;
+    z-index: -1;
+    position: absolute;
+
+    filter: grayscale(100%);
+    transition: all $colorChangeTime ease;
+}
+
+.circle-1 {
+    height: 166px;
+    width: 166px;
+    border-radius: 83px;
+    background-color: $pink;
+    top: 15%;
+    right: -8%;
+    z-index: -1;
+    position: absolute;
+    opacity: .2;
+    filter: grayscale(100%);
+    transition: all $colorChangeTime ease;
+}
+
+.circle-2 {
+    height: 115px;
+    width: 115px;
+    border-radius: 57.5px;
+    background-color: $pink;
+    top: 37%;
+    left: 52%;
+    z-index: -1;
+    position: absolute;
+    opacity: .2;
+    filter: grayscale(100%);
+    transition: all $colorChangeTime ease;
+}
+
+.circle-3 {
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    background-color: $pink;
+    top: 84px;
+    left: 188px;
+    z-index: -1;
+    position: absolute;
+    opacity: .2;
+    filter: grayscale(100%);
+    transition: all $colorChangeTime ease;
+}
+
+.circle-4 {
+    height: 10px;
+    width: 10px;
+    border-radius: 7.5px;
+    background-color: $pink;
+    bottom: 5%;
+    left: 75%;
+    z-index: -1;
+    position: absolute;
+    opacity: .2;
+    filter: grayscale(100%);
+    transition: all $colorChangeTime ease;
+}
+
+.alive {
+    filter: grayscale(0%);
+    opacity: .7;
+}
+
+.scaled {
+    transform: scale(1.05);
+}
+
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.rotating {
+    animation: rotating 100s linear infinite;
+}

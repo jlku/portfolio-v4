@@ -1,0 +1,29 @@
+---
+title: Work
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+    {% include header.html %}
+    <div class="wrapper">
+        <ol class="grid">
+            {% for post in site.posts limit: 10 %}
+                {% if post.categories contains 'work' %}
+                    <li class="grid col-one-fourth work-item">
+                        <a href="{{ post.url }}">
+                            <img src="{{ post.thumbnail }}" class="work-item-img" alt="{{ post.thumbnailDesc }}">
+                            <div class="work-item-desc">
+                                <div class="work-item-desc-content">
+                                    <span>{{ post.title }}</span>
+                                    <span>{{ post.skills }}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ol>
+    </div>
+</body>
+</html>
