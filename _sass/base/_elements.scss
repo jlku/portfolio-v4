@@ -4,5 +4,22 @@ body {
 
 p {
     font: $paragraph;
-    color: $copyDark;
+    color: $greyDark;
+    margin-bottom: .8em;
+}
+
+li {
+    font: $paragraph;
+    color: $greyDark;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+
+}
+
+button:focus {
+    outline: none;
+
 }

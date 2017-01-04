@@ -1,0 +1,16 @@
+.post-video {
+    width: 100%;
+    margin-top: $headerSpace;
+}
+
+.post-image-header {
+    width: 100%;
+    height: auto;
+    margin: $headerSpace auto $verticalSpaceLarge auto;
+}
+
+.post-overview {
+    > section:nth-of-type(2) {
+        padding-right: 20px;
+    }
+}

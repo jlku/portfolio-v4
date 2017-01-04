@@ -1,5 +1,4 @@
 .grid {
-
     &:after {
         content: "";
         display: table;
@@ -9,6 +8,10 @@
 
 .col-one-eigth {
     width: 12.5%;
+}
+
+.col-seven-eigths {
+    width: 87.5%;
 }
 
 .col-one-fourth {
@@ -35,6 +38,7 @@
   padding-right: 20px;
   float: left;
 }
+
 [class*='col-']:last-of-type {
   padding-right: 0;
 }

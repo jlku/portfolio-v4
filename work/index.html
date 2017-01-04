@@ -6,24 +6,30 @@ title: Work
 {% include head.html %}
 <body>
     {% include header.html %}
-    <div class="wrapper">
+    <div class="wrapper wrapper-with-header">
         <ol class="grid">
             {% for post in site.posts limit: 10 %}
                 {% if post.categories contains 'work' %}
-                    <li class="grid col-one-fourth work-item">
+                    <li class="work-item">
                         <a href="{{ post.url }}">
-                            <img src="{{ post.thumbnail }}" class="work-item-img" alt="{{ post.thumbnailDesc }}">
-                            <div class="work-item-desc">
-                                <div class="work-item-desc-content">
-                                    <span>{{ post.title }}</span>
-                                    <span>{{ post.skills }}</span>
+                            <img class= "work-item-thumbnail" src="{{ post.thumbnail }}" class="work-item-img" alt="{{ post.thumbnailDesc }}">
+                            <div class="work-item-description">
+                                <div>
+                                    <span class="work-item-description-company">{{ post.company }}</span>
+                                    <h2 class="work-item-description-title">{{ post.title }}</h2>
                                 </div>
+
+                                <span class="work-item-description-skills">{{ post.skills }}</span>
                             </div>
+
                         </a>
                     </li>
                 {% endif %}
             {% endfor %}
         </ol>
+        {% include footer.html %}
     </div>
+
+    {% include scripts.html %}
 </body>
 </html>

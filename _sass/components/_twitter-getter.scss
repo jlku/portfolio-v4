@@ -1,0 +1,15 @@
+.twitter-getter-tweet {
+    color: $greyDark;
+
+    > a {
+        color: $greyDark;
+    }
+
+    > img {
+        max-height: 1em;
+    }
+}
+
+.twitter-getter-time {
+    color: $greyMedium;
+}

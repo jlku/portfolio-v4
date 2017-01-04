@@ -1,3 +1,13 @@
 .intro-greeting {
-    color: $copyDark;
+    color: $pink;
+
+    transition: all $colorChangeTime ease;
+}
+
+.intro-greeting-nightmode {
+    color: $greyMedium;
+}
+
+.intro-body {
+    transition: all $colorChangeTime ease;
 }

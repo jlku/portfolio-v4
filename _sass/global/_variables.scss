@@ -1,27 +1,32 @@
+// levers
+$shapeOpacity: .035;
+$rotationSpeed: 90s;
+$colorChangeTime: .2s;
+$scaleTime: 1.5s;
+
+// colors
 $pink: #FF746F;
 $yellow: #FFFB6F;
 $beige: #FBEDBC;
-
-$nightmodeCharcoal: #151515;
-
-$copyDark: #5B5B5B;
-$copyLight: #CACACA;
-
-$greyDark: #5B5B5B;
+$greyUltraDark: #151515;
+$greyDark: #606060;
 $greyMedium: #CACACA;
 $greyLight: #F7F7F7;
-
 $black: #000000;
 $white: #ffffff;
 
+// type
 $headingOne: 2.25rem/120% 'Circular Std Book', Helvetica, Sans-Serif;
 $headingTwo: 1.75rem/110% 'Circular Std Book', Helvetica, Sans-Serif;
 $headingThree: 1rem/100% 'Circular Std Book', Helvetica, Sans-Serif;
+$paragraph: 400 0.875rem/180% 'Open Sans', Helvetica, Sans-Serif; // 15px
+$paragraphSmall: 400 0.75rem 'Open Sans', Helvetica, Sans-Serif; // 12px
+$label: 700 0.6875rem 'Open Sans', Helvetica, Sans-Serif; // 11px
 
-$paragraph: 400 1rem/160% 'Open Sans', Helvetica, Sans-Serif;
-$label: 700 0.6875rem 'Open Sans', Helvetica, Sans-Serif;
-
+// spacing
 $verticalSpaceMedium: 1.75rem;
+$headerSpace: 10em;
+$verticalSpaceLarge: 4em;
 
 // breakpoints
 $breakpointLarge: 1174px;
@@ -33,11 +38,4 @@ $loadedDistance: 20px;
 $loadedStagger: .2s;
 $longDuration: .8s;
 $shortDuration: .4s;
-
-// menu selector bezier
-$bezier: cubic-bezier(0,.4,.5,1);
-
-// everything else bezier
-$bezierAltTwo: cubic-bezier(0,.46,.24,1);
-
-$colorChangeTime: 1.5s;
+$bezier: cubic-bezier(0,.46,.24,1);

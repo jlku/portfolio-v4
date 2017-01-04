@@ -8,24 +8,24 @@
 
 .heading-one {
     font: $headingOne;
-    color: $copyDark;
+    color: $greyDark;
 	margin-bottom: $verticalSpaceMedium;
 }
 
 .paragraph-light {
 	font: $paragraph;
-	color: $copyLight;
+	color: $greyMedium;
 }
 
 .paragraph-dark {
 	font: $paragraph;
-	color: $copyDark;
+	color: $greyDark;
 }
 
 .label {
     font: $label;
-    color: $copyLight;
+    color: $greyMedium;
     text-transform: uppercase;
-    letter-spacing: .15em;
+    letter-spacing: .10em;
 	margin-bottom: 1rem;
 }

@@ -1,0 +1,23 @@
+.footer {
+    @extend %clearfix;
+
+    padding: 2.5em 0 2.5em 0;
+}
+
+.footer-links {
+    float: right;
+
+    > a {
+        display: block;
+        float: left;
+        height: 28px;
+        width: 28px;
+        margin-right: .5em;
+
+        transition: all .2s ease;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+}
