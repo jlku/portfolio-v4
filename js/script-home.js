@@ -7,6 +7,7 @@ $(document).ready(function() {
     var background = $(".background");
     var introGreeting = $(".intro-greeting");
     var introBody = $(".intro-body");
+    var introHeading = $(".intro-heading");
 
     var nightmodeButton = $(".themes-button-nightmode");
     var daymodeButton = $(".themes-button-daymode");
@@ -49,6 +50,7 @@ $(document).ready(function() {
     // nightmode click
     nightmodeButton.click(function() {
         body.addClass("background-nightmode");
+        introHeading.addClass("intro-heading-nightmode");
         introGreeting.addClass("intro-greeting-nightmode");
         introBody.addClass("paragraph-dark");
         daymodeButton.removeClass("themes-button-active");

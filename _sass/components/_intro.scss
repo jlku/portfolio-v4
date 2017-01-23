@@ -1,3 +1,8 @@
+.intro {
+    text-align: center;
+    margin: 0 auto;
+}
+
 .intro-greeting {
     color: $pink;
 
@@ -5,6 +10,14 @@
 }
 
 .intro-greeting-nightmode {
+    color: $pink;
+}
+
+.intro-heading {
+    color: $greyDark
+}
+
+.intro-heading-nightmode {
     color: $greyMedium;
 }
 

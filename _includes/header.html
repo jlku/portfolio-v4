@@ -1,29 +1,18 @@
 <header class="grid header">
     <div class="wrapper">
-        <!-- <div class="grid col-one-fourth header-logo-container">
-            <a class="grid col-one-half header-logo-link" href="/">
-        		<div class="header-logo">
-        			<div class="header-logo-circle"></div>
-        			<div class="header-logo-shim"></div>
-        			<div class="header-logo-square"></div>
-        			<div class="header-logo-triangle"></div>
-        		</div>
-        	</a>
-        </div> -->
-
         {% if page.layout == "work-post" %}
-            <a href="/work" class="header-button-back">
-                <svg width="18px" height="14px" viewBox="-2040 -1185 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <desc>Created with Sketch.</desc>
-                    <defs></defs>
-                    <polygon id="Combined-Shape" stroke="none" fill="#5B5B5B" fill-rule="evenodd" points="-2035.58579 -1179 -2031.29289 -1183.29289 -2032.70711 -1184.70711 -2039.41421 -1178 -2032.70711 -1171.29289 -2031.29289 -1172.70711 -2035.58579 -1177 -2022 -1177 -2022 -1179"></polygon>
-                </svg>
-            </a>
-
-            <h2 class="header-title"> {{ page.title }} </h2>
+            <div class="header-back">
+                <a href="/work" class="header-button-back">
+                    <svg width="18px" height="14px" viewBox="-2040 -1185 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <polygon id="Combined-Shape" stroke="none" fill="#5B5B5B" fill-rule="evenodd" points="-2035.58579 -1179 -2031.29289 -1183.29289 -2032.70711 -1184.70711 -2039.41421 -1178 -2032.70711 -1171.29289 -2031.29289 -1172.70711 -2035.58579 -1177 -2022 -1177 -2022 -1179"></polygon>
+                    </svg>
+                </a>
+                <h2 class="header-title"> {{ page.title }} </h2>
+            </div>
         {% endif %}
-
-        <nav class="grid col-three-fourths header-navigation">
+        <nav class="header-navigation">
             <ul class="header-navigation-list">
                 {% if page.title == "Home" %}
                 <li><a class="header-navigation-item header-navigation-item-active" href="/">Home</a></li>
@@ -36,8 +25,6 @@
                 {% else %}
                 <li><a class="header-navigation-item" href="/work">Work</a></li>
                 {% endif %}
-
-                <li><a class="header-navigation-item" href="">Dribbble</a></li>
 
                 {% if page.title == "About" %}
                 <li><a class="header-navigation-item header-navigation-item-active" href="/about">About</a></li>

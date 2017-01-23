@@ -1,7 +1,8 @@
 .themes {
     position: absolute;
     bottom: 3em;
-    right: 12.5%;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 .themes-button-daymode {
