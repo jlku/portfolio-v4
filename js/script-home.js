@@ -71,6 +71,7 @@ $(document).ready(function() {
 
     daymodeButton.click(function() {
         body.removeClass("background-nightmode");
+        introHeading.removeClass("intro-heading-nightmode");
         introGreeting.removeClass("intro-greeting-nightmode");
         introBody.removeClass("paragraph-dark");
         nightmodeButton.removeClass("themes-button-active");

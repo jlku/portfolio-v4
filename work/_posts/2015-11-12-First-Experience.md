@@ -1,0 +1,10 @@
+---
+title: First Experience
+layout: work-post
+category: Work
+company: Uber
+skills: Visuals, UX, Motion
+thumbnail: ../images/cue-app-thumbnail.png
+thumbnailDesc: Lorem ipsum dolor sit amet
+keyColor: ftre
+---

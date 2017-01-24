@@ -1,0 +1,17 @@
+.story {
+    float: none;
+    margin: 0 auto;
+    margin-top: 15em;
+}
+
+.story-section {
+    position: relative;
+    margin-bottom: $verticalSpaceMedium;
+
+    > h3 {
+        position: absolute;
+        text-align: right;
+        transform: translateX(-150%) translateY(30%);;
+
+    }
+}
