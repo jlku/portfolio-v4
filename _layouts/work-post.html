@@ -6,32 +6,34 @@
 <body>
 
     {% include header.html %}
-    <img class="post-image-header"src="../images/signup/mosaic.png" alt="Screens from signup">
+    <img class="post-image-header"src="{{ page.headerImage }}" alt="Screens from signup">
     <!-- <video class="post-video" src="../images/signup/vis.mp4" autoplay="true"></video> -->
     <div class="wrapper">
-        <div class"grid">
-            <div class="grid col-seven-eigths post-overview">
-                <section class="grid col-one-half">
-                    <h2 class="label ">Project Details</h2>
-                    <p>Part of my work on the new Uber app included revamping our age-old register and login flows.</p>
-                    <p>The challenge for this project? The system needed to be flexible enough to enable localized flows across the globe, while still maintaining a quality bar that we previously didn’t meet.</p>
-                </section>
-
-                <section class="grid col-one-half">
-                    <h2 class="label ">Outcome</h2>
-                    <p>I get giddy about prototyping in code, motion design, and illustrating all sorts of random things.I get giddy about prototyping in code, motion design, and illustrating all sorts of random things.</p>
-                    <p>I get giddy about prototyping in code, motion design, and illustrating all sorts of random things.I get giddy about prototyping in code, motion design, and illustrating all sorts of random things.</p>
-                </section>
-            </div>
-
-            <section class="grid col-one-eigth">
-                <h2 class="label ">Tools</h2>
-                <ul>
-                    <li>Sketch</li>
-                    <li>Framer</li>
-                    <li>After Effects</li>
-                </ul>
+        <section class="story grid col-one-third">
+            <h2 class="heading-one">{{ page.title }}</h2>
+            <section class="story-section">
+                <h3 class="label">Overview</h3>
+                {% for paragraph in page.overview %}
+                    <p>{{ paragraph | textilize }}</p>
+                {% endfor %}
             </section>
+
+            <section class="story-section">
+                <h3 class="label">Outcome</h3>
+                {% for paragraph in page.outcome %}
+                    <p>{{ paragraph | textilize }}</p>
+                {% endfor %}
+            </section>
+
+            <section class="story-section">
+                <h3 class="label">Tools</h3>
+                {% for paragraph in page.tools %}
+                    <p>{{ paragraph | textilize }}</p>
+                {% endfor %}
+            </section>
+        </section>
+        <div>
+            {{ content }}
         </div>
         {% include footer.html %}
     </div>

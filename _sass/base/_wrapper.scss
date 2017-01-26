@@ -1,7 +1,11 @@
 .wrapper {
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
     position: relative;
+
+    @media (max-width: $breakpointLarge) {
+			width: 75%;
+		}
 }
 
 .wrapper-home {
