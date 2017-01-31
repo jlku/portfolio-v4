@@ -15,17 +15,19 @@
 .paragraph-light {
 	font: $paragraph;
 	color: $greyMedium;
+	margin-bottom: .8em;
 }
 
 .paragraph-dark {
 	font: $paragraph;
 	color: $greyDark;
+	margin-bottom: .8em;
 }
 
 .label {
     font: $label;
     color: $greyMedium;
     text-transform: uppercase;
-    letter-spacing: .10em;
+    letter-spacing: .2em;
 	margin-bottom: 1rem;
 }

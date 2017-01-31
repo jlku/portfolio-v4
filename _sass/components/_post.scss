@@ -1,12 +1,28 @@
 .post-video {
-    width: 100%;
-    margin-top: $headerSpace;
+    
 }
 
 .post-image-header {
     width: 100%;
     height: auto;
-    margin: $headerSpace auto $verticalSpaceLarge auto;
+    margin: $headerSpace auto $verticalSpaceExtraLarge auto;
+}
+
+.post-image-large {
+    width: 100%;
+    margin-bottom: 1.5%;
+    float: left;
+}
+
+.post-image-small-right {
+    width: 49.25%;
+    float: right;
+}
+
+.post-image-small-left {
+    width: 49.25%;
+    float: left;
+    margin-right: 1.5%;
 }
 
 .post-overview {

@@ -13,7 +13,7 @@ keyColor: ftre
 headerImage: "../images/signup/signup-1.png"
 
 # content
-title: Uber Signup
+title: Rider Education
 
 overview:
     - Blah blah blah

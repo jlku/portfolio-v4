@@ -14,27 +14,27 @@
             <section class="story-section">
                 <h3 class="label">Overview</h3>
                 {% for paragraph in page.overview %}
-                    <p>{{ paragraph | textilize }}</p>
+                    <p class="paragraph-dark">{{ paragraph | textilize }}</p>
                 {% endfor %}
             </section>
 
             <section class="story-section">
                 <h3 class="label">Outcome</h3>
                 {% for paragraph in page.outcome %}
-                    <p>{{ paragraph | textilize }}</p>
+                    <p class="paragraph-dark">{{ paragraph | textilize }}</p>
                 {% endfor %}
             </section>
 
             <section class="story-section">
                 <h3 class="label">Tools</h3>
                 {% for paragraph in page.tools %}
-                    <p>{{ paragraph | textilize }}</p>
+                    <p class="paragraph-dark">{{ paragraph | textilize }}</p>
                 {% endfor %}
             </section>
         </section>
-        <div>
+        <section class="visuals">
             {{ content }}
-        </div>
+        </section>
         {% include footer.html %}
     </div>
     {% include scripts.html %}
