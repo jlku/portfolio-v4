@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     var header = $('.header');
     var scrolledClass = "header-scrolled";
 

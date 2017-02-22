@@ -6,8 +6,12 @@
 <body>
 
     {% include header.html %}
-    <!-- <img class="post-image-header"src="{{ page.headerImage }}" alt="Screens from signup"> -->
-    <video class="post-video-header" src="{{ page.headerImage }}" autoplay="true" loop="true"></video>
+    {% if page.headerImage contains ".mp4" %}
+        <video class="post-header-media" src="{{ page.headerImage }}" autoplay="true" loop="true"></video>
+    {% else %}
+        <img class="post-header-media"src="{{ page.headerImage }}" />
+    {% endif %}
+
     <div class="wrapper">
         <section class="story grid col-one-third">
             <h2 class="heading-one">{{ page.title }}</h2>
