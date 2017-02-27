@@ -14,14 +14,12 @@ title: Work
                         <a href="{{ post.url }}">
                             <img class= "work-item-thumbnail" src="{{ post.thumbnail }}" class="work-item-img" alt="{{ post.thumbnailDesc }}">
                             <div class="work-item-description {{ post.keyColor }}">
+                                <span class="work-item-description-company">{{ post.company }}</span>
                                 <div>
-                                    <span class="work-item-description-company">{{ post.company }}</span>
                                     <h2 class="work-item-description-title">{{ post.title }}</h2>
+                                    <p class="work-item-description-summary">{{ post.summary }}</p>
                                 </div>
-
-                                <span class="work-item-description-skills">{{ post.skills }}</span>
                             </div>
-
                         </a>
                     </li>
                 {% endif %}

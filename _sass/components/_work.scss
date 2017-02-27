@@ -7,11 +7,19 @@
 }
 
 .final {
-	background-color: #FF9090;
+	background-color: #F87F7B;
 }
 
 .ftre {
 	background-color: #B5ECEF;
+}
+
+.signup {
+	background-color: #f7f7f7;
+}
+
+.nomad {
+	background-color: #BA99CB;
 }
 
 .work-item {
@@ -60,9 +68,8 @@
 	right: 0;
 	left: 0;
 	bottom: 0;
-	padding: $verticalSpaceMedium;
+	padding: 2.875em;
 	opacity: 0;
-	// background-color: rgba(0, 0, 0, .75);
 	display: flex;
 	align-items: center;
 	border-radius: 6px;
@@ -72,23 +79,24 @@
 
 .work-item-description-company {
 	font: $label;
-	text-transform: uppercase;
-	letter-spacing: .10em;
-	color: $greyDark;
-	margin-bottom: .5em;
-	display: block;
-}
-
-.work-item-description-skills {
-	font: $caption;
-	color: $greyDark;
+	color: $white;
+	opacity: .5;
 	position: absolute;
-	bottom: $verticalSpaceMedium;
+	top: 4.6em;
+	display: block;
 }
 
 .work-item-description-title {
 	font: $headingTwo;
 	color: $white;
+	display: block;
+	margin-bottom: $verticalSpaceSmall;
+}
+
+.work-item-description-summary {
+	font: $paragraph;
+	color: $white;
+	opacity: .5;
 	display: block;
 }
 

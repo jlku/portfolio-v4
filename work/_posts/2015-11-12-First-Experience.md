@@ -5,9 +5,9 @@ category: Work
 # thumbnail
 company: Uber
 skills: Visuals, UX, Motion
-thumbnail: ../images/cue-app-thumbnail.png
+thumbnail: ../images/final/final-tile.png
 thumbnailDesc: Lorem ipsum dolor sit amet
-keyColor: ftre
+keyColor: final
 
 # header
 headerImage: "../images/signup/signup-1.png"
