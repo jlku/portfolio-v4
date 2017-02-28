@@ -1,3 +1,13 @@
+.b-lazy {
+   opacity:0;
+   transform: translateY(50px);
+   transition: all 1.5s ease;
+}
+.b-loaded {
+   transform: translateY(0);
+   opacity: 1;
+}
+
 .work {
 	@extend %clearfix;
 
@@ -29,7 +39,7 @@
     display: block;
 	position: relative;
 
-	transition: all .3s ease;
+	transition: all .5s ease;
 
 	> a {
 		border-radius: 6px;
@@ -45,7 +55,7 @@
 	    height: 10em;
 	    margin: 0 10%;
 	    bottom: 0;
-	    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+	    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.3);
 	    opacity: 0;
 
 
@@ -102,6 +112,10 @@
 
 .work-item:hover {
 	transform: translateY(-8px) scale(1.015);
+
+	// ~ li {
+	// 	filter: grayscale(100%) opacity(10%);;
+	// }
 
 	> a:after {
         opacity: 1;
