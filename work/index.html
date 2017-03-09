@@ -6,28 +6,29 @@ title: Work
 {% include head.html %}
 <body>
     {% include header.html %}
-    <div class="wrapper wrapper-with-header">
-        <ol class="grid">
-            {% for post in site.posts limit: 10 %}
-                {% if post.categories contains 'work' %}
-                    <li class="work-item">
-                        <a href="{{ post.url }}">
-                            <img class= "work-item-thumbnail" src="{{ post.thumbnail }}" class="work-item-img" alt="{{ post.thumbnailDesc }}">
-                            <div class="work-item-description {{ post.keyColor }}">
-                                <span class="work-item-description-company">{{ post.company }}</span>
-                                <div>
-                                    <h2 class="work-item-description-title">{{ post.title }}</h2>
-                                    <p class="work-item-description-summary">{{ post.summary }}</p>
+    <div id="content">
+        <div class="wrapper-work">
+            <ol class="grid">
+                {% for post in site.posts limit: 10 %}
+                    {% if post.categories contains 'work' %}
+                        <li class="work-item">
+                            <a href="{{ post.url }}">
+                                <img class= "work-item-thumbnail" src="{{ post.thumbnail }}" class="work-item-img" alt="{{ post.thumbnailDesc }}">
+                                <div class="work-item-description {{ post.keyColor }}">
+                                    <span class="work-item-description-company">{{ post.company }}</span>
+                                    <div>
+                                        <h2 class="work-item-description-title">{{ post.title }}</h2>
+                                        <p class="work-item-description-summary">{{ post.summary }}</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </li>
-                {% endif %}
-            {% endfor %}
-        </ol>
-        {% include footer.html %}
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ol>
+            {% include footer.html %}
+        </div>
     </div>
-
     {% include scripts.html %}
 </body>
 </html>

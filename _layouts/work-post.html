@@ -4,43 +4,45 @@
 <html lang="en">
 {% include head.html %}
 <body>
-
     {% include header.html %}
-    {% if page.headerImage contains ".mp4" %}
-        <video class="post-header-media" src="{{ page.headerImage }}" autoplay="true" loop="true"></video>
-    {% else %}
-        <img class="post-header-media"src="{{ page.headerImage }}" />
-    {% endif %}
 
-    <div class="wrapper">
-        <section class="story grid col-one-third">
-            <h2 class="heading-one">{{ page.title }}</h2>
-            <section class="story-section">
-                <h3 class="label">Overview</h3>
-                {% for paragraph in page.overview %}
-                    <p class="paragraph-dark">{{ paragraph | textilize }}</p>
-                {% endfor %}
-            </section>
+    <div id="content">
+        {% if page.headerImage contains ".mp4" %}
+            <video class="post-header-media" src="{{ page.headerImage }}" autoplay="true" loop="true"></video>
+        {% else %}
+            <img class="post-header-media"src="{{ page.headerImage }}" />
+        {% endif %}
+        <div class="wrapper-work">
+            <section class="story grid col-one-third">
+                <h2 class="heading-one">{{ page.title }}</h2>
+                <section class="story-section">
+                    <h3 class="label">Overview</h3>
+                    {% for paragraph in page.overview %}
+                        <p class="paragraph-dark">{{ paragraph | textilize }}</p>
+                    {% endfor %}
+                </section>
 
-            <section class="story-section">
-                <h3 class="label">Outcome</h3>
-                {% for paragraph in page.outcome %}
-                    <p class="paragraph-dark">{{ paragraph | textilize }}</p>
-                {% endfor %}
-            </section>
+                <section class="story-section">
+                    <h3 class="label">Outcome</h3>
+                    {% for paragraph in page.outcome %}
+                        <p class="paragraph-dark">{{ paragraph | textilize }}</p>
+                    {% endfor %}
+                </section>
 
-            <section class="story-section">
-                <h3 class="label">Tools</h3>
-                {% for paragraph in page.tools %}
-                    <p class="paragraph-dark">{{ paragraph | textilize }}</p>
-                {% endfor %}
+                <section class="story-section">
+                    <h3 class="label">Tools</h3>
+                    {% for paragraph in page.tools %}
+                        <p class="paragraph-dark">{{ paragraph | textilize }}</p>
+                    {% endfor %}
+                </section>
             </section>
-        </section>
-        <section class="visuals">
-            {{ content }}
-        </section>
-        {% include footer.html %}
+            <section class="visuals">
+                {{ content }}
+            </section>
+            {% include footer.html %}
+        </div>
     </div>
+
     {% include scripts.html %}
 </body>
 </html>

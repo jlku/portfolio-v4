@@ -8,15 +8,18 @@ $(document).ready(function() {
     var introGreeting = $(".intro-greeting");
     var introBody = $(".intro-body");
     var introHeading = $(".intro-heading");
+    var header = $('.header');
 
     var nightmodeButton = $(".themes-button-nightmode");
     var daymodeButton = $(".themes-button-daymode");
+
+    var scrolledClass = "header-scrolled";
 
     var navigation = $(".header-navigation-list");
     var navItem1 = $(".header-navigation-list > li:nth-of-type(1) a");
     var navItem2 = $(".header-navigation-list > li:nth-of-type(2) a");
     var navItem3 = $(".header-navigation-list > li:nth-of-type(3) a");
-    var navItem4 = $(".header-navigation-list > li:nth-of-type(4) a");
+
 
     var circle1 = $(".shape-circle-1");
     var circle2 = $(".shape-circle-2");
@@ -37,7 +40,23 @@ $(document).ready(function() {
     var shapesSquaresCircles = [circle1, circle2, circle3, circle4, square1, square2, square3, square4]
     var shapesTriangles = [triangle1, triangle2, triangle3, triangle4]
 
+    // initialize lazy load
+    // var bLazy = new Blazy({
+    //     // load image 100px before you reach it
+    //     offset: 100
+    // });
+
+    // set initial behaviors
     daymodeButton.addClass("themes-button-active");
+
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop()) {
+            header.addClass(scrolledClass);
+        } else {
+            header.removeClass(scrolledClass);
+        }
+    });
 
     // navigation hover
     navigation.hover(function() {
@@ -58,7 +77,6 @@ $(document).ready(function() {
         navItem1.addClass("header-navigation-item-active-nightmode")
         navItem2.addClass("header-navigation-item-inactive-nightmode")
         navItem3.addClass("header-navigation-item-inactive-nightmode")
-        navItem4.addClass("header-navigation-item-inactive-nightmode")
 
         $.each(shapesSquaresCircles, function(index, value) {
             this.addClass("shape-nightmode");
@@ -79,7 +97,7 @@ $(document).ready(function() {
         navItem1.removeClass("header-navigation-item-active-nightmode")
         navItem2.removeClass("header-navigation-item-inactive-nightmode")
         navItem3.removeClass("header-navigation-item-inactive-nightmode")
-        navItem4.removeClass("header-navigation-item-inactive-nightmode")
+
 
         $.each(shapesSquaresCircles, function(index, value) {
             this.removeClass("shape-nightmode");
@@ -89,4 +107,22 @@ $(document).ready(function() {
             this.removeClass("shape-nightmode-triangle");
         });
     });
+
+
+
+    navItem1.click(function() {
+        background.addClass("background-scaled");
+        background.removeClass("background-hidden");
+    });
+
+    navItem2.click(function() {
+        background.removeClass("background-scaled");
+        background.addClass("background-hidden");
+    });
+
+    navItem3.click(function() {
+        background.removeClass("background-scaled");
+        background.addClass("background-hidden");
+    });
+
 });
