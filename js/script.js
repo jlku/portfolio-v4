@@ -9,6 +9,8 @@ $(document).ready(function() {
     var introBody = $(".intro-body");
     var introHeading = $(".intro-heading");
     var header = $('.header');
+    var workTile = $('.work-item-description');
+    var headerImage = $('.post-header-media');
 
     var nightmodeButton = $(".themes-button-nightmode");
     var daymodeButton = $(".themes-button-daymode");
@@ -108,7 +110,10 @@ $(document).ready(function() {
         });
     });
 
-
+    workTile.click(function() {
+        headerImage.addClass("post-header-media-loaded");
+        console.log("great");
+    });
 
     navItem1.click(function() {
         background.addClass("background-scaled");
@@ -124,5 +129,9 @@ $(document).ready(function() {
         background.removeClass("background-scaled");
         background.addClass("background-hidden");
     });
+
+    $(window).on('statechangecomplete', function(e, eventInfo){
+        console.log("changed");
+    })
 
 });

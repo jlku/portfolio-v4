@@ -14,9 +14,21 @@
         {% endif %}
         <nav class="header-navigation" id="nav">
             <ul class="header-navigation-list">
-                <li><a class="header-navigation-item" href="/">Home</a></li>
-                <li><a class="header-navigation-item" href="/work/">Work</a></li>
-                <li><a class="header-navigation-item" href="/about/">About</a></li>
+                {% if page.title == "Home" %}
+                    <li><a class="header-navigation-item header-navigation-item-active" href="/">Home</a></li>
+                {% else %}
+                    <li><a class="header-navigation-item" href="/">Home</a></li>
+                {% endif %}
+                {% if page.title == "Work" %}
+                    <li><a class="header-navigation-item header-navigation-item-active" href="/work/">Work</a></li>
+                {% else %}
+                    <li><a class="header-navigation-item" href="/work/">Work</a></li>
+                {% endif %}
+                {% if page.title == "About" %}
+                    <li><a class="header-navigation-item header-navigation-item-active" href="/about/">About</a></li>
+                {% else %}
+                    <li><a class="header-navigation-item" href="/about/">About</a></li>
+                {% endif %}
             </ul>
         </nav>
     </div>
