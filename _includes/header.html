@@ -19,7 +19,7 @@
                 {% else %}
                     <li><a class="header-navigation-item" href="/">Home</a></li>
                 {% endif %}
-                {% if page.title == "Work" %}
+                {% if page.title == "Work" or page.category == "Work" %}
                     <li><a class="header-navigation-item header-navigation-item-active" href="/work/">Work</a></li>
                 {% else %}
                     <li><a class="header-navigation-item" href="/work/">Work</a></li>

@@ -103,6 +103,15 @@
 	display: block;
 }
 
+.work-item-description-company-dark {
+	font: $label;
+	color: $black;
+	opacity: .5;
+	position: absolute;
+	top: 4.6em;
+	display: block;
+}
+
 .work-item-description-title {
 	font: $headingTwo;
 	color: $white;
@@ -114,6 +123,21 @@
 	font: $paragraph;
 	color: $white;
 	opacity: .5;
+	display: block;
+}
+
+.work-item-description-title-dark {
+	font: $headingTwo;
+	color: $black;
+    opacity: .4;
+	display: block;
+	margin-bottom: $verticalSpaceSmall;
+}
+
+.work-item-description-summary-dark {
+	font: $paragraph;
+	color: $black;
+	opacity: .3;
 	display: block;
 }
 
