@@ -1,27 +1,24 @@
 .intro {
-    text-align: center;
-    margin: 0 auto;
-    width: 30%;
-}
+    > h1 {
+        font: $headingThree;
+        color: $greyMedium;
+    }
 
-.intro-greeting {
-    color: $pink;
+    > p {
+        font: $billboard;
+        color: $greyDark;
+    }
 
-    transition: all $colorChangeTime ease;
+    > span {
+        position: absolute;
+        bottom: 4.8em;
+    }
 }
 
 .intro-greeting-nightmode {
     color: $pink;
 }
 
-.intro-heading {
-    color: $greyDark
-}
-
 .intro-heading-nightmode {
     color: $greyMedium;
-}
-
-.intro-body {
-    transition: all $colorChangeTime ease;
 }

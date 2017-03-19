@@ -8,13 +8,16 @@ $(document).ready(function() {
     var introGreeting = $(".intro-greeting");
     var introBody = $(".intro-body");
     var introHeading = $(".intro-heading");
-
+    var about = $(".header-navigation-item-about");
+    var work = $(".header-navigation-item-work");
+    var aboutContent = $("#about");
+    var content = $("#content");
 
 
     var nightmodeButton = $(".themes-button-nightmode");
     var daymodeButton = $(".themes-button-daymode");
 
-    
+
 
     var navigation = $(".header-navigation-list");
     var navItem1 = $(".header-navigation-list > li:nth-of-type(1) a");
@@ -54,7 +57,7 @@ $(document).ready(function() {
 
 
     // navigation hover
-    navigation.hover(function() {
+    about.hover(function() {
         background.addClass("background-scaled");
 
     }, function() {
@@ -62,16 +65,20 @@ $(document).ready(function() {
     });
 
     // nightmode click
-    nightmodeButton.click(function() {
+    about.click(function() {
         body.addClass("background-nightmode");
-        introHeading.addClass("intro-heading-nightmode");
-        introGreeting.addClass("intro-greeting-nightmode");
-        introBody.addClass("paragraph-dark");
-        daymodeButton.removeClass("themes-button-active");
-        nightmodeButton.addClass("themes-button-active");
-        navItem1.addClass("header-navigation-item-active-nightmode")
-        navItem2.addClass("header-navigation-item-inactive-nightmode")
-        navItem3.addClass("header-navigation-item-inactive-nightmode")
+        content.addClass("content-hidden");
+        about.addClass("content-hidden");
+        work.addClass("content-visible");
+        aboutContent.addClass("content-visible");
+        // introHeading.addClass("intro-heading-nightmode");
+        // introGreeting.addClass("intro-greeting-nightmode");
+        // introBody.addClass("paragraph-dark");
+        // daymodeButton.removeClass("themes-button-active");
+        // nightmodeButton.addClass("themes-button-active");
+        // navItem1.addClass("header-navigation-item-active-nightmode")
+        // navItem2.addClass("header-navigation-item-inactive-nightmode")
+        // navItem3.addClass("header-navigation-item-inactive-nightmode")
 
         $.each(shapesSquaresCircles, function(index, value) {
             this.addClass("shape-nightmode");
@@ -82,16 +89,20 @@ $(document).ready(function() {
         });
     });
 
-    daymodeButton.click(function() {
+    work.click(function() {
         body.removeClass("background-nightmode");
-        introHeading.removeClass("intro-heading-nightmode");
-        introGreeting.removeClass("intro-greeting-nightmode");
-        introBody.removeClass("paragraph-dark");
-        nightmodeButton.removeClass("themes-button-active");
-        daymodeButton.addClass("themes-button-active");
-        navItem1.removeClass("header-navigation-item-active-nightmode")
-        navItem2.removeClass("header-navigation-item-inactive-nightmode")
-        navItem3.removeClass("header-navigation-item-inactive-nightmode")
+        content.removeClass("content-hidden");
+        about.removeClass("content-hidden");
+        work.removeClass("content-visible");
+        aboutContent.removeClass("content-visible");
+        // introHeading.removeClass("intro-heading-nightmode");
+        // introGreeting.removeClass("intro-greeting-nightmode");
+        // introBody.removeClass("paragraph-dark");
+        // nightmodeButton.removeClass("themes-button-active");
+        // daymodeButton.addClass("themes-button-active");
+        // navItem1.removeClass("header-navigation-item-active-nightmode")
+        // navItem2.removeClass("header-navigation-item-inactive-nightmode")
+        // navItem3.removeClass("header-navigation-item-inactive-nightmode")
 
 
         $.each(shapesSquaresCircles, function(index, value) {
@@ -103,18 +114,30 @@ $(document).ready(function() {
         });
     });
 
-    navItem1.click(function() {
-        background.addClass("background-scaled");
-        background.removeClass("background-hidden");
-    });
+    // navItem1.click(function() {
+    //     background.addClass("background-scaled");
+    //     background.removeClass("background-hidden");
+    // });
+    //
+    // navItem2.click(function() {
+    //     background.removeClass("background-scaled");
+    //     background.addClass("background-hidden");
+    // });
+    //
+    // navItem3.click(function() {
+    //     background.removeClass("background-scaled");
+    //     background.addClass("background-hidden");
+    // });
 
-    navItem2.click(function() {
-        background.removeClass("background-scaled");
-        background.addClass("background-hidden");
-    });
+    var divs = $('.background, .intro'),
+    limit = 600;  /* scrolltop value when opacity should be 0 */
 
-    navItem3.click(function() {
-        background.removeClass("background-scaled");
-        background.addClass("background-hidden");
+    $(window).on('scroll', function() {
+       var st = $(this).scrollTop();
+
+       /* avoid unnecessary call to jQuery function */
+       if (st <= limit) {
+          divs.css({ 'opacity' : (1 - st/limit) });
+       }
     });
 });

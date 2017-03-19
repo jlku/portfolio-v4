@@ -5,9 +5,8 @@
     right: 0;
     bottom: 0;
     overflow: hidden;
-    z-index: -1;
     transform: translate3d(0, 0, 0);
-    transition: all $scaleTime ease;
+    transition: scale $scaleTime ease;
 }
 
 .background-nightmode {

@@ -1,23 +1,44 @@
 #content {
     width: 100%;
     height: 100%;
-    margin-top: $headerSpace;
+    padding-top: 130vh;
+}
+
+#about {
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.content-hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.content-visible {
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .wrapper-home {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    margin: 0 auto;
+    padding: 0 20% 0 20%;
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
-    align-items: center;
 }
 
 .wrapper-work {
     width: 60%;
     margin: 0 auto;
     position: relative;
+    margin-bottom: 10em;
 }
 
 .wrapper-about {
@@ -27,13 +48,15 @@
 }
 
 .wrapper {
+    @extend %clearfix;
+
     width: 60%;
     margin: 0 auto;
     position: relative;
 
-    @media (max-width: $breakpointLarge) {
-			width: 75%;
-		}
+    // @media (max-width: $breakpointLarge) {
+	// 		width: 75%;
+	// 	}
 }
 
 .wrapper-with-header {

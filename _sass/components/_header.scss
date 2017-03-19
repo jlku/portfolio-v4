@@ -40,11 +40,24 @@
     font: $headingThree;
     color: $greyMedium;
     transition: all $colorChangeTime ease;
+    position: absolute;
+    left: 0;
+    top: 0;
 
     &:hover {
         color: $greyDark;
     }
 }
+
+.header-navigation-item-about {
+
+}
+
+.header-navigation-item-work {
+    visibility: hidden;
+    opacity: 0;
+}
+
 
 .header-navigation-item-active {
     color: $greyDark;
