@@ -38,6 +38,10 @@
 
 .post-paragraph-embedded {
     display: block;
-    margin: 0 auto 5.7142857143em auto;
+    margin: 0 auto .8em auto;
     width: 33.33%;
+}
+
+.post-paragraph-embedded-last {
+    margin-bottom: 5.7142857143em;
 }
