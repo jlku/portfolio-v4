@@ -3,7 +3,8 @@ $(document).ready(function() {
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
 
-    var s = skrollr.init();
+
+    var s = skrollr.init({forceHeight: false});
 
     var body = $("body");
     var background = $(".background");
@@ -14,6 +15,8 @@ $(document).ready(function() {
     var work = $(".header-navigation-item-work");
     var aboutContent = $("#about");
     var content = $("#content");
+    var nightmodeIndicator = $(".header-theme-indicator-nightmode")
+    var indicatorTime = $(".header-theme-indicator-time")
 
 
     var nightmodeButton = $(".themes-button-nightmode");
@@ -48,6 +51,22 @@ $(document).ready(function() {
 
     var d = new Date();
     var n = d.getHours();
+
+
+    // setup
+    nightmodeIndicator.addClass("header-theme-indicator-hovered");
+    indicatorTime.addClass("header-theme-indicator-time-visible");
+
+
+
+    // indicator hover interactions
+
+
+    nightmodeIndicator.hover(
+       function(){ $(this).removeClass('header-theme-indicator-hovered') },
+       function(){ $(this).addClass('header-theme-indicator-hovered') }
+    )
+
 
     console.log(n);
 

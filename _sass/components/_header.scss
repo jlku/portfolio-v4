@@ -9,6 +9,28 @@
     transition: all .3s ease;
 }
 
+.header-theme-indicator-nightmode {
+    float: right;
+    transform: rotate(-48deg);
+    transition: transform .5s ease;
+}
+
+.header-theme-indicator-hovered {
+    transform: rotate(0deg);
+}
+
+.header-theme-indicator-time {
+    float: right;
+    font: $caption;
+    color: $white;
+    opacity: 0;
+}
+
+.header-theme-indicator-time-visible {
+    opacity: .7;
+    transform: translateX(-20px);
+}
+
 .header-scrolled {
     height: 5em;
     background-color: $white;
