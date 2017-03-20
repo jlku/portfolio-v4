@@ -1,18 +1,23 @@
 .intro {
+
     > h1 {
         font: $headingThree;
         color: $greyMedium;
+        margin-bottom: 1em;
+
     }
 
     > p {
         font: $billboard;
         color: $greyDark;
     }
+}
 
-    > span {
-        position: absolute;
-        bottom: 4.8em;
-    }
+.intro-scroll {
+    position: absolute;
+    bottom: 4.8em;
+    font: $paragraphItalic;
+    color: $greyMedium;
 }
 
 .intro-greeting-nightmode {

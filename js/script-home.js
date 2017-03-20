@@ -3,6 +3,8 @@ $(document).ready(function() {
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
 
+    var s = skrollr.init();
+
     var body = $("body");
     var background = $(".background");
     var introGreeting = $(".intro-greeting");
@@ -44,6 +46,27 @@ $(document).ready(function() {
     var shapesSquaresCircles = [circle1, circle2, circle3, circle4, square1, square2, square3, square4]
     var shapesTriangles = [triangle1, triangle2, triangle3, triangle4]
 
+    var d = new Date();
+    var n = d.getHours();
+
+    console.log(n);
+
+
+
+
+
+    if (n < 18 && n > 6) {
+        console.log("day");
+    } else {
+        body.addClass('no-transition'); // Disable transitions
+        body.addClass("background-nightmode");
+        body[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
+        body.removeClass('notransition'); // Re-enable transitions
+        $.each(shapesSquaresCircles, function(index, value) {
+            this.addClass("shape-nightmode");
+        });
+    }
+
     // initialize lazy load
     // var bLazy = new Blazy({
     //     // load image 100px before you reach it
@@ -66,11 +89,23 @@ $(document).ready(function() {
 
     // nightmode click
     about.click(function() {
-        body.addClass("background-nightmode");
-        content.addClass("content-hidden");
-        about.addClass("content-hidden");
-        work.addClass("content-visible");
-        aboutContent.addClass("content-visible");
+        if (n < 18 && n > 6) {
+            console.log("enable nightmode");
+
+            body.addClass("background-nightmode");
+            content.addClass("content-hidden");
+            about.addClass("content-hidden");
+            work.addClass("content-visible");
+            aboutContent.addClass("content-visible");
+        } else {
+            console.log("enable daymode");
+            body.removeClass("background-nightmode");
+            content.addClass("content-hidden");
+            about.addClass("content-hidden");
+            work.addClass("content-visible");
+            aboutContent.addClass("content-visible");
+        }
+
         // introHeading.addClass("intro-heading-nightmode");
         // introGreeting.addClass("intro-greeting-nightmode");
         // introBody.addClass("paragraph-dark");

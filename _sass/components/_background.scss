@@ -6,11 +6,11 @@
     bottom: 0;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
-    transition: scale $scaleTime ease;
+    transition: transform $scaleTime ease;
 }
 
 .background-nightmode {
-    background-color: $greyUltraDark;
+    background-color: $greyVeryDark;
 }
 
 .background-gradient {
