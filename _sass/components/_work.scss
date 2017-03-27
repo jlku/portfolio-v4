@@ -39,14 +39,25 @@
 .platform {
     background-color: #E4B9D4;
 }
+
 .work-item {
 	margin: 0 1.5% 1.5% 0;
     width: 32.3333333333%;
     float: left;
     display: block;
 	position: relative;
+    transform: translateY(50px);
+    opacity: 0;
 
 	transition: all .5s ease;
+
+    @media (max-width: $breakpointLarge) {
+        width: 48.5%;
+    }
+
+    @media (max-width: $breakpointSmall) {
+        width: 100%;
+    }
 
 	> a {
 		border-radius: 6px;
@@ -64,14 +75,21 @@
 	    bottom: 0;
 	    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.3);
 	    opacity: 0;
-
-
 	    transition: all .3s ease;
 	}
 }
 
+.work-item-loaded {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 .work-item:nth-of-type(3n+3) {
     margin-right: 0;
+
+    @media (max-width: $breakpointLarge) {
+        margin-right: 1.5%;
+    }
 }
 
 .work-item-thumbnail {

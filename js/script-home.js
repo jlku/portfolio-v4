@@ -1,9 +1,10 @@
 $(document).ready(function() {
 
+    // initialize mouse parallax
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
 
-
+    // initialize skollr parallax
     var s = skrollr.init({forceHeight: false});
 
     var body = $("body");
@@ -17,34 +18,26 @@ $(document).ready(function() {
     var content = $("#content");
     var nightmodeIndicator = $(".header-theme-indicator-nightmode")
     var indicatorTime = $(".header-theme-indicator-time")
-
-
     var nightmodeButton = $(".themes-button-nightmode");
     var daymodeButton = $(".themes-button-daymode");
-
-
-
     var navigation = $(".header-navigation-list");
     var navItem1 = $(".header-navigation-list > li:nth-of-type(1) a");
     var navItem2 = $(".header-navigation-list > li:nth-of-type(2) a");
     var navItem3 = $(".header-navigation-list > li:nth-of-type(3) a");
 
-
+    // bg shapes
     var circle1 = $(".shape-circle-1");
     var circle2 = $(".shape-circle-2");
     var circle3 = $(".shape-circle-3");
     var circle4 = $(".shape-circle-4");
-
     var triangle1 = $(".shape-triangle-1");
     var triangle2 = $(".shape-triangle-2");
     var triangle3 = $(".shape-triangle-3");
     var triangle4 = $(".shape-triangle-4");
-
     var square1 = $(".shape-square-1");
     var square2 = $(".shape-square-2");
     var square3 = $(".shape-square-3");
     var square4 = $(".shape-square-4");
-
     var shapes = [circle1, circle2, circle3, circle4, triangle1, triangle2, triangle3, triangle4, square1, square2, square3, square4]
     var shapesSquaresCircles = [circle1, circle2, circle3, circle4, square1, square2, square3, square4]
     var shapesTriangles = [triangle1, triangle2, triangle3, triangle4]
@@ -67,24 +60,17 @@ $(document).ready(function() {
        function(){ $(this).addClass('header-theme-indicator-hovered') }
     )
 
-
-    console.log(n);
-
-
-
-
-
-    if (n < 18 && n > 6) {
-        console.log("day");
-    } else {
-        body.addClass('no-transition'); // Disable transitions
-        body.addClass("background-nightmode");
-        body[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
-        body.removeClass('notransition'); // Re-enable transitions
-        $.each(shapesSquaresCircles, function(index, value) {
-            this.addClass("shape-nightmode");
-        });
-    }
+    // if (n < 18 && n > 6) {
+    //     console.log("day");
+    // } else {
+    //     body.addClass('no-transition'); // Disable transitions
+    //     body.addClass("background-nightmode");
+    //     body[0].offsetHeight; // Trigger a reflow, flushing the CSS changes
+    //     body.removeClass('notransition'); // Re-enable transitions
+    //     $.each(shapesSquaresCircles, function(index, value) {
+    //         this.addClass("shape-nightmode");
+    //     });
+    // }
 
     // initialize lazy load
     // var bLazy = new Blazy({
@@ -108,22 +94,27 @@ $(document).ready(function() {
 
     // nightmode click
     about.click(function() {
-        if (n < 18 && n > 6) {
-            console.log("enable nightmode");
-
-            body.addClass("background-nightmode");
-            content.addClass("content-hidden");
-            about.addClass("content-hidden");
-            work.addClass("content-visible");
-            aboutContent.addClass("content-visible");
-        } else {
-            console.log("enable daymode");
-            body.removeClass("background-nightmode");
-            content.addClass("content-hidden");
-            about.addClass("content-hidden");
-            work.addClass("content-visible");
-            aboutContent.addClass("content-visible");
-        }
+        body.addClass("background-nightmode");
+        content.addClass("content-hidden");
+        about.addClass("content-hidden");
+        work.addClass("content-visible");
+        aboutContent.addClass("content-visible");
+        // if (n < 18 && n > 6) {
+        //     console.log("enable nightmode");
+        //
+        //     body.addClass("background-nightmode");
+        //     content.addClass("content-hidden");
+        //     about.addClass("content-hidden");
+        //     work.addClass("content-visible");
+        //     aboutContent.addClass("content-visible");
+        // } else {
+        //     console.log("enable daymode");
+        //     body.removeClass("background-nightmode");
+        //     content.addClass("content-hidden");
+        //     about.addClass("content-hidden");
+        //     work.addClass("content-visible");
+        //     aboutContent.addClass("content-visible");
+        // }
 
         // introHeading.addClass("intro-heading-nightmode");
         // introGreeting.addClass("intro-greeting-nightmode");
@@ -183,15 +174,25 @@ $(document).ready(function() {
     //     background.addClass("background-hidden");
     // });
 
-    var divs = $('.background, .intro'),
-    limit = 600;  /* scrolltop value when opacity should be 0 */
+
 
     $(window).on('scroll', function() {
        var st = $(this).scrollTop();
+    //    console.log(st);
 
-       /* avoid unnecessary call to jQuery function */
-       if (st <= limit) {
-          divs.css({ 'opacity' : (1 - st/limit) });
+       if (st > 550) {
+           console.log("workinggg");
+           $(".work-item").each(function(i) {
+              $(this).delay((i + 1) * 200).addClass("work-item-loaded");
+           });
        }
+       /* avoid unnecessary call to jQuery function */
+    //    if (st <= limit) {
+    //       divs.css({ 'opacity' : (1 - st/limit) });
+    //    }
     });
+
+
+
+
 });

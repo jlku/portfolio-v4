@@ -5,39 +5,35 @@
     width: 100%;
     display: flex;
     align-items: center;
-    z-index: 2;
-    transition: all .3s ease;
+    z-index: 1;
+    // transition: all .3s ease;
 }
 
-.header-theme-indicator-nightmode {
-    float: right;
-    transform: rotate(-48deg);
-    transition: transform .5s ease;
-}
+// .header-theme-indicator-nightmode {
+//     float: right;
+//     transform: rotate(-48deg);
+//     transition: transform .5s ease;
+// }
+//
+// .header-theme-indicator-hovered {
+//     transform: rotate(0deg);
+// }
 
-.header-theme-indicator-hovered {
-    transform: rotate(0deg);
-}
-
-.header-theme-indicator-time {
-    float: right;
-    font: $caption;
-    color: $white;
-    opacity: 0;
-}
-
-.header-theme-indicator-time-visible {
-    opacity: .7;
-    transform: translateX(-20px);
-}
+// .header-theme-indicator-time {
+//     float: right;
+//     font: $caption;
+//     color: $white;
+//     opacity: 0;
+// }
+//
+// .header-theme-indicator-time-visible {
+//     opacity: .7;
+//     transform: translateX(-20px);
+// }
 
 .header-scrolled {
     height: 5em;
     background-color: $white;
-}
-
-.header-navigation {
-    text-align: center;
 }
 
 .header-back {
@@ -57,40 +53,21 @@
 }
 
 .header-navigation-item {
-    @extend %clearfix;
-
     font: $headingThree;
     color: $greyDark;
     transition: all $colorChangeTime ease;
-    position: absolute;
-    left: 0;
-    top: 0;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
 
     &:hover {
         color: $greyDark;
     }
 }
 
-.header-navigation-item-about {
-
-}
-
 .header-navigation-item-work {
     visibility: hidden;
     opacity: 0;
-}
-
-
-.header-navigation-item-active {
-    color: $greyDark;
-}
-
-.header-navigation-item-active-nightmode {
-    color: $greyMedium;
-}
-
-.header-navigation-item-inactive-nightmode {
-    color: $greyDark;
 }
 
 .header-button-back {
@@ -102,11 +79,4 @@
     &:hover {
         opacity: .4;
     }
-}
-
-.header-title {
-    height: auto;
-    font: $headingThree;
-    color: $greyDark;
-    float: left;
 }
