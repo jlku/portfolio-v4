@@ -24,7 +24,11 @@ $headingThree: 1rem/100% 'Graphik-Regular', Helvetica, Sans-Serif;
 $paragraphItalic: italic 400 0.875rem/180% 'Open Sans', Helvetica, Sans-Serif; // 15px
 $paragraph: 400 0.875rem/180% 'Open Sans', Helvetica, Sans-Serif; // 15px
 $caption: italic 400 0.625rem 'Open Sans', Helvetica, Sans-Serif; // 10px
-$label: 300 0.625rem 'Open Sans', Helvetica, Sans-Serif; // 10px
+
+
+$regularLarge: 2.875rem/125% 'Graphik-Regular', Helvetica, Sans-Serif; // 46px
+$regularMedium: 1.625rem/150% 'Graphik-Regular', Helvetica, Sans-Serif; // 46px
+$label: 0.75rem 'Graphik-Medium', Helvetica, Sans-Serif; // 14px
 
 // spacing
 $verticalSpaceSmall: .3em;
@@ -44,3 +48,4 @@ $loadedStagger: .2s;
 $longDuration: .8s;
 $shortDuration: .4s;
 $bezier: cubic-bezier(0,.46,.24,1);
+$bezierEaseOut: cubic-bezier(.25,0,0,1);

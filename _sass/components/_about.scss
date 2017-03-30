@@ -1,0 +1,56 @@
+#about {
+    padding-top: 12em;
+    overflow-y: scroll;
+    height: 1000px;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+
+    // removing this will make it work
+    pointer-events: none;
+
+}
+
+.about-main {
+    font: $regularLarge;
+    color: $greyDark;
+    width: 66.6%;
+    margin: 0 auto 2em auto;
+
+    > p {
+        margin-bottom: $verticalSpaceMedium;
+    }
+}
+
+.about-details {
+    width: 66.6%;
+    margin: 0 auto;
+
+    li {
+        font: $regularMedium;
+        color: $greyDark;
+    }
+
+    p {
+        font: $regularMedium;
+        color: $greyDark;
+    }
+    h2 {
+        font: $label;
+        color: $greyDark;
+        text-transform: uppercase;
+        margin-bottom: $verticalSpaceMedium;
+        letter-spacing: .1em;
+    }
+
+    > section:nth-of-type(1) {
+        width: 25%;
+        float: left;
+
+    }
+
+    > section:nth-of-type(2) {
+        width: 75%;
+        float: left;
+    }
+}

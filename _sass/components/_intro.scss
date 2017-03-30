@@ -16,9 +16,16 @@
     }
 }
 
-.intro-scroll {
+.intro-arrow {
     position: absolute;
     bottom: 4.8em;
     right: 50%;
     margin-right: -8px;
+    animation: arrowFloat 2s infinite;
+}
+
+@keyframes arrowFloat {
+  0%   { transform: translateY(0px); }
+  50%   { transform: translateY(10px); }
+  100%   { transform: translateY(0px); }
 }

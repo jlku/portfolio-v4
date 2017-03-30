@@ -99,6 +99,10 @@ $(document).ready(function() {
         about.addClass("content-hidden");
         work.addClass("content-visible");
         aboutContent.addClass("content-visible");
+        $(".header-navigation-item > div:nth-of-type(1)").addClass("rotate-right");
+        $(".header-navigation-item > div:nth-of-type(2)").addClass("rotate-left");
+        $(".header-navigation-item-work").addClass("header-navigation-item-work-active");
+        body.addClass("no-scroll");
         // if (n < 18 && n > 6) {
         //     console.log("enable nightmode");
         //
@@ -140,6 +144,9 @@ $(document).ready(function() {
         about.removeClass("content-hidden");
         work.removeClass("content-visible");
         aboutContent.removeClass("content-visible");
+        $(".header-navigation-item > div:nth-of-type(1)").removeClass("rotate-right");
+        $(".header-navigation-item > div:nth-of-type(2)").removeClass("rotate-left");
+        $(".header-navigation-item-work").removeClass("header-navigation-item-work-active");
         // introHeading.removeClass("intro-heading-nightmode");
         // introGreeting.removeClass("intro-greeting-nightmode");
         // introBody.removeClass("paragraph-dark");

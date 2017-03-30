@@ -8,14 +8,10 @@
   transition: none !important;
 }
 
-#about {
-    height: 100vh;
-    width: 100%;
-
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+.no-scroll {
+    overflow: hidden;
 }
+
 
 .content-hidden {
     visibility: hidden;

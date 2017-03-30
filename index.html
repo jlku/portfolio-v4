@@ -5,35 +5,40 @@ title: Home
 <html lang="en">
 {% include head.html %}
 <body>
-    <header class="grid header" data-0="transform: translateY(0px); opacity: 1;" data-5p="transform: translateY(-100px); opacity: 0;">
+    <header class="header" data-0="transform: translateY(0px); opacity: 1;" data-5p="transform: translateY(-100px); opacity: 0;">
         <div class="wrapper">
             <button class="header-navigation-item header-navigation-item-about">About</a></button>
-            <button class="header-navigation-item header-navigation-item-work">Work</a></button>
+            <button class="header-navigation-item header-navigation-item-work">
+                <div></div>
+                <div></div>
+            </button>
         </div>
     </header>
     <div id="about">
-        <section class="about-main">
-            <p>Hi, I’m Adam, a designer on Uber Eats. I’m working to make getting food to your mouth more magical.</p>
-            <p>Before joining Eats, I worked on the Uber Rider app for 2 years. I helped usher in the latest iteration of the app.</p>
-            <p>I previously worked with Final and Human Design in Boulder, Colorado, where I was raised and educated.</p>
-        </section>
-        <section class="about-details">
-            <section>
-                <h2>Tools</h2>
-                <ul>
-                    <li>Sketch/PS/IA</li>
-                    <li>Framer</li>
-                    <li>After Effects</li>
-                    <li>HTML, CSS, JS</li>
-                    <li>Swift</li>
-                </ul>
+        <div class="wrapper">
+            <section class="about-main">
+                <p>Hi, I’m Adam, a designer on Uber Eats. I’m working to make getting food to your mouth more magical.</p>
+                <p>Before joining Eats, I worked on the Uber Rider app for 2 years. I helped usher in the latest iteration of the app.</p>
+                <p>I previously worked with Final and Human Design in Boulder, Colorado, where I was raised and educated.</p>
             </section>
-            <section>
-                <h2>This site</h2>
-                <p>Built on Jekyll with good ‘ole fashioned HTML, CSS, and Javascript. Shout out to the people behind Skollr.js and Parallax.js for helpful libraries.</p>
+            <section class="about-details">
+                <section>
+                    <h2>Tools</h2>
+                    <ul>
+                        <li>Sketch/PS/IA</li>
+                        <li>Framer</li>
+                        <li>After Effects</li>
+                        <li>HTML/CSS/JS</li>
+                        <li>Swift</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>This site</h2>
+                    <p>Built on Jekyll with good ‘ole fashioned HTML, CSS, and Javascript. Shout out to the people behind Skollr.js and Parallax.js for helpful libraries.</p>
+                </section>
             </section>
+        </div>
 
-        </section>
     </div>
     <div id="content">
         <div class="wrapper-home">
@@ -41,7 +46,7 @@ title: Home
                 <h1>&mdash; Hello, I'm Adam &mdash;</h1>
                 <p>Product designer, prototyper, and platform thinker.</p>
             </section>
-            <svg class="intro-scroll" data-0="transform: translateY(0px); opacity: 1;" data-65p="transform: translateY(-300px); opacity: 0;" width="16px" height="26px" viewBox="-13043 -1128 16 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg class="intro-arrow" data-0="transform: translateY(0px); opacity: 1;" data-65p="transform: translateY(-300px); opacity: 0;" width="16px" height="26px" viewBox="-13043 -1128 16 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <polygon id="arrow" stroke="none" fill="#606060" fill-rule="nonzero" points="-13034.1789 -1105.23959 -13034.1789 -1127.75 -13035.6789 -1127.75 -13035.6789 -1105.23959 -13041.4697 -1111.03033 -13042.5303 -1109.96967 -13034.9289 -1102.36827 -13027.3275 -1109.96967 -13028.3882 -1111.03033"></polygon>
             </svg>
         </div>
