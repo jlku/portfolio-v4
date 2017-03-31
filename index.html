@@ -5,48 +5,49 @@ title: Home
 <html lang="en">
 {% include head.html %}
 <body>
-    <header class="header" data-0="transform: translateY(0px); opacity: 1;" data-5p="transform: translateY(-100px); opacity: 0;">
-        <div class="wrapper">
-            <button class="header-navigation-item header-navigation-item-about">About</a></button>
-            <button class="header-navigation-item header-navigation-item-work">
+    <header class="header-home" data-0="opacity: 1;" data-50p="opacity: 0;">
+        <button class="header-home-about">About</button>
+    </header>
+
+    <div id="about">
+        <div class="header-about">
+            <button class="header-about-close">
                 <div></div>
                 <div></div>
             </button>
         </div>
-    </header>
-    <div id="about">
-        <div class="wrapper">
-            <section class="about-main">
-                <p>Hi, I’m Adam, a designer on Uber Eats. I’m working to make getting food to your mouth more magical.</p>
-                <p>Before joining Eats, I worked on the Uber Rider app for 2 years. I helped usher in the latest iteration of the app.</p>
-                <p>I previously worked with Final and Human Design in Boulder, Colorado, where I was raised and educated.</p>
-            </section>
-            <section class="about-details">
-                <section>
-                    <h2>Tools</h2>
-                    <ul>
-                        <li>Sketch/PS/IA</li>
-                        <li>Framer</li>
-                        <li>After Effects</li>
-                        <li>HTML/CSS/JS</li>
-                        <li>Swift</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>This site</h2>
-                    <p>Built on Jekyll with good ‘ole fashioned HTML, CSS, and Javascript. Shout out to the people behind Skollr.js and Parallax.js for helpful libraries.</p>
-                </section>
-            </section>
-        </div>
 
+        <section class="about-billboard">
+            <p>Hi, I’m Adam, a designer on Uber Eats. I’m working to make getting food to your mouth more magical.</p>
+            <p>Before joining Eats, I worked on the Uber Rider app for 2 years. I helped usher in the latest iteration of the app.</p>
+            <p>I previously worked with Final and Human Design in Boulder, Colorado, where I was raised and educated.</p>
+        </section>
+
+        <section class="about-details">
+            <section>
+                <h2>Tools</h2>
+                <ul>
+                    <li>Sketch/PS/IA</li>
+                    <li>Framer</li>
+                    <li>After Effects</li>
+                    <li>HTML/CSS/JS</li>
+                    <li>Swift</li>
+                </ul>
+            </section>
+            <section>
+                <h2>This site</h2>
+                <p>Built on Jekyll with good ‘ole fashioned HTML, CSS, and Javascript. Shout out to the people behind Skollr.js and Parallax.js for helpful libraries.</p>
+            </section>
+        </section>
     </div>
+
     <div id="content">
         <div class="wrapper-home">
-            <section class="intro" data-0="transform: translateY(0px); opacity: 1" data-35p="transform: translateY(-200px); opacity: 0;">
+            <section class="intro" data-0="opacity: 1" data-50p="opacity: 0;">
                 <h1>&mdash; Hello, I'm Adam &mdash;</h1>
                 <p>Product designer, prototyper, and platform thinker.</p>
             </section>
-            <svg class="intro-arrow" data-0="transform: translateY(0px); opacity: 1;" data-65p="transform: translateY(-300px); opacity: 0;" width="16px" height="26px" viewBox="-13043 -1128 16 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg class="intro-arrow" data-0="opacity: 1;" data-50p="opacity: 0;" width="16px" height="26px" viewBox="-13043 -1128 16 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <polygon id="arrow" stroke="none" fill="#606060" fill-rule="nonzero" points="-13034.1789 -1105.23959 -13034.1789 -1127.75 -13035.6789 -1127.75 -13035.6789 -1105.23959 -13041.4697 -1111.03033 -13042.5303 -1109.96967 -13034.9289 -1102.36827 -13027.3275 -1109.96967 -13028.3882 -1111.03033"></polygon>
             </svg>
         </div>
@@ -79,29 +80,30 @@ title: Home
             </ol>
         </div>
     </div>
-    <div id="scene" class="background">
-        <!-- <div class="layer background-container" data-depth=".05">
-            <div class="shape-square-1 rotating"></div>
-            <div class="shape-circle-1"></div>
-            <div class="shape-triangle-1 rotating"></div>
-        </div>
-        <div class="layer background-container" data-depth=".1">
-            <div class="shape-square-2 rotating"></div>
-            <div class="shape-circle-2"></div>
-            <div class="shape-triangle-2 rotating"></div>
-        </div>
-        <div class="layer background-container" data-depth=".15">
-            <div class="shape-circle-3"></div>
-            <div class="shape-triangle-3 rotating"></div>
-            <div class="shape-square-3 rotating"></div>
-        </div>
-        <div class="layer background-container" data-depth=".2">
-            <div class="shape-triangle-4 rotating"></div>
-            <div class="shape-circle-4"></div>
-            <div class="shape-square-4 rotating"></div> -->
-        </div>
-    </div>
     {% include footer.html %}
     {% include scripts.html %}
 </body>
 </html>
+
+<!-- <div id="scene" class="background"> -->
+    <!-- <div class="layer background-container" data-depth=".05">
+        <div class="shape-square-1 rotating"></div>
+        <div class="shape-circle-1"></div>
+        <div class="shape-triangle-1 rotating"></div>
+    </div>
+    <div class="layer background-container" data-depth=".1">
+        <div class="shape-square-2 rotating"></div>
+        <div class="shape-circle-2"></div>
+        <div class="shape-triangle-2 rotating"></div>
+    </div>
+    <div class="layer background-container" data-depth=".15">
+        <div class="shape-circle-3"></div>
+        <div class="shape-triangle-3 rotating"></div>
+        <div class="shape-square-3 rotating"></div>
+    </div>
+    <div class="layer background-container" data-depth=".2">
+        <div class="shape-triangle-4 rotating"></div>
+        <div class="shape-circle-4"></div>
+        <div class="shape-square-4 rotating"></div> -->
+    <!-- </div> -->
+<!-- </div> -->

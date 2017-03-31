@@ -1,17 +1,23 @@
 #about {
     padding-top: 12em;
     overflow-y: scroll;
-    height: 1000px;
+    height: 100vh;
     width: 100%;
+    // this should prob be display none
     visibility: hidden;
     opacity: 0;
-
-    // removing this will make it work
+    position: relative;
     pointer-events: none;
-
+    z-index: 2;
 }
 
-.about-main {
+.about-visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+
+.about-billboard {
     font: $regularLarge;
     color: $greyDark;
     width: 66.6%;
@@ -23,6 +29,8 @@
 }
 
 .about-details {
+    @extend %clearfix;
+
     width: 66.6%;
     margin: 0 auto;
 
@@ -35,6 +43,7 @@
         font: $regularMedium;
         color: $greyDark;
     }
+
     h2 {
         font: $label;
         color: $greyDark;
@@ -46,7 +55,6 @@
     > section:nth-of-type(1) {
         width: 25%;
         float: left;
-
     }
 
     > section:nth-of-type(2) {
