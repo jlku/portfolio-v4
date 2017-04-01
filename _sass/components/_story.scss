@@ -1,6 +1,7 @@
 .story {
     float: none;
     margin: 0 auto $verticalSpaceExtraLarge auto;
+    width: 40%;
 }
 
 .story-about {
@@ -14,7 +15,7 @@
     > h3 {
         position: absolute;
         text-align: right;
-        transform: translateX(-150%) translateY(42%);;
+        transform: translateX(-150%) translateY(58%);;
 
     }
 }

@@ -1,5 +1,5 @@
 // should be header-work
-.header {
+.header-work {
     height: $headerSpace;
     position: fixed;
     top: 0;
@@ -7,6 +7,9 @@
     display: flex;
     align-items: center;
     z-index: 1;
+    background-color: transparent;
+    padding: 0 20%;
+    transition: all $durationShort $bezierEaseOut;
 }
 
 // header-work-scrolled
@@ -16,9 +19,17 @@
 }
 
 // header-work-back
-.header-back {
-    position: absolute;
-    left: 0;
+.header-work-back {
+    > svg {
+        vertical-align: middle;
+        margin-right: .5em;
+    }
+
+    > span {
+        font: $caption;
+        color: $greyDark;
+        vertical-align: middle;
+    }
 }
 
 .header-home {

@@ -1,8 +1,18 @@
+.twitter-getter {
+    width: 45%;
+    float: left;
+}
+
 .twitter-getter-tweet {
-    color: $greyMedium;
+    color: $greyDark;
+    font: $paragraph;
+    margin-bottom: 1em;
 
     > a {
-        color: $greyLight;
+        color: $greyDark;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     > img {
@@ -11,5 +21,6 @@
 }
 
 .twitter-getter-time {
-    color: $greyDark;
+    color: $greyMedium;
+    font: $paragraph;
 }

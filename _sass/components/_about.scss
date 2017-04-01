@@ -17,10 +17,30 @@
     pointer-events: auto !important;
 }
 
+.about-links {
+    float: left;
+    padding: 0 30%;
+    margin-bottom: 5.75em;
+
+    > a {
+        display: block;
+        float: left;
+        height: 28px;
+        width: 28px;
+        margin-right: .5em;
+
+        transition: all .2s ease;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+}
+
 .about-billboard {
     font: $regularLarge;
     color: $greyDark;
-    width: 66.6%;
+    width: 40%;
     margin: 0 auto 2em auto;
 
     > p {
@@ -30,9 +50,8 @@
 
 .about-details {
     @extend %clearfix;
-
-    width: 66.6%;
-    margin: 0 auto;
+    width: 40%;
+    margin: 0 auto 5.75em auto;
 
     li {
         font: $regularMedium;
@@ -60,5 +79,9 @@
     > section:nth-of-type(2) {
         width: 75%;
         float: left;
+    }
+
+    @media (max-width: $breakpointLarge) {
+        width: 66.6%;
     }
 }
