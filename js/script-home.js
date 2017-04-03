@@ -4,19 +4,19 @@ $(document).ready(function() {
     var s = skrollr.init({forceHeight: false});
 
     var body = $("body");
-    var background = $(".background");
-    var introGreeting = $(".intro-greeting");
-    var introBody = $(".intro-body");
-    var introHeading = $(".intro-heading");
+    // var background = $(".background");
+    // var introGreeting = $(".intro-greeting");
+    // var introBody = $(".intro-body");
+    // var introHeading = $(".intro-heading");
     var aboutButton = $(".header-home-about");
     var aboutCloseButton = $(".header-about-close");
     var about = $("#about");
     var content = $("#content");
-    var nightmodeIndicator = $(".header-theme-indicator-nightmode")
-    var indicatorTime = $(".header-theme-indicator-time")
-    var nightmodeButton = $(".themes-button-nightmode");
-    var daymodeButton = $(".themes-button-daymode");
-    var navigation = $(".header-navigation-list");
+    // var nightmodeIndicator = $(".header-theme-indicator-nightmode")
+    // var indicatorTime = $(".header-theme-indicator-time")
+    // var nightmodeButton = $(".themes-button-nightmode");
+    // var daymodeButton = $(".themes-button-daymode");
+    // var navigation = $(".header-navigation-list");
 
     // show about
     aboutButton.click(function() {
@@ -32,27 +32,38 @@ $(document).ready(function() {
 
     // hide about
     aboutCloseButton.click(function() {
-        body.removeClass("background-nightmode no-scroll");
-        content.removeClass("content-hidden");
-        aboutButton.removeClass("content-hidden");
-        aboutCloseButton.removeClass("content-visible");
-        about.removeClass("about-visible");
-        $(".header-navigation-item > div:nth-of-type(1)").removeClass("rotate-right");
-        $(".header-navigation-item > div:nth-of-type(2)").removeClass("rotate-left");
-        $(".header-navigation-item-work").removeClass("header-navigation-item-work-active");
+        aboutCloseButton.removeClass("content-visible header-about-close-rotated");
+        $(".header-about-close > div:nth-of-type(1)").removeClass("rotate-right");
+        $(".header-about-close > div:nth-of-type(2)").removeClass("rotate-left");
+
+        setTimeout(function(){
+            body.removeClass("background-nightmode no-scroll");
+            content.removeClass("content-hidden");
+            aboutButton.removeClass("content-hidden");
+
+            about.removeClass("about-visible");
+
+            $(".header-navigation-item-work").removeClass("header-navigation-item-work-active");
+        }, 1000);
     });
-
+    var loadDelay = 100;
     $(window).on('scroll', function() {
-       var st = $(this).scrollTop();
+       var scrollPosition = $(this).scrollTop();
 
-       if (st > 550) {
-           $(".work-item").each(function(i) {
-              $(this).delay((i + 1) * 200).addClass("work-item-loaded");
+       if (scrollPosition > 550) {
+        //    $(".work-item").each(function(i) {
+        //        console.log(i);
+        //       $(this).delay(i * 200).addClass("work-item-loaded");
+        //    });
+           console.log("working");
+           $(".work-item").each(function(i, el) {
+               var $this = $(this);
+               setTimeout(function() {
+                   $this.addClass('work-item-loaded');
+               }, i * loadDelay);
            });
        }
     });
-
-
 });
 
 // initialize mouse parallax

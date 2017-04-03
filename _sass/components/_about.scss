@@ -17,26 +17,6 @@
     pointer-events: auto !important;
 }
 
-.about-links {
-    float: left;
-    padding: 0 30%;
-    margin-bottom: 5.75em;
-
-    > a {
-        display: block;
-        float: left;
-        height: 28px;
-        width: 28px;
-        margin-right: .5em;
-
-        transition: all .2s ease;
-
-        &:hover {
-            opacity: .5;
-        }
-    }
-}
-
 .about-billboard {
     font: $regularLarge;
     color: $greyDark;
@@ -45,6 +25,10 @@
 
     > p {
         margin-bottom: $verticalSpaceMedium;
+    }
+
+    @media (max-width: $breakpointLarge) {
+        width: 45%;
     }
 }
 
@@ -74,14 +58,40 @@
     > section:nth-of-type(1) {
         width: 25%;
         float: left;
+
+
     }
 
     > section:nth-of-type(2) {
         width: 75%;
         float: left;
+
+
     }
 
     @media (max-width: $breakpointLarge) {
-        width: 66.6%;
+        width: 45%;
+    }
+}
+
+.about-links {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+    padding: 0 27.5%;
+
+    > a {
+        display: block;
+        float: left;
+        height: 28px;
+        width: 28px;
+        margin-right: .5em;
+
+        transition: all .2s ease;
+
+        &:hover {
+            opacity: .5;
+        }
     }
 }

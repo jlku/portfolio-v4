@@ -21,7 +21,7 @@ $billboard: 3rem/120% 'Graphik-Medium', Helvetica, Sans-Serif;
 $headingOne: 2.375rem/120% 'Graphik-Medium', Helvetica, Sans-Serif;
 $headingTwo: 1.75rem/110% 'Graphik-Regular', Helvetica, Sans-Serif;
 $headingThree: 1rem/100% 'Graphik-Regular', Helvetica, Sans-Serif;
-$paragraphItalic: italic 400 0.875rem/180% 'Open Sans', Helvetica, Sans-Serif; // 15px
+
 
 
 
@@ -29,7 +29,7 @@ $regularLarge: 2.875rem/125% 'Graphik-Regular', Helvetica, Sans-Serif; // 46px
 $regularMedium: 1.625rem/150% 'Graphik-Regular', Helvetica, Sans-Serif; // 26px
 $paragraph: 400 0.875rem/180% 'Graphik-Regular', Helvetica, Sans-Serif; // 14px
 $label: 0.625rem 'Graphik-Medium', Helvetica, Sans-Serif; // 10px
-$caption: 0.75rem 'Graphik-Regular', Helvetica, Sans-Serif; // 14px
+$caption: 0.75rem 'Graphik-RegularItalic', Helvetica, Sans-Serif; // 12px
 
 // spacing
 $verticalSpaceSmall: .3em;
@@ -50,7 +50,7 @@ $longDuration: .8s;
 $shortDuration: .4s;
 $bezier: cubic-bezier(0,.46,.24,1);
 
-$bezierEaseOut: cubic-bezier(.25,0,0,1);
+$bezierEaseOut: cubic-bezier(.3,0,0,1);
 $durationLong: .6s;
 $durationMedium: .4s;
 $durationShort: .2s;
