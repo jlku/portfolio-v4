@@ -5,7 +5,6 @@
 {% include head.html %}
 <body>
     {% include header.html %}
-
     <div id="content">
         {% if page.headerImage contains ".mp4" %}
             <video class="post-header-media" src="{{ page.headerImage }}" autoplay="true" loop="true"></video>
@@ -14,7 +13,8 @@
         {% endif %}
         <div class="wrapper-work">
             <section class="story">
-                <h2 class="heading-one">{{ page.title }}</h2>
+                <h2 class="heading-one">{{ page.company }} {{ page.title }}</h2>
+                <span class="caption">{{ page.timing }}</span>
                 <section class="story-section">
                     <h3 class="label">Overview</h3>
                     {% for paragraph in page.overview %}
@@ -37,6 +37,7 @@
                 </section>
             </section>
             <section class="visuals">
+                <h3>{{ page.title }} Visuals</h3>
                 {{ content }}
             </section>
             {% include footer.html %}

@@ -1,0 +1,5 @@
+.visuals {
+    > h3 {
+        @extend %visually-hidden;
+    }
+}

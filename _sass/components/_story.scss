@@ -2,6 +2,15 @@
     float: none;
     margin: 0 auto $verticalSpaceExtraLarge auto;
     width: 40%;
+
+    > h2 {
+        margin-bottom: .2em;
+    }
+
+    > span {
+        margin-bottom: 2.8em;
+        display: inline-block;
+    }
 }
 
 .story-about {

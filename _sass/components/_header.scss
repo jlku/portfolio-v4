@@ -76,7 +76,7 @@
 .header-about-close {
     height: 40px;
     width: 40px;
-    transition: transform .7s $bezierEaseOut;
+    transition: transform $durationExtraLong $bezierEaseOut;
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
@@ -89,7 +89,7 @@
         position: absolute;
         background-color: $greyDark;
         transform-origin: center center;
-        transition: all .7s $bezierEaseOut;
+        transition: all $durationExtraLong $bezierEaseOut;
         opacity: 0;
         transform: rotate(0);
     }

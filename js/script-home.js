@@ -59,7 +59,7 @@ $(document).ready(function() {
                 body.removeClass("background-nightmode no-scroll");
                 content.removeClass("content-hidden");
                 aboutButton.removeClass("content-hidden");
-            }, 300);
+            }, 1500);
         }
     });
 

@@ -10,12 +10,12 @@
     pointer-events: none;
     z-index: 2;
 
-    transition: all $durationLong $bezierEaseOut;
+    transition: all $durationExtraLong $bezierEaseOut;
 }
 
 .about-container {
     transform: translateY(50px);
-    transition: transform $durationLong $bezierEaseOut;
+    transition: transform $durationExtraLong $bezierEaseOut;
 }
 
 .about-container-loaded {
