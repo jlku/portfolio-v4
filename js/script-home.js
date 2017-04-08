@@ -11,6 +11,7 @@ $(document).ready(function() {
     var aboutButton = $(".header-home-about");
     var aboutCloseButton = $(".header-about-close");
     var about = $("#about");
+    var aboutContainer = $(".about-container");
     var content = $("#content");
     // var nightmodeIndicator = $(".header-theme-indicator-nightmode")
     // var indicatorTime = $(".header-theme-indicator-time")
@@ -25,6 +26,7 @@ $(document).ready(function() {
         content.addClass("content-hidden");
         aboutButton.addClass("content-hidden");
         aboutCloseButton.addClass("content-visible header-about-close-rotated");
+        aboutContainer.addClass("about-container-loaded");
 
         $(".header-about-close > div:nth-of-type(1)").addClass("rotate-right");
         $(".header-about-close > div:nth-of-type(2)").addClass("rotate-left");
@@ -35,17 +37,33 @@ $(document).ready(function() {
         aboutCloseButton.removeClass("content-visible header-about-close-rotated");
         $(".header-about-close > div:nth-of-type(1)").removeClass("rotate-right");
         $(".header-about-close > div:nth-of-type(2)").removeClass("rotate-left");
+        about.removeClass("about-visible");
+        aboutContainer.removeClass("about-container-loaded");
 
         setTimeout(function(){
             body.removeClass("background-nightmode no-scroll");
             content.removeClass("content-hidden");
             aboutButton.removeClass("content-hidden");
-
-            about.removeClass("about-visible");
-
-            $(".header-navigation-item-work").removeClass("header-navigation-item-work-active");
-        }, 1000);
+        }, 300);
     });
+    document.addEventListener('keyup', function(e) {
+
+        if (e.keyCode == 27) {
+            aboutCloseButton.removeClass("content-visible header-about-close-rotated");
+            $(".header-about-close > div:nth-of-type(1)").removeClass("rotate-right");
+            $(".header-about-close > div:nth-of-type(2)").removeClass("rotate-left");
+            about.removeClass("about-visible");
+            aboutContainer.removeClass("about-container-loaded");
+
+            setTimeout(function(){
+                body.removeClass("background-nightmode no-scroll");
+                content.removeClass("content-hidden");
+                aboutButton.removeClass("content-hidden");
+            }, 300);
+        }
+    });
+
+
     var loadDelay = 100;
     $(window).on('scroll', function() {
        var scrollPosition = $(this).scrollTop();

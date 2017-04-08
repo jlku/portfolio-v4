@@ -9,6 +9,17 @@
     position: relative;
     pointer-events: none;
     z-index: 2;
+
+    transition: all $durationLong $bezierEaseOut;
+}
+
+.about-container {
+    transform: translateY(50px);
+    transition: transform $durationLong $bezierEaseOut;
+}
+
+.about-container-loaded {
+    transform: translateY(0px);
 }
 
 .about-visible {
@@ -80,6 +91,7 @@
     display: table;
     width: 100%;
     padding: 0 27.5%;
+    margin-bottom: 5.75em;
 
     > a {
         display: block;
