@@ -8,7 +8,7 @@
     align-items: center;
     z-index: 1;
     background-color: transparent;
-    padding: 0 20%;
+    padding: 0 25%;
     transition: all $durationShort $bezierEaseOut;
 
     @media (max-width: $breakpointLarge) {

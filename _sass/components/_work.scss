@@ -42,7 +42,7 @@
 
 .work-item {
 	margin: 0 1.5% 1.5% 0;
-    width: 32.3333333333%;
+    width: 48.5%;
     float: left;
     display: block;
 	position: relative;
@@ -60,7 +60,6 @@
     }
 
 	> a {
-		border-radius: 6px;
 		overflow: hidden;
 		display: block;
 	}
@@ -84,7 +83,7 @@
     opacity: 1;
 }
 
-.work-item:nth-of-type(3n+3) {
+.work-item:nth-of-type(2n) {
     margin-right: 0;
 
     @media (max-width: $breakpointLarge) {
@@ -107,7 +106,6 @@
 	opacity: 0;
 	display: flex;
 	align-items: center;
-	border-radius: 6px;
 
 	transition: all $shortDuration $bezier;
 }
