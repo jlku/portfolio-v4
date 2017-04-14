@@ -5,7 +5,7 @@ title: Home
 <html lang="en">
 {% include head.html %}
 <body>
-    <header class="header-home" data-0="opacity: 1;" data-50p="opacity: 0;">
+    <header class="header-home">
         <button class="header-home-about">About</button>
     </header>
 
@@ -94,12 +94,19 @@ title: Home
 
     <div id="content">
         <div class="wrapper-home">
-            <section class="intro" data-0="opacity: 1" data-50p="opacity: 0;">
+            <section class="intro" >
                 <h1>&mdash; Hello, I'm Adam &mdash;</h1>
-                <p>Product designer, prototyper, and platform thinker.</p>
+                <p><span>Product designer</span>, prototyper, and platform thinker.</p>
             </section>
-            <svg class="intro-arrow" data-0="opacity: 1;" data-50p="opacity: 0;" width="16px" height="26px" viewBox="-13043 -1128 16 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <polygon id="arrow" stroke="none" fill="#606060" fill-rule="nonzero" points="-13034.1789 -1105.23959 -13034.1789 -1127.75 -13035.6789 -1127.75 -13035.6789 -1105.23959 -13041.4697 -1111.03033 -13042.5303 -1109.96967 -13034.9289 -1102.36827 -13027.3275 -1109.96967 -13028.3882 -1111.03033"></polygon>
+
+
+            <svg class="intro-arrow" data-0="opacity:1;" data-100="opacity:0;" width="14px" height="8px" viewBox="0 0 14 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="home" transform="translate(-712.000000, -980.000000)" fill-rule="nonzero" fill="#606060">
+                        <polygon id="Rectangle-5" points="713.944544 980.540738 712.883883 981.601398 719.071068 987.788582 725.258252 981.601398 724.197592 980.540738 719.071068 985.667262"></polygon>
+                    </g>
+                </g>
             </svg>
         </div>
         <div class="wrapper-work">
@@ -131,30 +138,29 @@ title: Home
             </ol>
         </div>
     </div>
+    <div id="scene" class="background" data-0="opacity:1;transform:scale(1);" data-40p="opacity:0;transform:scale(.85);">
+        <div class="layer background-container" data-depth=".05">
+            <div class="shape-square-1 rotating"></div>
+            <div class="shape-circle-1"></div>
+            <div class="shape-triangle-1 rotating"></div>
+        </div>
+        <div class="layer background-container" data-depth=".05">
+            <div class="shape-square-2 rotating"></div>
+            <div class="shape-circle-2"></div>
+            <div class="shape-triangle-2 rotating"></div>
+        </div>
+        <div class="layer background-container" data-depth=".15">
+            <div class="shape-circle-3"></div>
+            <div class="shape-triangle-3 rotating"></div>
+            <div class="shape-square-3 rotating"></div>
+        </div>
+        <div class="layer background-container" data-depth=".2">
+            <div class="shape-triangle-4 rotating"></div>
+            <div class="shape-circle-4"></div>
+            <div class="shape-square-4 rotating"></div>
+        </div>
+    </div>
     {% include footer.html %}
     {% include scripts.html %}
 </body>
 </html>
-
-<!-- <div id="scene" class="background"> -->
-    <!-- <div class="layer background-container" data-depth=".05">
-        <div class="shape-square-1 rotating"></div>
-        <div class="shape-circle-1"></div>
-        <div class="shape-triangle-1 rotating"></div>
-    </div>
-    <div class="layer background-container" data-depth=".1">
-        <div class="shape-square-2 rotating"></div>
-        <div class="shape-circle-2"></div>
-        <div class="shape-triangle-2 rotating"></div>
-    </div>
-    <div class="layer background-container" data-depth=".15">
-        <div class="shape-circle-3"></div>
-        <div class="shape-triangle-3 rotating"></div>
-        <div class="shape-square-3 rotating"></div>
-    </div>
-    <div class="layer background-container" data-depth=".2">
-        <div class="shape-triangle-4 rotating"></div>
-        <div class="shape-circle-4"></div>
-        <div class="shape-square-4 rotating"></div> -->
-    <!-- </div> -->
-<!-- </div> -->

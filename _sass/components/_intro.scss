@@ -13,6 +13,10 @@
         font: $billboard;
         text-align: center;
         color: $greyDark;
+
+        > span {
+            color: $pink;
+        }
     }
 }
 
@@ -21,7 +25,7 @@
     bottom: 4.8em;
     right: 50%;
     margin-right: -8px;
-    animation: arrowFloat 2s infinite;
+    // animation: arrowFloat 2s infinite;
 }
 
 @keyframes arrowFloat {

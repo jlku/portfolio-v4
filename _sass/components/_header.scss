@@ -59,6 +59,11 @@
     cursor: pointer;
 }
 
+.header-home-about-hidden {
+    pointer-events: none !important;
+
+}
+
 .header-about {
     height: $headerSpace;
     position: absolute;

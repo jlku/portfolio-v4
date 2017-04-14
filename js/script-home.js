@@ -4,6 +4,7 @@ $(document).ready(function() {
     var s = skrollr.init({forceHeight: false});
 
     var body = $("body");
+    var shapes = $(".background-container");
     // var background = $(".background");
     // var introGreeting = $(".intro-greeting");
     // var introBody = $(".intro-body");
@@ -19,12 +20,22 @@ $(document).ready(function() {
     // var daymodeButton = $(".themes-button-daymode");
     // var navigation = $(".header-navigation-list");
 
+    // // navigation hover
+    aboutButton.hover(function() {
+        body.addClass("background-nightmode");
+        shapes.addClass("shapes-nightmode");
+
+    }, function() {
+        body.removeClass("background-nightmode");
+        shapes.removeClass("shapes-nightmode");
+    });
+
     // show about
     aboutButton.click(function() {
         body.addClass("background-nightmode no-scroll");
         about.addClass("about-visible");
         content.addClass("content-hidden");
-        aboutButton.addClass("content-hidden");
+        aboutButton.addClass("content-hidden header-home-about-hidden");
         aboutCloseButton.addClass("content-visible header-about-close-rotated");
         aboutContainer.addClass("about-container-loaded");
 
@@ -85,8 +96,8 @@ $(document).ready(function() {
 });
 
 // initialize mouse parallax
-// var scene = document.getElementById('scene');
-// var parallax = new Parallax(scene);
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
 
 // bg shapes
 // var circle1 = $(".shape-circle-1");
@@ -105,13 +116,7 @@ $(document).ready(function() {
 // var shapesSquaresCircles = [circle1, circle2, circle3, circle4, square1, square2, square3, square4]
 // var shapesTriangles = [triangle1, triangle2, triangle3, triangle4]
 
-// // navigation hover
-// aboutButton.hover(function() {
-//     background.addClass("background-scaled");
-//
-// }, function() {
-//     background.removeClass("background-scaled");
-// });
+
 
 // $.each(shapesSquaresCircles, function(index, value) {
 //     this.removeClass("shape-nightmode");
