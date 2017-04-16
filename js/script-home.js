@@ -4,35 +4,38 @@ $(document).ready(function() {
     var s = skrollr.init({forceHeight: false});
 
     var body = $("body");
-    var shapes = $(".background-container");
-    // var background = $(".background");
-    // var introGreeting = $(".intro-greeting");
-    // var introBody = $(".intro-body");
-    // var introHeading = $(".intro-heading");
+
+    introGreeting = $('.intro-greeting');
+    introBio = $('.intro-bio');
+    // var shapesSquare = $("[class*='shape-square']");
+    // var shapesCircle = $("[class*='shape-circle']");
+    var shapesTriangle = $("[class*='shape-triangle']");
     var aboutButton = $(".header-home-about");
     var aboutCloseButton = $(".header-about-close");
     var about = $("#about");
     var aboutContainer = $(".about-container");
     var content = $("#content");
-    // var nightmodeIndicator = $(".header-theme-indicator-nightmode")
-    // var indicatorTime = $(".header-theme-indicator-time")
-    // var nightmodeButton = $(".themes-button-nightmode");
-    // var daymodeButton = $(".themes-button-daymode");
-    // var navigation = $(".header-navigation-list");
 
-    // // navigation hover
+    // about hover
     aboutButton.hover(function() {
-        body.addClass("background-nightmode");
-        shapes.addClass("shapes-nightmode");
+        body.addClass("nightmode-background");
+        shapesTriangle.addClass("nightmode-shapes-triangle");
+        introGreeting.addClass("nightmode-text-dark");
+        introBio.addClass("nightmode-text-light");
+        aboutButton.addClass("nightmode-text-dark");
+
 
     }, function() {
-        body.removeClass("background-nightmode");
-        shapes.removeClass("shapes-nightmode");
+        body.removeClass("nightmode-background");
+        shapesTriangle.removeClass("nightmode-shapes-triangle");
+        introGreeting.removeClass("nightmode-text-dark");
+        introBio.removeClass("nightmode-text-light");
+        aboutButton.removeClass("nightmode-text-dark");
     });
 
-    // show about
+    // about click
     aboutButton.click(function() {
-        body.addClass("background-nightmode no-scroll");
+        body.addClass("nightmode-background no-scroll");
         about.addClass("about-visible");
         content.addClass("content-hidden");
         aboutButton.addClass("content-hidden header-home-about-hidden");
@@ -43,7 +46,7 @@ $(document).ready(function() {
         $(".header-about-close > div:nth-of-type(2)").addClass("rotate-left");
     });
 
-    // hide about
+    // about close
     aboutCloseButton.click(function() {
         aboutCloseButton.removeClass("content-visible header-about-close-rotated");
         $(".header-about-close > div:nth-of-type(1)").removeClass("rotate-right");
@@ -52,7 +55,7 @@ $(document).ready(function() {
         aboutContainer.removeClass("about-container-loaded");
 
         setTimeout(function(){
-            body.removeClass("background-nightmode no-scroll");
+            body.removeClass("nightmode-background no-scroll");
             content.removeClass("content-hidden");
             aboutButton.removeClass("content-hidden");
         }, 300);
@@ -67,7 +70,7 @@ $(document).ready(function() {
             aboutContainer.removeClass("about-container-loaded");
 
             setTimeout(function(){
-                body.removeClass("background-nightmode no-scroll");
+                body.removeClass("nightmode-background no-scroll");
                 content.removeClass("content-hidden");
                 aboutButton.removeClass("content-hidden");
             }, 1500);

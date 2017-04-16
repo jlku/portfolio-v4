@@ -1,22 +1,26 @@
 .intro {
     width: 66.66%;
     margin: 0 auto;
+}
 
-    > h1 {
-        font: $headingThree;
-        margin-bottom: 1em;
-        text-align: center;
-        color: $greyMedium;
-    }
+.intro-greeting {
+    font: $headingThree;
+    margin-bottom: 1em;
+    text-align: center;
+    color: $greyMedium;
 
-    > p {
-        font: $billboard;
-        text-align: center;
-        color: $greyDark;
+    transition: all $durationLong ease;
+}
 
-        > span {
-            color: $pink;
-        }
+.intro-bio {
+    font: $billboard;
+    text-align: center;
+    color: $greyDark;
+
+    transition: all $durationLong ease;
+
+    > span {
+        color: $pink;
     }
 }
 
