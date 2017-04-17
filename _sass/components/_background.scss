@@ -6,10 +6,12 @@
     bottom: 0;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
+
+    transition: all $durationLong ease;
 }
 
 .background-hidden {
-    opacity: 0;
+    opacity: 0 !important;
 }
 
 .background-container {
@@ -18,6 +20,8 @@
     left: 0;
     right: 0;
     bottom: 0;
+
+
 }
 
 [class*='shape-square'] {
