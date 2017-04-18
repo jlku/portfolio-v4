@@ -2,12 +2,14 @@ body {
     margin-bottom: 20em;
     background-color: $white;
     height: 100%;
-
+    overflow: auto;
     transition: all $durationLong ease;
 }
 
 html {
     background-color: $white;
+    
+
 }
 
 // p {

@@ -104,7 +104,7 @@ $(document).ready(function() {
     });
 
 
-    var loadDelay = 100;
+    var loadDelay = 200;
     $(window).on('scroll', function() {
        var scrollPosition = $(this).scrollTop();
 

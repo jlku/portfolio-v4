@@ -52,6 +52,10 @@
     padding: 0 auto 8em auto;
 
     @media (max-width: $breakpointLarge) {
+        width: 66.6%;
+    }
+
+    @media (max-width: $breakpointMedium) {
         width: 75%;
     }
 
@@ -74,6 +78,10 @@
     position: relative;
 
     @media (max-width: $breakpointLarge) {
+        width: 66.66%;
+    }
+
+    @media (max-width: $breakpointMedium) {
         width: 75%;
     }
 }

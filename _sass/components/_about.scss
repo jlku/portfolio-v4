@@ -10,6 +10,10 @@
     z-index: 2;
 
     transition: all $durationExtraLong $bezierEaseOut;
+
+    @media (max-width: $breakpointSmall) {
+        padding-top: 9em;
+    }
 }
 
 .about-container {
@@ -40,6 +44,15 @@
     @media (max-width: $breakpointLarge) {
         width: 45%;
     }
+
+    @media (max-width: $breakpointMedium) {
+        width: 60%;
+    }
+
+    @media (max-width: $breakpointSmall) {
+        width: 75%;
+        font: $regularMedium;
+    }
 }
 
 .about-details {
@@ -47,14 +60,38 @@
     width: 40%;
     margin: 0 auto 5.75em auto;
 
+    @media (max-width: $breakpointLarge) {
+        width: 45%;
+    }
+
+    @media (max-width: $breakpointMedium) {
+        width: 60%;
+    }
+
+    @media (max-width: $breakpointSmall) {
+        width: 75%;
+        font: $regularMedium;
+        margin-bottom: 2em;
+    }
+
     li {
         font: $regularMedium;
         color: $greyDark;
+
+        @media (max-width: $breakpointSmall) {
+            width: 100%;
+            font: $paragraphLarge;
+        }
     }
 
     p {
         font: $regularMedium;
         color: $greyDark;
+
+        @media (max-width: $breakpointSmall) {
+            width: 100%;
+            font: $paragraphLarge;
+        }
     }
 
     h2 {
@@ -68,19 +105,29 @@
     > section:nth-of-type(1) {
         width: 25%;
         float: left;
+        padding-right: 20px;
 
+        @media (max-width: $breakpointMedium) {
+            display: block;
+            float: none;
+            width: 100%;
+            margin-bottom: 5.75em;
+        }
 
+        @media (max-width: $breakpointSmall) {
+            margin-bottom: 2em;
+        }
     }
 
     > section:nth-of-type(2) {
         width: 75%;
         float: left;
 
-
-    }
-
-    @media (max-width: $breakpointLarge) {
-        width: 45%;
+        @media (max-width: $breakpointMedium) {
+            display: block;
+            float: none;
+            width: 100%;
+        }
     }
 }
 
@@ -90,6 +137,20 @@
     display: table;
     width: 40%;
     margin: 0 auto 5.75em auto;
+
+    @media (max-width: $breakpointLarge) {
+        width: 45%;
+    }
+
+    @media (max-width: $breakpointMedium) {
+        width: 60%;
+    }
+
+    @media (max-width: $breakpointSmall) {
+        width: 75%;
+        font: $regularMedium;
+        margin-bottom: 2em;
+    }
 
     > a {
         display: block;
