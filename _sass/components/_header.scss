@@ -1,6 +1,5 @@
-// should be header-work
 .header-work {
-    height: $headerSpace;
+    height:7em;
     position: fixed;
     top: 0;
     width: 100%;
@@ -31,10 +30,19 @@
     }
 
     > span {
-        font: $caption;
-        color: $greyDark;
+        font: $captionNoItalic;
         vertical-align: middle;
     }
+}
+.header-work-back-icon-dark {
+    fill: $greyDark !important;
+}
+.header-work-back-light {
+        color: $white;
+}
+
+.header-work-back-dark {
+        color: $greyDark;
 }
 
 .header-home {

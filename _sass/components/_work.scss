@@ -47,7 +47,7 @@
     display: block;
 	position: relative;
     transform: translateY(25px);
-    opacity: 0;
+    opacity: 1;
 
 	transition: all $durationExtraLong $bezierEaseOut;
 
@@ -108,6 +108,8 @@
 	align-items: center;
 
 	transition: all $shortDuration $bezier;
+
+
 }
 
 .work-item-description-company {
@@ -117,6 +119,10 @@
 	position: absolute;
 	top: 3em;
 	display: block;
+
+    @media (max-width: $breakpointMedium) {
+        font-size: .75rem;
+    }
 }
 
 .work-item-description-company-dark {
@@ -126,6 +132,10 @@
 	position: absolute;
 	top: 3em;
 	display: block;
+
+    @media (max-width: $breakpointMedium) {
+        font-size: .75rem;
+    }
 }
 
 .work-item-description-title {
@@ -133,6 +143,10 @@
 	color: $white;
 	display: block;
 	margin-bottom: $verticalSpaceSmall;
+
+    @media (max-width: $breakpointMedium) {
+        font-size: 1.75rem;
+    }
 }
 
 .work-item-description-summary {
@@ -140,6 +154,10 @@
 	color: $white;
 	opacity: .5;
 	display: block;
+
+    @media (max-width: $breakpointMedium) {
+        font-size: .75rem;
+    }
 }
 
 .work-item-description-title-dark {
@@ -148,6 +166,10 @@
     opacity: .4;
 	display: block;
 	margin-bottom: $verticalSpaceSmall;
+
+    @media (max-width: $breakpointMedium) {
+        font-size: 1.75rem;
+    }
 }
 
 .work-item-description-summary-dark {
@@ -155,14 +177,14 @@
 	color: $black;
 	opacity: .3;
 	display: block;
+
+    @media (max-width: $breakpointMedium) {
+        font-size: .75rem;
+    }
 }
 
 .work-item:hover {
 	transform: translateY(-8px) scale(1.015);
-
-	// ~ li {
-	// 	filter: grayscale(100%) opacity(10%);;
-	// }
 
 	> a:after {
         opacity: 1;
