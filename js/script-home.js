@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // initialize skollr parallax
-    var s = skrollr.init({forceHeight: true});
+    // var s = skrollr.init({forceHeight: true});
 
     // initialize mouse parallax
     var scene = document.getElementById('scene');
