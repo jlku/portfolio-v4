@@ -10,6 +10,10 @@
     color: $greyMedium;
 
     transition: all $durationLong ease;
+
+    @media (max-width: $breakpointSmall) {
+        text-align: left;
+    }
 }
 
 .intro-bio {
@@ -21,6 +25,11 @@
 
     > span {
         color: $pink;
+    }
+
+    @media (max-width: $breakpointSmall) {
+        text-align: left;
+        width: 90%;
     }
 }
 
