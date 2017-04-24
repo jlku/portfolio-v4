@@ -11,6 +11,10 @@
         margin-bottom: 2.8em;
         display: inline-block;
     }
+
+    @media (max-width: $breakpointSmall) {
+        width: 80%;
+    }
 }
 
 .story-about {
@@ -24,7 +28,13 @@
     > h3 {
         position: absolute;
         text-align: right;
-        transform: translateX(-150%) translateY(58%);;
+        transform: translateX(-150%) translateY(58%);
+
+        @media (max-width: $breakpointSmall) {
+            position: relative;
+            text-align: left;
+            transform: none;
+        }
 
     }
 }
