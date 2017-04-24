@@ -10,6 +10,10 @@
     > span {
         margin-bottom: 2.8em;
         display: inline-block;
+
+        @media (max-width: $breakpointSmall) {
+            margin-bottom: 5.3em;
+        }
     }
 
     @media (max-width: $breakpointSmall) {
