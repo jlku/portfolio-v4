@@ -5,6 +5,10 @@
     opacity: 0;
     transform: translateY(30px);
     transition: all $longDuration ease;
+
+    @media (max-width: $breakpointSmall) {
+        display: none;
+    }
 }
 
 .post-header-media-loaded {
