@@ -57,6 +57,7 @@
 
     @media (max-width: $breakpointSmall) {
         width: 100%;
+        margin: 0 auto 5% auto;
     }
 
 	> a {
@@ -186,15 +187,23 @@
 .work-item:hover {
 	transform: translateY(-8px) scale(1.015);
 
-	> a:after {
+    @media (max-width: $breakpointSmall) {
+        transform: none;
+    }
+
+    > a:after {
         opacity: 1;
+
+        @media (max-width: $breakpointSmall) {
+            opacity: 0;
+        }
 	}
 
 	.work-item-description {
 		opacity: 1;
-	}
 
-	.work-item-thumbnail {
-		filter: grayscale(100%);
+        @media (max-width: $breakpointSmall) {
+            opacity: 0;
+        }
 	}
 }
