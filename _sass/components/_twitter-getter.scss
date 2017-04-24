@@ -1,6 +1,13 @@
 .twitter-getter {
     width: 45%;
     float: left;
+
+    @media (max-width: $breakpointSmall) {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3em;
+        float: none;
+    }
 }
 
 .twitter-getter-tweet {

@@ -37,6 +37,14 @@
 	font: $paragraph;
 	color: $greyDark;
 	margin-bottom: .8em;
+
+    > a {
+        font-family: 'Graphik-Medium';
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .label {
