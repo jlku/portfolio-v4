@@ -35,6 +35,10 @@
     right: 50%;
     margin-right: -8px;
     // animation: arrowFloat 2s infinite;
+
+    @media (max-width: $breakpointSmall) {
+        visibility: hidden;
+    }
 }
 
 @keyframes arrowFloat {
