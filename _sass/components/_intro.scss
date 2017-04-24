@@ -1,6 +1,10 @@
 .intro {
     width: 66.66%;
     margin: 0 auto;
+
+    @media (max-width: $breakpointSmall) {
+        width: 100%;
+    }
 }
 
 .intro-greeting {
@@ -10,10 +14,6 @@
     color: $greyMedium;
 
     transition: all $durationLong ease;
-
-    @media (max-width: $breakpointSmall) {
-        text-align: left;
-    }
 }
 
 .intro-bio {
@@ -27,10 +27,6 @@
         color: $pink;
     }
 
-    @media (max-width: $breakpointSmall) {
-        text-align: left;
-        width: 90%;
-    }
 }
 
 .intro-arrow {
