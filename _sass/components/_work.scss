@@ -1,19 +1,5 @@
-.b-lazy {
-   opacity: 0;
-   transform: translateY(50px);
-   transition: all 1.5s ease;
-}
-.b-loaded {
-   transform: translateY(0);
-   opacity: 1;
-}
-
 .work {
 	@extend %clearfix;
-
-	display: block;
-	margin: 0 auto;
-	padding-top: 9.875em;
 }
 
 .final {

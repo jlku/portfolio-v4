@@ -1,0 +1,13 @@
+.no-scroll {
+    overflow: hidden;
+}
+
+.content-hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.content-visible {
+    visibility: visible;
+    opacity: 1;
+}
