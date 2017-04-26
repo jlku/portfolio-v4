@@ -2,6 +2,9 @@
     float: none;
     margin: 0 auto $verticalSpaceExtraLarge auto;
     width: 50%;
+    transform: translateY(50px);
+    transition: all $durationExtraLong $bezierEaseOut;
+    opacity: 0;
 
     > h2 {
         margin-bottom: .2em;
@@ -19,6 +22,11 @@
     @media (max-width: $breakpointSmall) {
         width: 80%;
     }
+}
+
+.story-loaded {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .story-about {

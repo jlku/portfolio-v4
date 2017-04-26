@@ -22,13 +22,11 @@ $(document).ready(function() {
 
     // about hover
     aboutButton.hover(function() {
-
         body.addClass("nightmode-background");
         shapesTriangle.addClass("nightmode-shapes-triangle");
         introGreeting.addClass("nightmode-text-dark");
         introBio.addClass("nightmode-text-light");
         aboutButton.addClass("nightmode-text-dark");
-
     }, function() {
 
         var hasClass = about.hasClass("about-visible");

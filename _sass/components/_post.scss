@@ -3,8 +3,8 @@
     height: auto;
     margin: 0 auto $verticalSpaceExtraLarge auto;
     opacity: 0;
-    transform: translateY(30px);
-    transition: all $longDuration ease;
+
+    transition: all $durationExtraLong ease;
 
     @media (max-width: $breakpointSmall) {
         display: none;
@@ -13,7 +13,7 @@
 
 .post-header-media-loaded {
     opacity: 1;
-    transform: translateY(0);
+
 }
 
 .post-image-large {

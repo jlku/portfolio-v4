@@ -35,6 +35,10 @@
 
 // header-work-back
 .header-work-back {
+    transform: translateX(-10px);
+    transition: all $durationExtraLong $bezierEaseOut;
+    opacity: 0;
+
     > svg {
         vertical-align: middle;
         margin-right: .5em;
@@ -45,6 +49,13 @@
         vertical-align: middle;
     }
 }
+
+.header-work-back-loaded {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
 .header-work-back-icon-dark {
     fill: $greyDark !important;
 }
