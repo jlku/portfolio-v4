@@ -55,8 +55,13 @@
     display: block;
     margin: 0 auto .8em auto;
     width: 50%;
+    font: $paragraph;
+    color: $greyDark;
 }
 
 .post-paragraph-embedded-last {
-    margin-bottom: 5.7142857143em;
+    margin: 0 auto 5.7142857143em auto;
+    font: $paragraph;
+    color: $greyDark;
+    width: 50%;
 }
