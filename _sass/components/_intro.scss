@@ -34,11 +34,17 @@
     bottom: 4.8em;
     right: 50%;
     margin-right: -8px;
+    opacity: 1;
     // animation: arrowFloat 2s infinite;
+    transition: all $durationShort ease;
 
     @media (max-width: $breakpointSmall) {
         visibility: hidden;
     }
+}
+
+.intro-arrow-hidden {
+    opacity: 0;
 }
 
 @keyframes arrowFloat {

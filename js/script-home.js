@@ -1,13 +1,11 @@
 $(document).ready(function() {
 
-    // initialize skollr parallax
-    // var s = skrollr.init({forceHeight: false});
-
     // initialize mouse parallax
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
 
     var body = $("body");
+
     var allShapes = $(".background")
     var introGreeting = $('.intro-greeting');
     var introBio = $('.intro-bio');
@@ -20,6 +18,7 @@ $(document).ready(function() {
     var about = $("#about");
     var aboutContainer = $(".about-container");
     var content = $("#content-home");
+    var introArrow = $(".intro-arrow");
 
     // about hover
     aboutButton.hover(function() {
@@ -103,11 +102,17 @@ $(document).ready(function() {
     });
 
 
-    var limit = 300;  /* scrolltop value when opacity should be 0 */
+    var limit = 20;  /* scrolltop value when opacity should be 0 */
     var loadDelay = 200;
     $(window).on('scroll', function() {
        var scrollPosition = $(this).scrollTop();
-       console.log(scrollPosition);
+
+       if (scrollPosition > 0) {
+           introArrow.addClass('intro-arrow-hidden');
+           console.log("working");
+       } else {
+           introArrow.removeClass('intro-arrow-hidden');
+       }
 
        if (scrollPosition > 400) {
            $(".work-item").each(function(i, el) {
@@ -118,11 +123,14 @@ $(document).ready(function() {
            });
        }
 
+
+
+       aboutButton.css('transform', 'translateY(' + scrollPosition/-3 + 'px)');
        intro.css('transform', 'translateY(' + scrollPosition/-3 + 'px)');
        allShapes.css('transform', 'translateY(' + scrollPosition/-5 + 'px)');
 
     //    if (scrollPosition <= limit) {
-    //        allShapes.css({ 'opacity' : (1 - scrollPosition/limit) });
+    //        introArrow.css({ 'opacity' : (1 - scrollPosition/limit) });
     //    }
     });
 });
