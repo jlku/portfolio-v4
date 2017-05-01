@@ -106,6 +106,7 @@ $(document).ready(function() {
     var loadDelay = 200;
     $(window).on('scroll', function() {
        var scrollPosition = $(this).scrollTop();
+       console.log(scrollPosition);
 
        if (scrollPosition > 400) {
            $(".work-item").each(function(i, el) {
