@@ -102,6 +102,7 @@ $(document).ready(function() {
     });
 
 
+    var limit = 300;  /* scrolltop value when opacity should be 0 */
     var loadDelay = 200;
     $(window).on('scroll', function() {
        var scrollPosition = $(this).scrollTop();
@@ -114,5 +115,9 @@ $(document).ready(function() {
                }, i * loadDelay);
            });
        }
+
+    //    if (scrollPosition <= limit) {
+    //        allShapes.css({ 'opacity' : (1 - scrollPosition/limit) });
+    //    }
     });
 });
