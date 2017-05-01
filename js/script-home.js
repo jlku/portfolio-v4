@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // initialize skollr parallax
-    var s = skrollr.init({forceHeight: false});
+    // var s = skrollr.init({forceHeight: false});
 
     // initialize mouse parallax
     var scene = document.getElementById('scene');
@@ -11,6 +11,7 @@ $(document).ready(function() {
     var allShapes = $(".background")
     var introGreeting = $('.intro-greeting');
     var introBio = $('.intro-bio');
+    var intro = $('.intro');
     // var shapesSquare = $("[class*='shape-square']");
     // var shapesCircle = $("[class*='shape-circle']");
     var shapesTriangle = $("[class*='shape-triangle']");
@@ -116,6 +117,9 @@ $(document).ready(function() {
                }, i * loadDelay);
            });
        }
+
+       intro.css('transform', 'translateY(' + scrollPosition/-3 + 'px)');
+       allShapes.css('transform', 'translateY(' + scrollPosition/-5 + 'px)');
 
     //    if (scrollPosition <= limit) {
     //        allShapes.css({ 'opacity' : (1 - scrollPosition/limit) });
