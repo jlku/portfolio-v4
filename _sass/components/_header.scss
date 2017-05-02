@@ -50,6 +50,12 @@
     }
 }
 
+.header-work-back-icon {
+    @media (max-width: $breakpointSmall) {
+        fill: $greyDark;
+    }
+}
+
 .header-work-back-loaded {
     transform: translateX(0);
     opacity: 1;
@@ -60,7 +66,11 @@
     fill: $greyDark !important;
 }
 .header-work-back-light {
-        color: $white;
+    color: $white;
+    @media (max-width: $breakpointSmall) {
+        color: $greyDark;
+    }
+
 }
 
 .header-work-back-dark {
