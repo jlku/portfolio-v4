@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // initialize mouse parallax
     var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene);
+    // var parallax = new Parallax(scene);
 
     var body = $("body");
 

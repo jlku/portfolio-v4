@@ -27,6 +27,7 @@
     margin: 0 auto;
     position: relative;
     padding: 0 auto 8em auto;
+    z-index: 1;
 
     @media (max-width: $breakpointLarge) {
         width: 66.6%;
