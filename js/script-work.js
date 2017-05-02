@@ -1,13 +1,13 @@
 $(document).ready(function() {
     var headerWork = $('.header-work');
     var scrolledClass = "header-scrolled";
-    var headerImage = $('.post-header-media');
+    var headerImage = $('#post-header');
     var headerWorkBack = $(".header-work-back");
     var backText = $(".header-work-back > span");
     var backIcon = $(".header-work-back-icon");
     var story = $(".story");
 
-    headerImage.addClass("post-header-media-loaded");
+    headerImage.addClass("post-header-loaded");
     story.addClass("story-loaded");
     headerWorkBack.addClass("header-work-back-loaded");
 
