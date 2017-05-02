@@ -1,14 +1,20 @@
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A product designer living and working SF.">
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <meta property="og:title" content="The Portfolio of Adam Noffsinger"/>
+    <meta property="og:site_name" content="The Portfolio of Adam Noffsinger"/>
+    <meta property="og:image" content="http://noff.me/images/opengraph.png"/>
+    <meta property="og:url" content="http://noff.me"/>
+    <meta property="og:description" content="A product designer living and working SF."/>
+    {% if page.title == "Home" %}
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    {% else %}
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    {% endif %}
     {% if page.title == "Home" %}
     <link rel="stylesheet" href="css/style.css">
-    {% else if page.title == "Kittens" %}
-    <link rel="stylesheet" href="../../../../css/style.css">
     {% else %}
     <link rel="stylesheet" href="../css/style.css">
     {% endif %}
