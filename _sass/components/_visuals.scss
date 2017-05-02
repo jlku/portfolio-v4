@@ -28,4 +28,10 @@
             margin-bottom: 5%;
         }
     }
+
+    > video:last-of-type {
+        @media (max-width: $breakpointSmall) {
+            margin-bottom: 0;
+        }
+    }
 }

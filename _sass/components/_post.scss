@@ -57,6 +57,10 @@
     width: 50%;
     font: $paragraph;
     color: $greyDark;
+
+    @media (max-width: $breakpointSmall) {
+        width: 80%;
+    }
 }
 
 .post-paragraph-embedded-last {
@@ -64,4 +68,8 @@
     font: $paragraph;
     color: $greyDark;
     width: 50%;
+
+    @media (max-width: $breakpointSmall) {
+        width: 80%;
+    }
 }
