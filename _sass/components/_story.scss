@@ -6,21 +6,28 @@
     transition: all $durationExtraLong $bezierEaseOut;
     opacity: 0;
 
-    > h2 {
-        margin-bottom: .2em;
-    }
-
-    > span {
-        margin-bottom: 2.8em;
-        display: inline-block;
-
-        @media (max-width: $breakpointSmall) {
-            margin-bottom: 5.3em;
-        }
-    }
-
     @media (max-width: $breakpointSmall) {
         width: 80%;
+    }
+}
+
+.story-title {
+    margin-bottom: .2em;
+    font: $headingOne;
+    color: $greyDark;
+}
+
+.story-date {
+    font: $caption;
+    color: $greyMedium;
+    margin-bottom: 8em;
+    text-align: center;
+    line-height: 155%;
+    margin-bottom: 2.8em;
+    display: inline-block;
+
+    @media (max-width: $breakpointSmall) {
+        margin-bottom: 5.3em;
     }
 }
 
@@ -36,17 +43,36 @@
 .story-section {
     position: relative;
     margin-bottom: $verticalSpaceMedium;
+}
 
-    > h3 {
-        position: absolute;
-        text-align: right;
-        transform: translateX(-150%) translateY(58%);
+.story-section-label {
+    position: absolute;
+    text-align: right;
+    transform: translateX(-150%) translateY(58%);
+    font: $label;
+    color: $greyMedium;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+	margin-bottom: 1rem;
 
-        @media (max-width: $breakpointSmall) {
-            position: relative;
-            text-align: left;
-            transform: none;
+    @media (max-width: $breakpointSmall) {
+        position: relative;
+        text-align: left;
+        transform: none;
+    }
+}
+
+.story-section-paragraph {
+    font: $paragraph;
+	color: $greyDark;
+	margin-bottom: .8em;
+
+    > a {
+        font-family: 'Graphik-Medium';
+        color: $greyDark;
+
+        &:hover {
+            text-decoration: underline;
         }
-
     }
 }

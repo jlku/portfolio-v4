@@ -1,0 +1,15 @@
+#post-hero {
+    width: 100%;
+    height: auto;
+    margin: 0 auto $verticalSpaceExtraLarge auto;
+    opacity: 0;
+    transition: all $durationExtraLong ease;
+
+    @media (max-width: $breakpointSmall) {
+        display: none;
+    }
+}
+
+.post-hero-loaded {
+    opacity: 1 !important;
+}

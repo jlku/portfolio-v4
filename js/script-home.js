@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // initialize mouse parallax
     var scene = document.getElementById('scene');
-    // var parallax = new Parallax(scene);
+    var parallax = new Parallax(scene);
 
     var body = $("body");
 
@@ -17,7 +17,7 @@ $(document).ready(function() {
     var aboutCloseButton = $(".header-about-close");
     var about = $("#about");
     var aboutContainer = $(".about-container");
-    var content = $("#content-home");
+    var content = $(".wrapper-home");
     var introArrow = $(".intro-arrow");
 
     // about hover

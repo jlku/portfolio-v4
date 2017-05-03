@@ -1,15 +1,77 @@
 #post-header {
+    height:7em;
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: auto;
-    margin: 0 auto $verticalSpaceExtraLarge auto;
-    opacity: 0;
-    transition: all $durationExtraLong ease;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    background-color: transparent;
+    padding: 0 25%;
+    transition: all $durationShort $bezierEaseOut;
+
+    @media (max-width: $breakpointLarge) {
+        padding: 0 12.5% 0 12.5%;
+    }
 
     @media (max-width: $breakpointSmall) {
-        display: none;
+        height: 4em;
+        background-color: $white;
+        box-shadow: 0px 0px 70px 0px rgba(0,0,0,0.1);
+        padding: 0 5% 0 5%;
     }
 }
 
-.post-header-loaded {
-    opacity: 1 !important;
+.post-header-scrolled {
+    height: 5em !important;
+    background-color: $white !important;
+    box-shadow: 0px 0px 70px 0px rgba(0,0,0,0.1);
+
+    @media (max-width: $breakpointSmall) {
+        height: 4em;
+    }
+}
+
+
+.post-header-back {
+    transform: translateX(-10px);
+    transition: all $durationExtraLong $bezierEaseOut;
+    opacity: 0;
+
+    > svg {
+        vertical-align: middle;
+        margin-right: .5em;
+    }
+
+    > span {
+        font: $captionNoItalic;
+        vertical-align: middle;
+    }
+}
+
+.post-header-back-loaded {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.post-header-back-icon {
+    @media (max-width: $breakpointSmall) {
+        fill: $greyDark;
+    }
+}
+
+.post-header-back-icon-dark {
+    fill: $greyDark !important;
+}
+
+.post-header-label-light {
+    color: $white;
+
+    @media (max-width: $breakpointSmall) {
+        color: $greyDark;
+    }
+}
+
+.post-header-label-dark {
+        color: $greyDark;
 }
