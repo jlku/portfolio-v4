@@ -6,15 +6,13 @@ $(document).ready(function() {
 
     var body = $("body");
 
-    var allShapes = $(".background")
+    var allShapes = $("#scene")
     var introGreeting = $('.intro-greeting');
     var introBio = $('.intro-bio');
     var intro = $('.intro');
-    // var shapesSquare = $("[class*='shape-square']");
-    // var shapesCircle = $("[class*='shape-circle']");
-    var shapesTriangle = $("[class*='shape-triangle']");
+    var shapesTriangle = $("[class*='scene-triangle']");
     var aboutButton = $(".header-home-about");
-    var aboutCloseButton = $(".header-about-close");
+    var aboutCloseButton = $(".button-close-x");
     var about = $("#about");
     var aboutContainer = $(".about-container");
     var content = $(".wrapper-home");
@@ -47,22 +45,22 @@ $(document).ready(function() {
     // about click
     aboutButton.click(function() {
         body.addClass("no-scroll");
-        allShapes.addClass("background-hidden")
+        allShapes.addClass("scene-hidden")
         about.addClass("about-visible");
         content.addClass("content-hidden");
         aboutButton.addClass("content-hidden header-home-about-hidden");
-        aboutCloseButton.addClass("content-visible header-about-close-rotated");
+        aboutCloseButton.addClass("content-visible button-close-x-rotated");
         aboutContainer.addClass("about-container-loaded");
-        $(".header-about-close > div:nth-of-type(1)").addClass("rotate-right");
-        $(".header-about-close > div:nth-of-type(2)").addClass("rotate-left");
+        $(".button-close-x > div:nth-of-type(1)").addClass("rotate-right");
+        $(".button-close-x > div:nth-of-type(2)").addClass("rotate-left");
     });
 
     // about close
     aboutCloseButton.click(function() {
 
-        aboutCloseButton.removeClass("content-visible header-about-close-rotated");
-        $(".header-about-close > div:nth-of-type(1)").removeClass("rotate-right");
-        $(".header-about-close > div:nth-of-type(2)").removeClass("rotate-left");
+        aboutCloseButton.removeClass("content-visible button-close-x-rotated");
+        $(".button-close-x > div:nth-of-type(1)").removeClass("rotate-right");
+        $(".button-close-x > div:nth-of-type(2)").removeClass("rotate-left");
         about.removeClass("about-visible");
         aboutContainer.removeClass("about-container-loaded");
         introGreeting.removeClass("nightmode-text-dark");
@@ -71,7 +69,7 @@ $(document).ready(function() {
 
         setTimeout(function(){
             body.removeClass("nightmode-background no-scroll");
-            allShapes.removeClass("background-hidden");
+            allShapes.removeClass("scene-hidden");
             shapesTriangle.removeClass("nightmode-shapes-triangle");
             content.removeClass("content-hidden");
             aboutButton.removeClass("content-hidden nightmode-text-dark header-home-about-hidden");
@@ -83,10 +81,10 @@ $(document).ready(function() {
     document.addEventListener('keyup', function(e) {
 
         if (e.keyCode == 27) {
-            allShapes.removeClass("background-hidden")
-            aboutCloseButton.removeClass("content-visible header-about-close-rotated");
-            $(".header-about-close > div:nth-of-type(1)").removeClass("rotate-right");
-            $(".header-about-close > div:nth-of-type(2)").removeClass("rotate-left");
+            allShapes.removeClass("scene-hidden")
+            aboutCloseButton.removeClass("content-visible button-close-x-rotated");
+            $(".button-close-x > div:nth-of-type(1)").removeClass("rotate-right");
+            $(".button-close-x > div:nth-of-type(2)").removeClass("rotate-left");
             about.removeClass("about-visible");
             aboutContainer.removeClass("about-container-loaded");
             shapesTriangle.removeClass("nightmode-shapes-triangle");

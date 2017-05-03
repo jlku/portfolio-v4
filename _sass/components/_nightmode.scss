@@ -15,9 +15,7 @@
 }
 
 .nightmode-shapes-triangle {
-    // border-color: transparent transparent rgba(242, 242, 242, .04) transparent;
-
     &:after {
-        border-color: transparent transparent $greyVeryDark transparent;
+        border-color: transparent transparent $greyVeryDark transparent !important;
     }
 }

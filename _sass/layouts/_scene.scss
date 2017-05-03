@@ -1,4 +1,4 @@
-.background {
+#scene {
     position: absolute;
     top: 0;
     left: 0;
@@ -6,28 +6,22 @@
     bottom: 0;
     overflow: hidden;
     transform: translate3d(0, 0, 0);
-
-    // transition: all $durationLong ease;
 }
 
-.background-hidden {
+.scene-hidden {
     opacity: 0 !important;
 }
 
-.background-container {
+.scene-container {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-
-
 }
 
-[class*='shape-square'] {
-
+[class*='scene-square'] {
     position: absolute;
-    transition: all $colorChangeTime ease;
     height: 18px;
     width: 18px;
     border: solid 4.5px rgba(167, 167, 167, .12);
@@ -35,22 +29,18 @@
     transition: all $durationLong ease;
 }
 
-[class*='shape-circle'] {
-
+[class*='scene-circle'] {
     position: absolute;
     height: 18px;
     width: 18px;
     border: solid 4.5px rgba(167, 167, 167, .12);
     border-radius: 9px;
-    transition: all $colorChangeTime ease;
 
     transition: all $durationLong ease;
 }
 
-[class*='shape-triangle'] {
-    
+[class*='scene-triangle'] {
     position: absolute;
-    transition: all $colorChangeTime ease;
     width: 0;
     height: 0;
     border-style: solid;
@@ -71,84 +61,65 @@
         border-color: transparent transparent white transparent;
 
         transition: all $durationLong ease;
-
     }
 }
 
-.shape-square-1 {
+.scene-square-1 {
     bottom: 7%;
     left: 7%;
 }
 
-.shape-square-2 {
+.scene-square-2 {
     top: 15%;
     left: 30%;
 }
 
-.shape-square-3 {
+.scene-square-3 {
     bottom: 15%;
     left: 40%;
 }
 
-.shape-square-4 {
+.scene-square-4 {
     top: 35%;
     right: 20%;
 }
 
-.shape-triangle-1 {
+.scene-triangle-1 {
     top: 50%;
     left: 7%;
 }
 
-.shape-triangle-2 {
+.scene-triangle-2 {
     top: 60%;
     right: 8%;
 }
 
-.shape-triangle-3 {
+.scene-triangle-3 {
     top: 1%;
     left: 70%;
 }
 
-.shape-triangle-4 {
+.scene-triangle-4 {
     top: 68%;
     left: 25%;
 }
 
-.shape-circle-1 {
+.scene-circle-1 {
     top: 15%;
     right: 2%;
 }
 
-.shape-circle-2 {
+.scene-circle-2 {
     top: 37%;
     left: 52%;
 }
 
-.shape-circle-3 {
+.scene-circle-3 {
     top: 84px;
     left: 14%;
 }
 
-.shape-circle-4 {
+.scene-circle-4 {
     bottom: 5%;
     left: 75%;
-}
-
-@keyframes rotating {
-    from{
-        -webkit-transform: rotate(0deg);
-    }
-    to{
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes rotating {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.rotating {
-    animation: rotating $rotationSpeed linear infinite;
 }

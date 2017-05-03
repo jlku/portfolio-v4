@@ -5,6 +5,7 @@
 @import "global/behaviors";
 @import "global/extends/clearfix";
 @import "global/extends/visually-hidden";
+@import "global/keyframes";
 
 @import "base/reset";
 @import "base/typography";
@@ -12,16 +13,15 @@
 @import "base/grid";
 
 @import "components/header";
+@import "components/button-close-x";
+@import "components/button-social-link";
 @import "components/footer";
 @import "components/post";
 @import "components/work";
 @import "components/intro";
-@import "components/background";
-@import "components/img";
 @import "components/twitter-getter";
-@import "components/themes";
 @import "components/story";
-@import "components/about";
+
 @import "components/triptych";
 @import "components/nightmode";
 
@@ -30,3 +30,5 @@
 @import "layouts/post-visuals";
 @import "layouts/footer";
 @import "layouts/wrappers";
+@import "layouts/about";
+@import "layouts/scene";
