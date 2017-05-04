@@ -21,36 +21,3 @@
   font-weight: normal;
   font-style: normal;
 }
-
-.heading-one {
-    font: $medium38;
-    color: $greyDark;
-}
-
-.paragraph-light {
-	font: $regular14;
-	color: $greyMedium;
-	margin-bottom: .8em;
-}
-
-.paragraph-dark {
-	font: $regular14;
-	color: $greyDark;
-	margin-bottom: .8em;
-
-    > a {
-        font-family: 'Graphik-Medium';
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
-
-.label {
-    font: $sectionLabel;
-    color: $greyMedium;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-	margin-bottom: 1rem;
-}

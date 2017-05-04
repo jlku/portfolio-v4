@@ -22,7 +22,6 @@ $(document).ready(function() {
             postHeader.addClass("post-header-scrolled");
             postHeaderBackLabel.addClass('post-header-label-dark');
             postHeaderBackIcon.attr("class", "post-header-back-icon post-header-back-icon-dark");
-
         } else {
             postHeader.removeClass("post-header-scrolled");
             postHeaderBackLabel.removeClass('post-header-label-dark');
