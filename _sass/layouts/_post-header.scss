@@ -1,5 +1,5 @@
 #post-header {
-    height:7em;
+    height: 7em;
     position: fixed;
     top: 0;
     width: 100%;
@@ -34,7 +34,7 @@
 
 
 .post-header-back {
-    transform: translateX(-10px);
+    transform: translateX(-20px);
     transition: all $durationExtraLong $bezierEaseOut;
     opacity: 0;
 
