@@ -5,13 +5,10 @@ title: Home
 <html lang="en">
 {% include head.html %}
     <body>
-
         <header id="home-header">
             <button class="home-header-about">About</button>
         </header>
-
         {% include about.html %}
-
         <div class="wrapper-home">
             <div class="wrapper-intro">
                 <section class="intro">
@@ -23,16 +20,14 @@ title: Home
                         <path d="M1.945.54L.885 1.6 7.07 7.79 13.26 1.6 12.198.54 7.07 5.668" fill-rule="nonzero" fill="#606060"/>
                     </svg>
                 </span>
-
             </div>
-
             <div class="wrapper-work">
                 <ol class="work">
                     {% for post in site.posts limit: 10 %}
                         {% if post.categories contains 'work' %}
                             <li class="work-item">
                                 <a href="{{ post.url }}">
-                                    <img class= "work-item-thumbnail" src="{{ post.thumbnail }}" class="work-item-img" alt="{{ post.thumbnailDesc }}">
+                                    <img class= "work-item-thumbnail" src="{{ post.thumbnail }}" alt="{{ post.thumbnailDesc }}">
                                     <div class="work-item-description {{ post.keyColor }}">
                                         {% if post.keyColor == "signup" or post.keyColor == "skoop" %}
                                             <span class="work-item-description-company-dark">{{ post.company }}</span>
@@ -55,7 +50,6 @@ title: Home
                 </ol>
             </div>
         </div>
-
         <div id="scene">
             <div class="layer scene-container" data-depth=".05">
                 <div class="scene-square-1 is-rotating"></div>
@@ -78,7 +72,6 @@ title: Home
                 <div class="scene-square-4 is-rotating"></div>
             </div>
         </div>
-
         {% include footer.html %}
         {% include scripts.html %}
     </body>
