@@ -1,63 +1,45 @@
 // levers
-$shapeOpacity: .035;
 $rotationSpeed: 20s;
-$colorChangeTime: .2s;
-$scaleTime: 1.5s;
 
 // colors
 $pink: #FF746F;
-$yellow: #FFFB6F;
-$beige: #FBEDBC;
-$greyUltraDark: #151515;
-$greyVeryDark: #272727;
+$greyUltraDark: #272727;
 $greyDark: #606060;
 $greyMedium: #CACACA;
-$greyLight: #F7F7F7;
 $black: #000000;
 $white: #ffffff;
 
 // type
+$medium46: 2.875rem/120% 'Graphik-Medium', Helvetica, Sans-Serif; // 46px - intro
+$medium38: 2.375rem/120% 'Graphik-Medium', Helvetica, Sans-Serif; // 38px - story title, work tile title
+$medium28: 1.75rem/120% 'Graphik-Medium', Helvetica, Sans-Serif; // 28px - work tile title small
+$medium14: 0.875rem 'Graphik-Medium', Helvetica, Sans-Serif; // 14px - embedded paragraph links
 
+$regular46: 2.875rem/125% 'Graphik-Regular', Helvetica, Sans-Serif; // 46px - about billboard
+$regular28: 1.75rem/150% 'Graphik-Regular', Helvetica, Sans-Serif; // 28px - about details
+$regular16: 1rem 'Graphik-Regular', Helvetica, Sans-Serif; // 16px - about link, intro greeting
+$regular14: 400 0.875rem/180% 'Graphik-Regular', Helvetica, Sans-Serif; // 14px - all paragraph, work tile description and tags, twitter getter
+$regular12: 0.75rem/145% 'Graphik-Regular', Helvetica, Sans-Serif; // 12px - back button, work tile description and tags small
 
-
-
-$medium48: 3rem/120% 'Graphik-Medium', Helvetica, Sans-Serif; // 48px
-$medium38: 2.375rem/120% 'Graphik-Medium', Helvetica, Sans-Serif; // 38px
-$medium28: 1.75rem/120% 'Graphik-Medium', Helvetica, Sans-Serif; // 28px
-$medium14: 0.875rem 'Graphik-Medium', Helvetica, Sans-Serif; // 14px
-
-$regular46: 2.875rem/125% 'Graphik-Regular', Helvetica, Sans-Serif; // 46px
-$regular16: 1rem/100% 'Graphik-Regular', Helvetica, Sans-Serif; // 16px
-$regular14: 400 0.875rem/180% 'Graphik-Regular', Helvetica, Sans-Serif; // 14px
-$regular12: 0.75rem/145% 'Graphik-Regular', Helvetica, Sans-Serif; // 12px
-
-$caption: 0.625rem 'Graphik-RegularItalic', Helvetica, Sans-Serif; // 12px
-
-$headingTwo: 1.75rem/110% 'Graphik-Regular', Helvetica, Sans-Serif;
-$regularMedium: 1.625rem/150% 'Graphik-Regular', Helvetica, Sans-Serif; // 26px
-$paragraphLarge: 400 1rem/180% 'Graphik-Regular', Helvetica, Sans-Serif; // 16px
-
-$label: 9px 'Graphik-Medium', Helvetica, Sans-Serif; // 10px
-
-
+$caption: 0.625rem/155% 'Graphik-RegularItalic', Helvetica, Sans-Serif; // 10px - story date, post-caption
+$sectionLabel: 0.625rem 'Graphik-Medium', Helvetica, Sans-Serif; // 10px story section label, about section label
 
 // spacing
+$headerSpace: 10em;
+$verticalSpaceLarge: 8em;
 $verticalSpaceSmall: .3em;
 $verticalSpaceMedium: 1.75rem;
-$headerSpace: 10em;
-$verticalSpaceLarge: 4em;
-$verticalSpaceExtraLarge: 8em;
 
 // breakpoints
 $breakpointLarge: 1440px; // 15 inch mbp
 $breakpointMedium: 944px; // 13 inch mbp
 $breakpointSmall: 696px; // mobile device
 
-// animations
-$bezier: cubic-bezier(0,.46,.24,1);
+// curves
 $bezierEaseOut: cubic-bezier(.3,0,0,1);
 
+// timing
+$durationExtraLong: .9s;
 $durationLong: .6s;
 $durationMedium: .4s;
 $durationShort: .2s;
-$durationExtraLong: .9s;

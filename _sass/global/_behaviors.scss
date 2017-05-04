@@ -1,13 +1,17 @@
-.no-scroll {
+.is-no-scroll {
     overflow: hidden;
 }
 
-.content-hidden {
+.is-hidden {
     visibility: hidden;
     opacity: 0;
 }
 
-.content-visible {
+.is-visible {
     visibility: visible;
     opacity: 1;
+}
+
+.is-rotating {
+    animation: rotating $rotationSpeed linear infinite;
 }

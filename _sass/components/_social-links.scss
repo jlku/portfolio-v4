@@ -8,7 +8,7 @@
         width: 28px;
         margin-right: .5em;
 
-        transition: all .2s ease;
+        transition: all $durationShort ease;
 
         @media (max-width: $breakpointSmall) {
             &:last-of-type {

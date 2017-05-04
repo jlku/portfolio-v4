@@ -59,7 +59,7 @@
         height: 0;
         border-style: solid;
         border-width: 0 4.5px 7px 4.5px;
-        border-color: transparent transparent white transparent;
+        border-color: transparent transparent $white transparent;
 
         transition: all $durationLong ease;
     }

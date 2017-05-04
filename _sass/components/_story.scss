@@ -1,5 +1,5 @@
 .story {
-    margin: 0 auto $verticalSpaceExtraLarge auto;
+    margin: 0 auto $verticalSpaceLarge auto;
     width: 50%;
     transform: translateY(50px);
     transition: all $durationExtraLong $bezierEaseOut;
@@ -43,7 +43,7 @@
     position: absolute;
     text-align: right;
     transform: translateX(-150%) translateY(58%);
-    font: $label;
+    font: $sectionLabel;
     color: $greyMedium;
     text-transform: uppercase;
     letter-spacing: .2em;

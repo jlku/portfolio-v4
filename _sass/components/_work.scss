@@ -125,7 +125,7 @@
 	margin-bottom: $verticalSpaceSmall;
 
     @media (max-width: $breakpointMedium) {
-        font-size: 1.75rem;
+        font: $medium28;
     }
 }
 
@@ -148,7 +148,7 @@
 	margin-bottom: $verticalSpaceSmall;
 
     @media (max-width: $breakpointMedium) {
-        font-size: 1.75rem;
+        font: $medium28;
     }
 }
 

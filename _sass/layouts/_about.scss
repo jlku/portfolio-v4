@@ -61,7 +61,7 @@
 
     @media (max-width: $breakpointSmall) {
         width: 75%;
-        font: $regularMedium;
+        font: $regular28;
     }
 }
 
@@ -85,7 +85,7 @@
 
     @media (max-width: $breakpointSmall) {
         width: 75%;
-        font: $regularMedium;
+        font: $regular28;
         margin-bottom: 2em;
     }
 
@@ -119,30 +119,32 @@
 }
 
 .about-details-label {
-    font: $label;
+    font: $sectionLabel;
     color: $greyDark;
     text-transform: uppercase;
     margin-bottom: $verticalSpaceMedium;
-    letter-spacing: .1em;
+    letter-spacing: .2em;
 }
 
 .about-details-list-item {
-    font: $regularMedium;
+    font: $regular28;
     color: $greyDark;
 
     @media (max-width: $breakpointSmall) {
         width: 100%;
-        font: $paragraphLarge;
+        font: $regular16;
+        margin-bottom: .6em;
     }
 }
 
 .about-details-paragraph {
-    font: $regularMedium;
+    font: $regular28;
     color: $greyDark;
 
     @media (max-width: $breakpointSmall) {
         width: 100%;
-        font: $paragraphLarge;
+        font: $regular16;
+        line-height: 160%;
     }
 }
 
@@ -162,7 +164,7 @@
 
     @media (max-width: $breakpointSmall) {
         width: 75%;
-        font: $regularMedium;
+        font: $regular28;
         margin-bottom: 2em;
     }
 }

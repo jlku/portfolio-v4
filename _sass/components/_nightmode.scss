@@ -1,5 +1,5 @@
 .nightmode-background {
-    background-color: $greyVeryDark;
+    background-color: $greyUltraDark;
 }
 
 .nightmode-text-light {
@@ -12,6 +12,6 @@
 
 .nightmode-shapes-triangle {
     &:after {
-        border-color: transparent transparent $greyVeryDark transparent !important;
+        border-color: transparent transparent $greyUltraDark transparent !important;
     }
 }

@@ -40,7 +40,7 @@
 
     > a {
         font-family: 'Graphik-Medium';
-        
+
         &:hover {
             text-decoration: underline;
         }
@@ -48,17 +48,9 @@
 }
 
 .label {
-    font: $label;
+    font: $sectionLabel;
     color: $greyMedium;
     text-transform: uppercase;
     letter-spacing: .2em;
 	margin-bottom: 1rem;
-}
-
-.caption {
-	font: $caption;
-	color: $greyMedium;
-	margin-bottom: 8em;
-	text-align: center;
-    line-height: 155%;
 }
