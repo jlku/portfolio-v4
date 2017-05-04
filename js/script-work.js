@@ -1,34 +1,32 @@
 $(document).ready(function() {
-    var headerWork = $('#post-header');
-    var scrolledClass = "post-header-scrolled";
-    var heroMedia = $('#post-hero');
-    var headerWorkBack = $(".post-header-back");
-    var backText = $(".post-header-back > span");
-    var backIcon = $(".post-header-back-icon");
+
+    // variables
+    var postHeader = $('#post-header');
+    var postHeaderBack = $(".post-header-back");
+    var postHeaderBackLabel = $(".post-header-back > span");
+    var postHeaderBackIcon = $(".post-header-back-icon");
+
+    var postHero = $('#post-hero');
     var story = $(".story");
 
-    heroMedia.addClass("post-hero-loaded");
+    // setup
+    postHero.addClass("post-hero-loaded");
     story.addClass("story-loaded");
-    headerWorkBack.addClass("post-header-back-loaded");
+    postHeaderBack.addClass("post-header-back-loaded");
 
     $(window).scroll(function() {
+        var scrollPos = $(this).scrollTop();
+        var postHeroBottom = postHero.height();
 
-        var scrollingPoint = $(window).scrollTop();
-        var headerBottom = heroMedia.height();
-
-        console.log(scrollingPoint);
-        console.log("the header is " + headerBottom);
-
-        if (scrollingPoint > headerBottom) {
-            headerWork.addClass(scrolledClass);
-            backText.addClass('post-header-label-dark');
-            backIcon.attr("class", "post-header-back-icon post-header-back-icon-dark");
-
+        if (scrollPos > postHeroBottom) {
+            postHeader.addClass("post-header-scrolled");
+            postHeaderBackLabel.addClass('post-header-label-dark');
+            postHeaderBackIcon.attr("class", "post-header-back-icon post-header-back-icon-dark");
 
         } else {
-            headerWork.removeClass(scrolledClass);
-            backText.removeClass('post-header-label-dark');
-            backIcon.attr("class", "post-header-back-icon");
+            postHeader.removeClass("post-header-scrolled");
+            postHeaderBackLabel.removeClass('post-header-label-dark');
+            postHeaderBackIcon.attr("class", "post-header-back-icon");
         }
     });
 });
