@@ -1,0 +1,22 @@
+.post-paragraph-embedded {
+    display: block;
+    margin: 0 auto .8em auto;
+    width: 50%;
+    font: $regular14;
+    color: $greyDark;
+
+    @media (max-width: $breakpointSmall) {
+        width: 80%;
+    }
+}
+
+.post-paragraph-embedded-last {
+    margin: 0 auto 5.7142857143em auto;
+    font: $regular14;
+    color: $greyDark;
+    width: 50%;
+
+    @media (max-width: $breakpointSmall) {
+        width: 80%;
+    }
+}

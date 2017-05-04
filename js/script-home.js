@@ -11,7 +11,7 @@ $(document).ready(function() {
     var introBio = $('.intro-bio');
     var intro = $('.intro');
     var shapesTriangle = $("[class*='scene-triangle']");
-    var aboutButton = $(".header-home-about");
+    var aboutButton = $(".home-header-about");
     var aboutCloseButton = $(".button-close-x");
     var about = $("#about");
     var aboutContainer = $(".about-container");
@@ -48,19 +48,19 @@ $(document).ready(function() {
         allShapes.addClass("scene-hidden")
         about.addClass("about-visible");
         content.addClass("content-hidden");
-        aboutButton.addClass("content-hidden header-home-about-hidden");
+        aboutButton.addClass("content-hidden home-header-about-hidden");
         aboutCloseButton.addClass("content-visible button-close-x-rotated");
         aboutContainer.addClass("about-container-loaded");
-        $(".button-close-x > div:nth-of-type(1)").addClass("rotate-right");
-        $(".button-close-x > div:nth-of-type(2)").addClass("rotate-left");
+        $(".button-close-x > div:nth-of-type(1)").addClass("button-close-x-rotate-right");
+        $(".button-close-x > div:nth-of-type(2)").addClass("button-close-x-rotate-left");
     });
 
     // about close
     aboutCloseButton.click(function() {
 
         aboutCloseButton.removeClass("content-visible button-close-x-rotated");
-        $(".button-close-x > div:nth-of-type(1)").removeClass("rotate-right");
-        $(".button-close-x > div:nth-of-type(2)").removeClass("rotate-left");
+        $(".button-close-x > div:nth-of-type(1)").removeClass("button-close-x-rotate-right");
+        $(".button-close-x > div:nth-of-type(2)").removeClass("button-close-x-rotate-left");
         about.removeClass("about-visible");
         aboutContainer.removeClass("about-container-loaded");
         introGreeting.removeClass("nightmode-text-dark");
@@ -72,7 +72,7 @@ $(document).ready(function() {
             allShapes.removeClass("scene-hidden");
             shapesTriangle.removeClass("nightmode-shapes-triangle");
             content.removeClass("content-hidden");
-            aboutButton.removeClass("content-hidden nightmode-text-dark header-home-about-hidden");
+            aboutButton.removeClass("content-hidden nightmode-text-dark home-header-about-hidden");
 
         }, 300);
     });
@@ -83,8 +83,8 @@ $(document).ready(function() {
         if (e.keyCode == 27) {
             allShapes.removeClass("scene-hidden")
             aboutCloseButton.removeClass("content-visible button-close-x-rotated");
-            $(".button-close-x > div:nth-of-type(1)").removeClass("rotate-right");
-            $(".button-close-x > div:nth-of-type(2)").removeClass("rotate-left");
+            $(".button-close-x > div:nth-of-type(1)").removeClass("button-close-x-rotate-right");
+            $(".button-close-x > div:nth-of-type(2)").removeClass("button-close-x-rotate-left");
             about.removeClass("about-visible");
             aboutContainer.removeClass("about-container-loaded");
             shapesTriangle.removeClass("nightmode-shapes-triangle");
@@ -92,7 +92,7 @@ $(document).ready(function() {
             setTimeout(function(){
                 body.removeClass("nightmode-background no-scroll");
                 content.removeClass("content-hidden");
-                aboutButton.removeClass("content-hidden nightmode-text-dark header-home-about-hidden");
+                aboutButton.removeClass("content-hidden nightmode-text-dark home-header-about-hidden");
                 introGreeting.removeClass("nightmode-text-dark");
                 introBio.removeClass("nightmode-text-light");
             }, 300);

@@ -1,12 +1,5 @@
-.footer-links {
-    float: right;
+.social-links {
     @extend %clearfix;
-
-    @media (max-width: $breakpointSmall) {
-        float: none;
-        width: 208px;
-        margin: 0 auto;
-    }
 
     > a {
         display: block;
@@ -26,5 +19,15 @@
         &:hover {
             opacity: .5;
         }
+    }
+}
+
+.social-links-footer {
+    float: right;
+
+    @media (max-width: $breakpointSmall) {
+        float: none;
+        width: 208px;
+        margin: 0 auto;
     }
 }

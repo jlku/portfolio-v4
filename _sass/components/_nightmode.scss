@@ -10,10 +10,6 @@
     color: $greyDark;
 }
 
-.nightmode-shapes {
-    opacity: .04;
-}
-
 .nightmode-shapes-triangle {
     &:after {
         border-color: transparent transparent $greyVeryDark transparent !important;

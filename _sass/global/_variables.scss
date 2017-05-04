@@ -17,18 +17,29 @@ $black: #000000;
 $white: #ffffff;
 
 // type
-$billboard: 3rem/120% 'Graphik-Medium', Helvetica, Sans-Serif;
-$headingOne: 2.375rem/120% 'Graphik-Medium', Helvetica, Sans-Serif;
-$headingTwo: 1.75rem/110% 'Graphik-Regular', Helvetica, Sans-Serif;
-$headingThree: 1rem/100% 'Graphik-Regular', Helvetica, Sans-Serif;
+
+
+
+
+$medium48: 3rem/120% 'Graphik-Medium', Helvetica, Sans-Serif; // 48px
+$medium38: 2.375rem/120% 'Graphik-Medium', Helvetica, Sans-Serif; // 38px
+$medium28: 1.75rem/120% 'Graphik-Medium', Helvetica, Sans-Serif; // 28px
+$medium14: 0.875rem 'Graphik-Medium', Helvetica, Sans-Serif; // 14px
 
 $regular46: 2.875rem/125% 'Graphik-Regular', Helvetica, Sans-Serif; // 46px
+$regular16: 1rem/100% 'Graphik-Regular', Helvetica, Sans-Serif; // 16px
+$regular14: 400 0.875rem/180% 'Graphik-Regular', Helvetica, Sans-Serif; // 14px
+$regular12: 0.75rem/145% 'Graphik-Regular', Helvetica, Sans-Serif; // 12px
+
+$caption: 0.625rem 'Graphik-RegularItalic', Helvetica, Sans-Serif; // 12px
+
+$headingTwo: 1.75rem/110% 'Graphik-Regular', Helvetica, Sans-Serif;
 $regularMedium: 1.625rem/150% 'Graphik-Regular', Helvetica, Sans-Serif; // 26px
 $paragraphLarge: 400 1rem/180% 'Graphik-Regular', Helvetica, Sans-Serif; // 16px
-$paragraph: 400 0.875rem/180% 'Graphik-Regular', Helvetica, Sans-Serif; // 14px
+
 $label: 9px 'Graphik-Medium', Helvetica, Sans-Serif; // 10px
-$caption: 0.625rem 'Graphik-RegularItalic', Helvetica, Sans-Serif; // 12px
-$captionNoItalic: 0.75rem 'Graphik-Regular', Helvetica, Sans-Serif; // 12px
+
+
 
 // spacing
 $verticalSpaceSmall: .3em;
@@ -43,12 +54,7 @@ $breakpointMedium: 944px; // 13 inch mbp
 $breakpointSmall: 696px; // mobile device
 
 // animations
-$loadedDistance: 20px;
-$loadedStagger: .2s;
-$longDuration: .8s;
-$shortDuration: .4s;
 $bezier: cubic-bezier(0,.46,.24,1);
-
 $bezierEaseOut: cubic-bezier(.3,0,0,1);
 
 $durationLong: .6s;

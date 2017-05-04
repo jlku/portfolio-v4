@@ -8,7 +8,7 @@
 }
 
 .intro-greeting {
-    font: $headingThree;
+    font: $regular16;
     margin-bottom: 1em;
     text-align: center;
     color: $greyMedium;
@@ -17,7 +17,7 @@
 }
 
 .intro-bio {
-    font: $billboard;
+    font: $medium48;
     text-align: center;
     color: $greyDark;
 
@@ -25,8 +25,8 @@
 
     > span {
         color: $pink;
+        // cursor: url('../images/nightmode.png'), auto;
     }
-
 }
 
 .intro-arrow {
@@ -35,7 +35,7 @@
     right: 50%;
     margin-right: -8px;
     opacity: 1;
-    // animation: arrowFloat 2s infinite;
+    animation: arrowFloat 2s infinite;
     transition: all $durationShort ease;
 
     @media (max-width: $breakpointSmall) {
@@ -45,10 +45,4 @@
 
 .intro-arrow-hidden {
     opacity: 0;
-}
-
-@keyframes arrowFloat {
-  0%   { transform: translateY(0px); }
-  50%   { transform: translateY(10px); }
-  100%   { transform: translateY(0px); }
 }

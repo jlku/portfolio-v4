@@ -12,7 +12,7 @@
 
 .twitter-getter-tweet {
     color: $greyDark;
-    font: $paragraph;
+    font: $regular14;
     margin-bottom: 1em;
 
     > a {
@@ -29,8 +29,8 @@
 
 .twitter-getter-time {
     color: $greyMedium;
-    font: $paragraph;
-    transition: opacity $shortDuration ease;
+    font: $regular14;
+    transition: opacity $durationMedium ease;
     transform: translateX(20px);
     position: relative;
     display: inline-block;
@@ -42,8 +42,9 @@
             opacity: .5;
         }
     }
+
     &:before {
-        transition: opacity $shortDuration ease;
+        transition: opacity $durationMedium ease;
         content: '';
         background-image: url("../images/twitter.svg");
         height: 10.22px;
@@ -52,6 +53,5 @@
         position: absolute;
         left: -20px;
         top: 6px;
-
     }
 }

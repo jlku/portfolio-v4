@@ -1,4 +1,4 @@
-.header-home {
+#home-header {
     height: $headerSpace;
     position: absolute;
     top: 0;
@@ -13,31 +13,13 @@
     }
 }
 
-.header-home-about {
-    font: $headingThree;
+.home-header-about {
+    font: $regular16;
     color: $greyDark;
     margin: 0 auto;
     cursor: pointer;
 }
 
-.header-home-about-hidden {
+.home-header-about-hidden {
     pointer-events: none !important;
-
-}
-
-
-
-
-
-.header-navigation-item-work-active {
-    pointer-events: auto !important;
-}
-
-.rotate-left {
-    transform: rotate(90deg) !important;
-    opacity: 1 !important;
-}
-
-.rotate-right {
-    opacity: 1 !important;
 }

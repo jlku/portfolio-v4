@@ -1,5 +1,4 @@
 .story {
-    float: none;
     margin: 0 auto $verticalSpaceExtraLarge auto;
     width: 50%;
     transform: translateY(50px);
@@ -13,7 +12,7 @@
 
 .story-title {
     margin-bottom: .2em;
-    font: $headingOne;
+    font: $medium38;
     color: $greyDark;
 }
 
@@ -21,7 +20,6 @@
     font: $caption;
     color: $greyMedium;
     margin-bottom: 8em;
-    text-align: center;
     line-height: 155%;
     margin-bottom: 2.8em;
     display: inline-block;
@@ -34,10 +32,6 @@
 .story-loaded {
     transform: translateY(0);
     opacity: 1;
-}
-
-.story-about {
-    margin-top: 15em;
 }
 
 .story-section {
@@ -63,12 +57,12 @@
 }
 
 .story-section-paragraph {
-    font: $paragraph;
+    font: $regular14;
 	color: $greyDark;
 	margin-bottom: .8em;
 
     > a {
-        font-family: 'Graphik-Medium';
+        font: $medium14;
         color: $greyDark;
 
         &:hover {

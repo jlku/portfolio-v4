@@ -1,30 +1,7 @@
 .work {
 	@extend %clearfix;
+
 	z-index: 1;
-}
-
-.final {
-	background-color: #F87F7B;
-}
-
-.skoop {
-    background-color: #DFDFDF;
-}
-
-.ftre {
-	background-color: #BBEAED;
-}
-
-.signup {
-	background-color: #f7f7f7;
-}
-
-.nomad {
-	background-color: #C3A3D3;
-}
-
-.platform {
-    background-color: #E4B9D4;
 }
 
 .work-item {
@@ -38,10 +15,6 @@
 
 	transition: all $durationExtraLong $bezierEaseOut;
 
-    @media (max-width: $breakpointLarge) {
-        width: 48.5%;
-    }
-
     @media (max-width: $breakpointSmall) {
         width: 100%;
         margin: 0 auto 5.8% auto;
@@ -50,7 +23,6 @@
     }
 
 	> a {
-		overflow: hidden;
 		display: block;
 	}
 
@@ -66,111 +38,10 @@
 	    opacity: 0;
 	    transition: all $durationExtraLong $bezierEaseOut;
 	}
-}
 
-.work-item-loaded {
-    transform: translateY(0px);
-    opacity: 1;
-}
-
-.work-item:nth-of-type(2n) {
-    margin-right: 0;
-
-    @media (max-width: $breakpointLarge) {
-        margin-right: 1.5%;
-    }
-}
-
-.work-item-thumbnail {
-	display: block;
-	width: 100%;
-}
-
-.work-item-description {
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	padding: 2.875em;
-	opacity: 0;
-	display: flex;
-	align-items: center;
-
-	transition: all $shortDuration $bezier;
-
-
-}
-
-.work-item-description-company {
-	font: $paragraph;
-	color: $white;
-	opacity: .5;
-	position: absolute;
-	top: 3em;
-	display: block;
-
-    @media (max-width: $breakpointMedium) {
-        font-size: .75rem;
-    }
-}
-
-.work-item-description-company-dark {
-	font: $paragraph;
-	color: $black;
-	opacity: .5;
-	position: absolute;
-	top: 3em;
-	display: block;
-
-    @media (max-width: $breakpointMedium) {
-        font-size: .75rem;
-    }
-}
-
-.work-item-description-title {
-	font: $headingOne;
-	color: $white;
-	display: block;
-	margin-bottom: $verticalSpaceSmall;
-
-    @media (max-width: $breakpointMedium) {
-        font-size: 1.75rem;
-    }
-}
-
-.work-item-description-summary {
-	font: $paragraph;
-	color: $white;
-	opacity: .5;
-	display: block;
-
-    @media (max-width: $breakpointMedium) {
-        font-size: .75rem;
-    }
-}
-
-.work-item-description-title-dark {
-	font: $headingOne;
-	color: $black;
-    opacity: .4;
-	display: block;
-	margin-bottom: $verticalSpaceSmall;
-
-    @media (max-width: $breakpointMedium) {
-        font-size: 1.75rem;
-    }
-}
-
-.work-item-description-summary-dark {
-	font: $paragraph;
-	color: $black;
-	opacity: .3;
-	display: block;
-
-    @media (max-width: $breakpointMedium) {
-        font-size: .75rem;
-    }
+	&:nth-of-type(2n) {
+	    margin-right: 0;
+	}
 }
 
 .work-item:hover {
@@ -195,4 +66,123 @@
             opacity: 0;
         }
 	}
+}
+
+.work-item-loaded {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.work-item-thumbnail {
+	display: block;
+	width: 100%;
+}
+
+.work-item-description {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	padding: 2.875em;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+
+	transition: all $durationMedium $bezierEaseOut;
+}
+
+.work-item-description-company {
+	font: $regular14;
+	color: $white;
+	opacity: .5;
+	position: absolute;
+	top: 3em;
+	display: block;
+
+    @media (max-width: $breakpointMedium) {
+        font-size: .75rem;
+    }
+}
+
+.work-item-description-company-dark {
+	font: $regular14;
+	color: $black;
+	opacity: .5;
+	position: absolute;
+	top: 3em;
+	display: block;
+
+    @media (max-width: $breakpointMedium) {
+        font: $regular12;
+    }
+}
+
+.work-item-description-title {
+	font: $medium38;
+	color: $white;
+	display: block;
+	margin-bottom: $verticalSpaceSmall;
+
+    @media (max-width: $breakpointMedium) {
+        font-size: 1.75rem;
+    }
+}
+
+.work-item-description-summary {
+	font: $regular14;
+	color: $white;
+	opacity: .5;
+	display: block;
+
+    @media (max-width: $breakpointMedium) {
+        font: $regular12;
+    }
+}
+
+.work-item-description-title-dark {
+	font: $medium38;
+	color: $black;
+    opacity: .4;
+	display: block;
+	margin-bottom: $verticalSpaceSmall;
+
+    @media (max-width: $breakpointMedium) {
+        font-size: 1.75rem;
+    }
+}
+
+.work-item-description-summary-dark {
+	font: $regular14;
+	color: $black;
+	opacity: .3;
+	display: block;
+
+    @media (max-width: $breakpointMedium) {
+        font: $regular12;
+    }
+}
+
+.final {
+	background-color: #F87F7B;
+}
+
+.skoop {
+    background-color: #DFDFDF;
+}
+
+.ftre {
+	background-color: #BBEAED;
+}
+
+.signup {
+	background-color: #f7f7f7;
+}
+
+.nomad {
+	background-color: #C3A3D3;
+}
+
+.platform {
+    background-color: #E4B9D4;
 }

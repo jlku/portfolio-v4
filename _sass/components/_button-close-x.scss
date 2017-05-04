@@ -1,7 +1,7 @@
 .button-close-x {
     height: 40px;
     width: 40px;
-    transition: transform $durationExtraLong $bezierEaseOut;
+    transition: transform $durationExtraLong $bezierEaseOut, opacity $durationShort ease;
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
@@ -26,4 +26,13 @@
 
 .button-close-x-rotated {
     transform: rotate(45deg);
+}
+
+.button-close-x-rotate-left {
+    transform: rotate(90deg) !important;
+    opacity: 1 !important;
+}
+
+.button-close-x-rotate-right {
+    opacity: 1 !important;
 }
