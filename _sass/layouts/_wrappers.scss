@@ -24,10 +24,6 @@
     z-index: 1;
 
     @media (max-width: $breakpointLarge) {
-        width: 66.6%;
-    }
-
-    @media (max-width: $breakpointMedium) {
         width: 75%;
     }
 
@@ -40,7 +36,6 @@
     width: 50%;
     margin: 0 auto;
     position: relative;
-    padding: 0 auto 8em auto;
 
     @media (max-width: $breakpointLarge) {
         width: 75%;
@@ -66,10 +61,6 @@
     position: relative;
 
     @media (max-width: $breakpointLarge) {
-        width: 66.6%;
-    }
-
-    @media (max-width: $breakpointMedium) {
         width: 75%;
     }
 }

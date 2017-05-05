@@ -18,6 +18,12 @@
     color: $greyDark;
     margin: 0 auto;
     cursor: pointer;
+
+    transition: all $durationShort ease;
+
+    &:hover {
+        opacity: .5;
+    }
 }
 
 .home-header-about-hidden {

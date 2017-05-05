@@ -15,6 +15,7 @@ $(document).ready(function() {
     var introGreeting = $('.intro-greeting');
     var introBio = $('.intro-bio');
     var introArrow = $(".intro-arrow");
+    var introSpan = $(".intro-bio > span");
 
     var workItem = $(".work-item");
 
@@ -31,26 +32,24 @@ $(document).ready(function() {
     var workTileLoadPoint = 400;
 
     // about link hover
-    aboutButton.hover(function() {
+    introSpan.hover(function() {
         body.addClass("nightmode-background");
         shapesTriangle.addClass("nightmode-shapes-triangle");
         introGreeting.addClass("nightmode-text-dark");
         introBio.addClass("nightmode-text-light");
         aboutButton.addClass("nightmode-text-dark");
     }, function() {
-        var hasClass = about.hasClass("about-visible");
-        if (hasClass == false) {
-            body.removeClass("nightmode-background");
-            shapesTriangle.removeClass("nightmode-shapes-triangle");
-            introGreeting.removeClass("nightmode-text-dark");
-            introBio.removeClass("nightmode-text-light");
-            aboutButton.removeClass("nightmode-text-dark");
-        }
+        body.removeClass("nightmode-background");
+        shapesTriangle.removeClass("nightmode-shapes-triangle");
+        introGreeting.removeClass("nightmode-text-dark");
+        introBio.removeClass("nightmode-text-light");
+        aboutButton.removeClass("nightmode-text-dark");
     });
 
     // about link click
     aboutButton.click(function() {
-        body.addClass("is-no-scroll");
+        body.addClass("nightmode-background is-no-scroll");
+        shapesTriangle.addClass("nightmode-shapes-triangle");
         wholeScene.addClass("scene-hidden")
         about.addClass("about-visible");
         wrapperHome.addClass("is-hidden");
