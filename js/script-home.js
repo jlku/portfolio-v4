@@ -44,7 +44,7 @@ $(document).ready(function() {
 
     setTimeout(function(){
         introArrow.addClass("intro-arrow-loaded"); //.9s
-    }, 700);
+    }, 1000);
 
     // span hover
     introSpan.hover(function() {

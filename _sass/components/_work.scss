@@ -1,4 +1,4 @@
-.work {
+	.work {
 	@extend %clearfix;
 
 	z-index: 1;
@@ -90,31 +90,37 @@
 	align-items: center;
 
 	transition: all $durationMedium $bezierEaseOut;
+
+	@media (max-width: $breakpointMedium) {
+        padding: 2.2em;
+    }
 }
 
 .work-item-description-company {
-	font: $regular14;
+	font: $regular16;
 	color: $white;
 	opacity: .5;
 	position: absolute;
-	top: 3em;
+	top: 2.3em;
 	display: block;
 
     @media (max-width: $breakpointMedium) {
         font-size: .75rem;
+		top: 2.5em;
     }
 }
 
 .work-item-description-company-dark {
-	font: $regular14;
+	font: $regular16;
 	color: $black;
 	opacity: .5;
 	position: absolute;
-	top: 3em;
+	top: 2.3em;
 	display: block;
 
     @media (max-width: $breakpointMedium) {
-        font: $regular12;
+        font-size: .75rem;
+		top: 2.5em;
     }
 }
 
@@ -130,7 +136,7 @@
 }
 
 .work-item-description-summary {
-	font: $regular14;
+	font: $regular16;
 	color: $white;
 	opacity: .5;
 	display: block;
@@ -153,7 +159,7 @@
 }
 
 .work-item-description-summary-dark {
-	font: $regular14;
+	font: $regular16;
 	color: $black;
 	opacity: .3;
 	display: block;
