@@ -359,7 +359,7 @@
 
   Parallax.prototype.accelerate = function(element) {
     // removed this to allow scale of background to work correctly
-    // this.css(element, 'transform', 'translate3d(0,0,0)');
+    this.css(element, 'transform', 'translate3d(0,0,0)');
     this.css(element, 'transform-style', 'preserve-3d');
     this.css(element, 'backface-visibility', 'hidden');
   };

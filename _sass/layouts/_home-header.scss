@@ -7,10 +7,19 @@
     align-items: center;
     z-index: 1;
     padding: 0 20% 0 20%;
+    transform: translateY(10px);
+    opacity: 0;
+
+    transition: all $durationExtraLong $bezierEaseOut;
 
     @media (max-width: $breakpointLarge) {
         padding: 0 12.5% 0 12.5%;
     }
+}
+
+.home-header-loaded {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
 }
 
 .home-header-about {
@@ -19,7 +28,7 @@
     margin: 0 auto;
     cursor: pointer;
 
-    transition: all $durationShort ease;
+    transition: opacity $durationExtraLong ease;
 
     &:hover {
         opacity: .5;

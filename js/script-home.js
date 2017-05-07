@@ -17,6 +17,8 @@ $(document).ready(function() {
     var introArrow = $(".intro-arrow");
     var introSpan = $(".intro-bio > span");
 
+    var homeHeader = $("#home-header")
+
     var workItem = $(".work-item");
 
     var about = $("#about");
@@ -31,7 +33,20 @@ $(document).ready(function() {
     var workTileLoadStagger = 200;
     var workTileLoadPoint = 400;
 
-    // about link hover
+
+    // setup
+    homeHeader.addClass("home-header-loaded"); // .9s
+
+    setTimeout(function(){
+        introGreeting.addClass("intro-copy-loaded"); // .9s
+        introBio.addClass("intro-copy-loaded"); // .9s
+    }, 350);
+
+    setTimeout(function(){
+        introArrow.addClass("intro-arrow-loaded"); //.9s
+    }, 700);
+
+    // span hover
     introSpan.hover(function() {
         body.addClass("nightmode-background");
         shapesTriangle.addClass("nightmode-shapes-triangle");
@@ -50,7 +65,7 @@ $(document).ready(function() {
     aboutButton.click(function() {
         body.addClass("nightmode-background is-no-scroll");
         shapesTriangle.addClass("nightmode-shapes-triangle");
-        wholeScene.addClass("scene-hidden")
+        wholeScene.addClass("scene-hidden");
         about.addClass("about-visible");
         wrapperHome.addClass("is-hidden");
         aboutButton.addClass("is-hidden home-header-about-hidden");
