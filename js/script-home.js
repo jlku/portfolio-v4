@@ -1,15 +1,8 @@
 $(document).ready(function() {
 
-    // initialize parallax.js
-    var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene);
-
     // variables
     var body = $("body");
     var wrapperHome = $(".wrapper-home");
-
-    var wholeScene = $("#scene")
-    var shapesTriangle = $("[class*='scene-triangle']");
 
     var intro = $('.intro');
     var introGreeting = $('.intro-greeting');
@@ -65,7 +58,6 @@ $(document).ready(function() {
     aboutButton.click(function() {
         body.addClass("nightmode-background is-no-scroll");
         shapesTriangle.addClass("nightmode-shapes-triangle");
-        wholeScene.addClass("scene-hidden");
         about.addClass("about-visible");
         wrapperHome.addClass("is-hidden");
         aboutButton.addClass("is-hidden home-header-about-hidden");
@@ -87,7 +79,6 @@ $(document).ready(function() {
 
         setTimeout(function(){
             body.removeClass("nightmode-background is-no-scroll");
-            wholeScene.removeClass("scene-hidden");
             shapesTriangle.removeClass("nightmode-shapes-triangle");
             wrapperHome.removeClass("is-hidden");
             aboutButton.removeClass("is-hidden nightmode-text-dark home-header-about-hidden");
@@ -107,7 +98,6 @@ $(document).ready(function() {
 
             setTimeout(function(){
                 body.removeClass("nightmode-background is-no-scroll");
-                wholeScene.removeClass("scene-hidden");
                 shapesTriangle.removeClass("nightmode-shapes-triangle");
                 wrapperHome.removeClass("is-hidden");
                 aboutButton.removeClass("is-hidden nightmode-text-dark home-header-about-hidden");
@@ -136,6 +126,5 @@ $(document).ready(function() {
 
        aboutButton.css('transform', 'translateY(' + scrollPosition/-2.5 + 'px)');
        intro.css('transform', 'translateY(' + scrollPosition/-2.5 + 'px)');
-       wholeScene.css('transform', 'translateY(' + scrollPosition/-5 + 'px)');
     });
 });

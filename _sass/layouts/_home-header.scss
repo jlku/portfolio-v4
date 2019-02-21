@@ -1,40 +1,39 @@
 #home-header {
-    height: $headerSpace;
-    position: absolute;
+    height: 7em;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     z-index: 1;
     padding: 0 20% 0 20%;
-    transform: translateY(10px);
-    opacity: 0;
-
-    transition: all $durationExtraLong $bezierEaseOut;
+    // background-color: $accent;
 
     @media (max-width: $breakpointLarge) {
         padding: 0 12.5% 0 12.5%;
     }
 }
 
+.home-header-logo {
+   height: 40px;
+   width: 40px;
+   display: block;
+   background-color: $white;
+   border-radius: 20px;
+}
+
+.home-header-nav {
+   display: block;
+
+   > a {
+      font: $cta;
+      color: $white;
+      margin-right: .5em;
+   }
+}
+
 .home-header-loaded {
     transform: translateY(0) !important;
     opacity: 1 !important;
-}
-
-.home-header-about {
-    font: $regular16;
-    color: $greyDark;
-    margin: 0 auto;
-    cursor: pointer;
-
-    transition: opacity $durationExtraLong ease;
-
-    &:hover {
-        opacity: .5;
-    }
-}
-
-.home-header-about-hidden {
-    pointer-events: none !important;
 }

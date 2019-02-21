@@ -6,20 +6,23 @@ title: Home
 {% include head.html %}
     <body>
         <header id="home-header">
-            <button class="home-header-about">About</button>
+            <div class="home-header-logo"></div>
+            <div class="home-header-nav">
+               <a href="">Projects</a>
+               <a href="">Writing</a>
+               <a href="">About</a>
+            </div>
+
         </header>
-        {% include about.html %}
         <div class="wrapper-home">
             <div class="wrapper-intro">
                 <section class="intro">
-                    <h1 class="intro-greeting">&mdash; Hello, I'm Adam &mdash;</h1>
-                    <p class='intro-bio'><span>Product designer</span>, prototyper, and platform thinker.</p>
+                   <span class="intro-greeting">Hi, I'm Adam</span>
+                   <span class='intro-bio'>A designer @ Dropbox working on Design Systems.</span>
                 </section>
-                <span class="intro-arrow">
-                    <svg width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.945.54L.885 1.6 7.07 7.79 13.26 1.6 12.198.54 7.07 5.668" fill-rule="nonzero" fill="#606060"/>
-                    </svg>
-                </span>
+                <div class="intro-scroll">
+                   <div></div>
+                </div>
             </div>
             <div class="wrapper-work">
                 <ol class="work">
@@ -28,48 +31,18 @@ title: Home
                             <li class="work-item">
                                 <a href="{{ post.url }}">
                                     <img class= "work-item-thumbnail" src="{{ post.thumbnail }}" alt="{{ post.thumbnailDesc }}">
-                                    <div class="work-item-description {{ post.keyColor }}">
-                                        {% if post.keyColor == "signup" or post.keyColor == "skoop" %}
-                                            <span class="work-item-description-company-dark">{{ post.company }}</span>
-                                            <div>
-                                                <h2 class="work-item-description-title-dark">{{ post.title }}</h2>
-                                                <p class="work-item-description-summary-dark">{{ post.summary }}</p>
-                                            </div>
-                                        {% else %}
-                                            <span class="work-item-description-company">{{ post.company }}</span>
-                                            <div>
-                                                <h2 class="work-item-description-title">{{ post.title }}</h2>
-                                                <p class="work-item-description-summary">{{ post.summary }}</p>
-                                            </div>
-                                        {% endif %}
+                                    <div class="work-item-description">
+                                      <span class="work-item-description-company-dark">{{ post.company }}</span>
+                                      <div>
+                                          <h2 class="work-item-description-title-dark">{{ post.title }}</h2>
+                                          <p class="work-item-description-summary-dark">{{ post.summary }}</p>
+                                      </div>
                                     </div>
                                 </a>
                             </li>
                         {% endif %}
                     {% endfor %}
                 </ol>
-            </div>
-        </div>
-        <div id="scene">
-            <div class="layer scene-container" data-depth=".05">
-                <div class="scene-square-1 is-rotating"></div>
-                <div class="scene-circle-1"></div>
-                <div class="scene-triangle-1 is-rotating"></div>
-            </div>
-            <div class="layer scene-container" data-depth=".05">
-                <div class="scene-square-2 is-rotating"></div>
-                <div class="scene-circle-2"></div>
-                <div class="scene-triangle-2 is-rotating"></div>
-            </div>
-            <div class="layer scene-container" data-depth=".15">
-                <div class="scene-circle-3"></div>
-                <div class="scene-triangle-3 is-rotating"></div>
-                <div class="scene-square-3 is-rotating"></div>
-            </div>
-            <div class="layer scene-container" data-depth=".2">
-                <div class="scene-triangle-4 is-rotating"></div>
-                <div class="scene-circle-4"></div>
-                <div class="scene-square-4 is-rotating"></div>
             </div>
         </div>
         {% include footer.html %}

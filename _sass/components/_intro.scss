@@ -1,6 +1,7 @@
 .intro {
-    width: 66.66%;
     margin: 0 auto;
+    font: $heading-1;
+    text-align: left;
 
     @media (max-width: $breakpointSmall) {
         width: 100%;
@@ -8,29 +9,13 @@
 }
 
 .intro-greeting {
-    font: $regular16;
-    margin-bottom: 1em;
-    text-align: center;
-    color: $greyMedium;
-    transform: translateY(10px);
-    opacity: 0;
-
-    transition: color $durationLong ease, transform $durationExtraLong $bezierEaseOut, opacity $durationExtraLong $bezierEaseOut;
+    color: $accent;
+    display: block;
 }
 
 .intro-bio {
-    font: $medium46;
-    text-align: center;
-    color: $greyDark;
-    transform: translateY(10px);
-    opacity: 0;
-
-    transition: color $durationLong ease, transform $durationExtraLong $bezierEaseOut, opacity $durationExtraLong $bezierEaseOut;
-
-    > span {
-        color: $pink;
-        cursor: help;
-    }
+    color: $white;
+    display: block;
 }
 
 .intro-copy-loaded {
@@ -38,14 +23,28 @@
     transform: translateY(0);
 }
 
-.intro-arrow {
+.intro-scroll {
     position: absolute;
     bottom: 4.8em;
-    right: 50%;
-    margin-right: -8px;
-    opacity: 0;
-    animation: arrowFloat 2s infinite;
-    transition: transform $durationShort ease, opacity $durationExtraLong ease;
+    height: 44px;
+    width: 28px;
+    border-width: 1px;
+    border-color: $white-20;
+    border-style: solid;
+    border-radius: 100px;
+    display: block;
+
+    > div {
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: $accent;
+      border-radius: 4px;
+      margin-left: 9px; 
+
+      animation: arrowFloat 2s infinite;
+      transition: transform $durationShort ease, opacity $durationExtraLong ease;
+   }
 
     @media (max-width: $breakpointSmall) {
         visibility: hidden;

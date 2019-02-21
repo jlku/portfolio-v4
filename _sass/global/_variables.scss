@@ -2,7 +2,11 @@
 $rotationSpeed: 20s;
 
 // colors
-$pink: #FCF086;
+$accent: #FCF086;
+$siteBackground: #1C1C1C;
+
+$white-20: rgba(255, 255, 255, .2);
+
 $greyUltraDark: #272727;
 $greyDark: #606060;
 $greyMedium: #CACACA;
@@ -10,7 +14,9 @@ $black: #000000;
 $white: #ffffff;
 
 // type
-$medium46: 2.875rem/120% 'Graphik-Medium', Helvetica, Sans-Serif; // 46px - intro
+$heading-1: 4.375rem/120% 'Arnhem-Bold', Helvetica, Serif; // 70px - intro
+$cta: 1.125rem/120% 'Graphik-Regular', Helvetica, Sans-Serif; // 18px
+
 $medium38: 2.375rem/120% 'Graphik-Medium', Helvetica, Sans-Serif; // 38px - story title, work tile title
 $medium28: 1.75rem/120% 'Graphik-Medium', Helvetica, Sans-Serif; // 28px - work tile title small
 $medium14: 0.875rem 'Graphik-Medium', Helvetica, Sans-Serif; // 14px - embedded paragraph links

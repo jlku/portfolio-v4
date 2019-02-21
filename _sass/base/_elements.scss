@@ -1,13 +1,13 @@
 body {
     margin-bottom: 20em;
-    background-color: $white;
+    background-color: $siteBackground;
     height: 100%;
     overflow: auto;
     transition: all $durationLong ease;
 }
 
 html {
-    background-color: $white;
+    background-color: $siteBackground;
 }
 
 button {
