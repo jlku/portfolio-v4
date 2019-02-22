@@ -6,6 +6,7 @@ $accent: #FCF086;
 $siteBackground: #1C1C1C;
 
 $white-20: rgba(255, 255, 255, .2);
+$white-40: rgba(255, 255, 255, .4);
 
 $greyUltraDark: #272727;
 $greyDark: #606060;
@@ -15,6 +16,10 @@ $white: #ffffff;
 
 // type
 $heading-1: 4.375rem/120% 'Arnhem-Bold', Helvetica, Serif; // 70px - intro
+$heading-3: 2rem/120% 'Arnhem-Bold', Helvetica, Serif; // 32px - intro
+
+$bodyRegular: 1.125rem/150% 'Graphik-Regular', Helvetica, Sans-Serif;
+
 $cta: 1.125rem/120% 'Graphik-Regular', Helvetica, Sans-Serif; // 18px
 
 $medium38: 2.375rem/120% 'Graphik-Medium', Helvetica, Sans-Serif; // 38px - story title, work tile title
@@ -32,9 +37,11 @@ $sectionLabel: 0.6875rem 'Graphik-Medium', Helvetica, Sans-Serif; // 11px story 
 
 // spacing
 $headerSpace: 10em;
-$verticalSpaceLarge: 8em;
-$verticalSpaceSmall: .3em;
-$verticalSpaceMedium: 1.75rem;
+$verticalSpaceLarge: 8em; // 48px
+$verticalSpaceMedium: 1.5em; // 24px
+$verticalSpaceRegular: 1em; // 16px
+$verticalSpaceSmall: .3em; // 4.8px
+
 
 // breakpoints
 $breakpointLarge: 1440px; // 15 inch mbp

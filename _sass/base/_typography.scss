@@ -21,7 +21,13 @@
 
 @font-face {
     font-family: 'Arnhem-Bold';
-    src: url('../fonts/arnhem-bold-webfont.woff') format('woff');
+    src: url('../fonts/Arnhem-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
+// @import url('https://rsms.me/inter/inter.css');
+// html { font-family: 'Inter', sans-serif; }
+// @supports (font-variation-settings: normal) {
+//   html { font-family: 'Inter var', sans-serif; }
+// }
