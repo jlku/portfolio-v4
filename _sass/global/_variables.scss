@@ -4,18 +4,18 @@ $rotationSpeed: 20s;
 // colors
 $accent: #FCF086;
 $siteBackground: #1C1C1C;
-
 $white-20: rgba(255, 255, 255, .2);
 $white-40: rgba(255, 255, 255, .4);
+$greyUltraDark: #232323;
 
-$greyUltraDark: #272727;
 $greyDark: #606060;
 $greyMedium: #CACACA;
 $black: #000000;
 $white: #ffffff;
 
 // type
-$heading-1: 4.375rem/120% 'Arnhem-Bold', Helvetica, Serif; // 70px - intro
+$heading-1: 4rem/120% 'Arnhem-Bold', Helvetica, Serif; // 64px - intro
+$heading-2: 2.5rem/120% 'Arnhem-Bold', Helvetica, Serif; // 40px - intro
 $heading-3: 2rem/120% 'Arnhem-Bold', Helvetica, Serif; // 32px - intro
 
 $bodyRegular: 1.125rem/150% 'Graphik-Regular', Helvetica, Sans-Serif;
@@ -36,12 +36,12 @@ $caption: 0.75rem/155% 'Graphik-RegularItalic', Helvetica, Sans-Serif; // 12px -
 $sectionLabel: 0.6875rem 'Graphik-Medium', Helvetica, Sans-Serif; // 11px story section label, about section label
 
 // spacing
-$headerSpace: 10em;
-$verticalSpaceLarge: 8em; // 48px
-$verticalSpaceMedium: 1.5em; // 24px
-$verticalSpaceRegular: 1em; // 16px
-$verticalSpaceSmall: .3em; // 4.8px
-
+$spaceMega: 16em; // space between homepage sections
+$spaceExtraLarge: 8em; // 48px
+$spaceLarge: 2em; // 32px
+$spaceMedium: 1.5em; // 24px
+$spaceSmall: 1em; // 16px
+$spaceExtraSmall: .5em; // 8px
 
 // breakpoints
 $breakpointLarge: 1440px; // 15 inch mbp

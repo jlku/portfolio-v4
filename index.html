@@ -12,36 +12,68 @@ title: Home
                <a href="">Writing</a>
                <a href="">About</a>
             </div>
-
         </header>
+
         <div class="wrapper-home">
             <div class="wrapper-intro">
                 <section class="intro">
-                   <span class="intro-greeting">Hi, I'm Adam</span>
+                   <h1 class="intro-greeting">Hi, I'm Adam</h1>
                    <span class='intro-bio'>A designer @ Dropbox working on Design Systems.</span>
                 </section>
                 <div class="intro-scroll">
                    <div></div>
                 </div>
             </div>
-            <div class="wrapper-work">
-                <ol class="work">
+            <section class="wrapper-work">
+               <h2>Case Studies</h2>
+                <ol>
                     {% for post in site.posts limit: 10 %}
                         {% if post.categories contains 'work' %}
-                            <li class="work-item">
+                           {% if post.type contains 'Featured' %}
+                              <li class="tile-work-featured">
+                                 <a href="">
+                                     <img class= "tile-work-thumbnail-featured" src="images/placeholder.png" alt="">
+                                     <div class="tile-work-description-featured">
+                                        <h2 class="tile-work-description-title">{{ post.title }}</h2>
+                                        <p class="tile-work-description-summary">{{ post.summary }}</p>
+                                        <button class="tile-work-cta">Read More</button>
+                                     </div>
+                                 </a>
+                              </li>
+                           {% else %}
+                              <li class="tile-work">
                                 <a href="{{ post.url }}">
-                                    <img class= "work-item-thumbnail" src="{{ post.thumbnail }}" alt="{{ post.thumbnailDesc }}">
-                                    <div class="work-item-description">
-                                       <h2 class="work-item-description-title">{{ post.title }}</h2>
-                                       <p class="work-item-description-summary">{{ post.summary }}</p>
-                                       <button class="work-item-cta">Read More</button>
+                                    <img class= "tile-work-thumbnail" src="images/onboarding.png" alt="{{ post.thumbnailDesc }}">
+                                    <div class="tile-work-description">
+                                       <h2 class="tile-work-description-title">{{ post.title }}</h2>
+                                       <p class="tile-work-description-summary">{{ post.summary }}</p>
+                                       <button class="tile-work-cta">Read More</button>
                                     </div>
                                 </a>
-                            </li>
+                              </li>
+                           {% endif %}
                         {% endif %}
                     {% endfor %}
                 </ol>
-            </div>
+            </section>
+
+           <section class="wrapper-writing">
+            <h2>Writing</h2>
+             <ol>
+                <li class="tile-writing">
+                 <a href="{{ post.url }}">
+                      <div class="tile-work-description">
+                        <h2 class="tile-work-description-title">{{ post.title }}</h2>
+                        <p class="tile-work-description-summary">{{ post.summary }}</p>
+                        <button class="tile-work-cta">Read More</button>
+                      </div>
+                 </a>
+                </li>
+             </ol>
+           </section>
+           <section class="wrapper-about">
+
+           </section>
         </div>
         {% include footer.html %}
         {% include scripts.html %}

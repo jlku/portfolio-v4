@@ -1,5 +1,5 @@
 .story {
-    margin: 0 auto $verticalSpaceLarge auto;
+    margin: 0 auto $spaceExtraLarge auto;
     width: 50%;
     transform: translateY(50px);
     transition: all $durationExtraLong $bezierEaseOut;
@@ -36,7 +36,7 @@
 
 .story-section {
     position: relative;
-    margin-bottom: $verticalSpaceMedium;
+    margin-bottom: $spaceMedium;
 }
 
 .story-section-label {

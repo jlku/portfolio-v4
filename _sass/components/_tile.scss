@@ -1,0 +1,122 @@
+.tile-work {
+	width: 100%;
+	height: 17.5em;
+
+	> a {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+}
+
+.tile-work-loaded {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.tile-work-thumbnail {
+	display: block;
+	width: 12.5em;
+	height: 12.5em;
+	border-radius: 10px;
+}
+
+.tile-work-description {
+	padding-left: 2.5em;
+	width: 60%;
+}
+
+.tile-work-description-title {
+	font: $heading-3;
+	color: $white;
+	margin-bottom: 0.5em;
+
+    @media (max-width: $breakpointMedium) {
+        font: $medium28;
+    }
+}
+
+.tile-work-description-summary {
+	font: $bodyRegular;
+	color: $white-40;
+	margin-bottom: $spaceSmall;
+
+    @media (max-width: $breakpointMedium) {
+        font: $regular12;
+    }
+}
+
+.tile-work-cta {
+	font: $cta;
+	color: $accent;
+}
+
+.tile-work-featured {
+	width: 100%;
+
+	.tile-work-description-summary {
+		width: 75%;
+	}
+
+	button {
+		margin-bottom: 2.22222em;
+	}
+}
+
+.tile-work-thumbnail-featured {
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 2.5em;
+}
+
+.tile-work, .tile-work-featured, .tile-writing {
+	&:after {
+		content: '';
+		background-color: #303030;
+		height: 1px;
+		width: 100%;
+		display: block;
+	}
+}
+
+.tile-writing {
+	width: 100%;
+	height: 17.5em;
+
+	> a {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+}
+
+.tile-writing-description {
+	padding-left: 2.5em;
+	width: 60%;
+}
+
+.tile-writing-description-title {
+	font: $heading-3;
+	color: $white;
+	margin-bottom: 0.5em;
+
+    @media (max-width: $breakpointMedium) {
+        font: $medium28;
+    }
+}
+
+.tile-writing-description-summary {
+	font: $bodyRegular;
+	color: $white-40;
+	margin-bottom: $spaceSmall;
+
+    @media (max-width: $breakpointMedium) {
+        font: $regular12;
+    }
+}
+
+.tile-writing-cta {
+	font: $cta;
+	color: $accent;
+}
