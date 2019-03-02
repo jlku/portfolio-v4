@@ -1,17 +1,22 @@
 // levers
 $rotationSpeed: 20s;
 
-// colors
-$accent: #FCF086;
-$siteBackground: #1C1C1C;
-$white-20: rgba(255, 255, 255, .2);
-$white-40: rgba(255, 255, 255, .4);
-$greyUltraDark: #232323;
+// all colors
+$yellow: #FCF086;
+$grey100: #1C1C1C;
+$grey200: #232323;
+$grey300: #333333;
+$grey400: #666666;
+$white: #ffffff;
 
+$white-20: rgba(255, 255, 255, .2);
 $greyDark: #606060;
 $greyMedium: #CACACA;
 $black: #000000;
-$white: #ffffff;
+
+// functional
+$accent: $yellow;
+$siteBackground: $grey100;
 
 // type
 $heading-1: 4rem/120% 'Arnhem-Bold', Helvetica, Serif; // 64px - intro

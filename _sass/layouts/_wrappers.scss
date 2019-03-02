@@ -1,5 +1,9 @@
 .wrapper-home {
-   padding: 0 12.5%;
+   padding: 0 20%;
+
+   @media (max-width: $breakpointLarge) {
+       padding: 0 12.5% 0 12.5%;
+   }
 }
 
 .wrapper-intro {

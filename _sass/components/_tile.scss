@@ -38,7 +38,7 @@
 
 .tile-work-description-summary {
 	font: $bodyRegular;
-	color: $white-40;
+	color: $grey400;
 	margin-bottom: $spaceSmall;
 
     @media (max-width: $breakpointMedium) {
@@ -89,10 +89,17 @@
 		align-items: center;
 		height: 100%;
 	}
+
+	&:before {
+		content: '';
+		background-color: #303030;
+		height: 1px;
+		width: 100%;
+		display: block;
+	}
 }
 
 .tile-writing-description {
-	padding-left: 2.5em;
 	width: 60%;
 }
 
@@ -108,7 +115,7 @@
 
 .tile-writing-description-summary {
 	font: $bodyRegular;
-	color: $white-40;
+	color: $grey400;
 	margin-bottom: $spaceSmall;
 
     @media (max-width: $breakpointMedium) {
