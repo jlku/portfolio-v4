@@ -1,5 +1,5 @@
 #home-header {
-    height: 7em;
+    height: $headerFooterHeight;
     position: fixed;
     top: 0;
     width: 100%;
@@ -13,14 +13,6 @@
     @media (max-width: $breakpointLarge) {
         padding: 0 12.5% 0 12.5%;
     }
-}
-
-.home-header-logo {
-   height: 40px;
-   width: 40px;
-   display: block;
-   background-color: $white;
-   border-radius: 20px;
 }
 
 .home-header-nav {

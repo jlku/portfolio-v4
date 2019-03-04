@@ -22,19 +22,6 @@
     // }
 }
 
-.wrapper-work {
-    width: 100%;
-    margin-bottom: $spaceMega;
-
-    // @media (max-width: $breakpointLarge) {
-    //     width: 75%;
-    // }
-    //
-    // @media (max-width: $breakpointSmall) {
-    //     width: 90%;;
-    // }
-}
-
 .wrapper-post {
     width: 50%;
     margin: 0 auto;
@@ -50,20 +37,25 @@
     }
 }
 
-.wrapper-about {
-    width: 60%;
-    margin: 0 auto;
-    position: relative;
+#projects {
+    width: 100%;
+    margin-bottom: $spaceMega;
+
+    // @media (max-width: $breakpointLarge) {
+    //     width: 75%;
+    // }
+    //
+    // @media (max-width: $breakpointSmall) {
+    //     width: 90%;;
+    // }
 }
 
-.wrapper-footer {
-    @extend %clearfix;
+#writing {
+   margin-bottom: $spaceMega;
+}
 
-    width: 50%;
-    margin: 0 auto;
-    position: relative;
+#about {
+   @extend %clearfix;
 
-    @media (max-width: $breakpointLarge) {
-        width: 75%;
-    }
+   margin-bottom: $spaceMega;
 }

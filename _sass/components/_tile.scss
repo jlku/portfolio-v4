@@ -73,7 +73,7 @@
 .tile-work, .tile-work-featured, .tile-writing {
 	&:after {
 		content: '';
-		background-color: #303030;
+		background-color: $borderColor;
 		height: 1px;
 		width: 100%;
 		display: block;
@@ -92,7 +92,7 @@
 
 	&:before {
 		content: '';
-		background-color: #303030;
+		background-color: $borderColor;
 		height: 1px;
 		width: 100%;
 		display: block;

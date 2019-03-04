@@ -1,0 +1,33 @@
+.logo {
+   height: 24px;
+
+   position: relative;
+}
+
+.logo-circle {
+   height: 24px;
+   width: 24px;
+   background-color: $grey400;
+   border-radius: 12px;
+   left: 0px;
+}
+
+.logo-square {
+   height: 24px;
+   width: 24px;
+   background-color: $grey500;
+   left: 12px;
+}
+
+.logo-triangle {
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 0 12px 24px 12px;
+   border-color: transparent transparent $white transparent;
+   left: 24px;
+}
+
+.logo-circle, .logo-square, .logo-triangle {
+   position: absolute;
+}

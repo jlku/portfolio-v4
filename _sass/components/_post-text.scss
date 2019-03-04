@@ -3,7 +3,7 @@
     margin: 0 auto .8em auto;
     width: 50%;
     font: $regular16;
-    color: $greyDark;
+    color: $grey400;
 
     @media (max-width: $breakpointSmall) {
         width: 80%;
@@ -13,7 +13,7 @@
 .post-paragraph-embedded-last {
     margin: 0 auto 5.7142857143em auto;
     font: $regular16;
-    color: $greyDark;
+    color: $grey400;
     width: 50%;
 
     @media (max-width: $breakpointSmall) {
@@ -23,7 +23,7 @@
 
 .post-caption {
     font: $caption;
-	color: $greyMedium;
+	color: $grey500;
 	margin-bottom: 8em;
 	text-align: center;
 }

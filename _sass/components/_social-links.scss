@@ -1,12 +1,10 @@
 .social-links {
-    @extend %clearfix;
+    display: flex;
+    align-items: center;
 
     > a {
         display: block;
-        float: left;
-        height: 28px;
-        width: 28px;
-        margin-right: .5em;
+        margin-right: .8em;
 
         transition: all $durationShort ease;
 

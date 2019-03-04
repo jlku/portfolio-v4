@@ -56,22 +56,22 @@
 
 .post-header-back-icon {
     @media (max-width: $breakpointSmall) {
-        fill: $greyDark;
+        fill: $grey400;
     }
 }
 
 .post-header-back-icon-dark {
-    fill: $greyDark !important;
+    fill: $grey400 !important;
 }
 
 .post-header-label-light {
     color: $white;
 
     @media (max-width: $breakpointSmall) {
-        color: $greyDark;
+        color: $grey400;
     }
 }
 
 .post-header-label-dark {
-        color: $greyDark;
+        color: $grey400;
 }

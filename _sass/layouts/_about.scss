@@ -1,169 +1,31 @@
-#about {
-    padding-top: 12em;
-    overflow-y: scroll;
-    height: 100vh;
-    width: 100%;
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    pointer-events: none;
-    z-index: 2;
+.about-main {
+   font: $bodyMega;
+   color: $grey400;
+   margin-bottom: $spaceMedium;
 
-    transition: all $durationExtraLong $bezierEaseOut;
-
-    @media (max-width: $breakpointSmall) {
-        padding-top: 9em;
-    }
+   > p {
+      margin-bottom: $spaceSmall;
+   }
 }
 
-.about-visible {
-    visibility: visible !important;
-    opacity: 1 !important;
-    pointer-events: auto !important;
+.about-contact, .about-site {
+   font: $bodyLarge;
+   color: $grey400;
+   width: 49%;
+
+   > h3 {
+      margin-bottom: $spaceExtraSmall;
+   }
+
+   > p {
+      margin-bottom: $spaceSmall;
+   }
 }
 
-.about-header {
-    height: $spaceMega;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 20% 0 20%;
-
-    @media (max-width: $breakpointLarge) {
-        padding: 0 12.5% 0 12.5%;
-    }
+.about-contact {
+   float: left;
 }
 
-.about-container {
-    transform: translateY(50px);
-    transition: transform $durationExtraLong $bezierEaseOut;
-}
-
-.about-container-loaded {
-    transform: translateY(0px);
-}
-
-.about-billboard {
-    font: $regular46;
-    color: $greyDark;
-    width: 40%;
-    margin: 0 auto 2em auto;
-
-    @media (max-width: $breakpointLarge) {
-        width: 45%;
-    }
-
-    @media (max-width: $breakpointMedium) {
-        width: 60%;
-    }
-
-    @media (max-width: $breakpointSmall) {
-        width: 75%;
-        font: $regular28;
-    }
-}
-
-.about-billboard-paragraph {
-    margin-bottom: $spaceMedium;
-}
-
-.about-details {
-    @extend %clearfix;
-
-    width: 40%;
-    margin: 0 auto 5.75em auto;
-
-    @media (max-width: $breakpointLarge) {
-        width: 45%;
-    }
-
-    @media (max-width: $breakpointMedium) {
-        width: 60%;
-    }
-
-    @media (max-width: $breakpointSmall) {
-        width: 75%;
-        font: $regular28;
-        margin-bottom: 2em;
-    }
-
-    > section:nth-of-type(1) {
-        width: 33.33%;
-        float: left;
-        padding-right: 20px;
-
-        @media (max-width: $breakpointMedium) {
-            display: block;
-            float: none;
-            width: 100%;
-            margin-bottom: 5.75em;
-        }
-
-        @media (max-width: $breakpointSmall) {
-            margin-bottom: 2em;
-        }
-    }
-
-    > section:nth-of-type(2) {
-        width: 66.66%;
-        float: left;
-
-        @media (max-width: $breakpointMedium) {
-            display: block;
-            float: none;
-            width: 100%;
-        }
-    }
-}
-
-.about-details-label {
-    font: $sectionLabel;
-    color: $greyDark;
-    text-transform: uppercase;
-    margin-bottom: $spaceMedium;
-    letter-spacing: .2em;
-}
-
-.about-details-list-item {
-    font: $regular28;
-    color: $greyDark;
-
-    @media (max-width: $breakpointSmall) {
-        width: 100%;
-        font: $regular16;
-    }
-}
-
-.about-details-paragraph {
-    font: $regular28;
-    color: $greyDark;
-
-    @media (max-width: $breakpointSmall) {
-        width: 100%;
-        font: $regular16;
-        line-height: 160%;
-    }
-}
-
-.about-links {
-    @extend %clearfix;
-
-    width: 40%;
-    margin: 0 auto 5.75em auto;
-
-    @media (max-width: $breakpointLarge) {
-        width: 45%;
-    }
-
-    @media (max-width: $breakpointMedium) {
-        width: 60%;
-    }
-
-    @media (max-width: $breakpointSmall) {
-        width: 75%;
-        font: $regular28;
-        margin-bottom: 2em;
-    }
+.about-site {
+   float: right;
 }

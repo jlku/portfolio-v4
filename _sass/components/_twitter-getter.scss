@@ -11,12 +11,12 @@
 }
 
 .twitter-getter-tweet {
-    color: $greyDark;
+    color: $grey400;
     font: $regular16;
     margin-bottom: 1em;
 
     > a {
-        color: $greyDark;
+        color: $grey400;
         &:hover {
             text-decoration: underline;
         }
@@ -28,7 +28,7 @@
 }
 
 .twitter-getter-time {
-    color: $greyMedium;
+    color: $grey500;
     font: $regular16;
     transition: opacity $durationMedium ease;
     transform: translateX(20px);

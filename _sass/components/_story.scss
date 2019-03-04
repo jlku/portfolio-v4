@@ -13,12 +13,12 @@
 .story-title {
     margin-bottom: .2em;
     font: $medium38;
-    color: $greyDark;
+    color: $grey400;
 }
 
 .story-date {
     font: $caption;
-    color: $greyMedium;
+    color: $grey500;
     margin-bottom: 8em;
     line-height: 155%;
     margin-bottom: 2.8em;
@@ -44,7 +44,7 @@
     text-align: right;
     transform: translateX(-150%) translateY(68%);
     font: $sectionLabel;
-    color: $greyMedium;
+    color: $grey500;
     text-transform: uppercase;
     letter-spacing: .2em;
 	margin-bottom: 1rem;
@@ -58,12 +58,12 @@
 
 .story-section-paragraph {
     font: $regular16;
-	color: $greyDark;
+	color: $grey400;
 	margin-bottom: .8em;
 
     > a {
         font: $medium14;
-        color: $greyDark;
+        color: $grey400;
 
         &:hover {
             text-decoration: underline;
