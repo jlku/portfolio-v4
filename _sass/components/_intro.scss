@@ -11,17 +11,21 @@
 .intro-greeting {
     color: $accent;
     display: block;
+    opacity: 0;
 
+    transition: all 1.5s ease;
 }
 
 .intro-bio {
     color: $white;
     display: block;
+    opacity: 0;
+
+    transition: all 1.5s ease;
 }
 
-.intro-copy-loaded {
+.intro-loaded {
     opacity: 1;
-    transform: translateY(0);
 }
 
 .intro-scroll {
@@ -34,6 +38,9 @@
     border-style: solid;
     border-radius: 100px;
     display: block;
+    opacity: 0;
+
+    transition: all 1.5s ease;
 
     > div {
       display: block;
@@ -42,9 +49,10 @@
       background-color: $accent;
       border-radius: 4px;
       margin-left: 9px;
+      margin-top: 4px;
 
-      animation: arrowFloat 2s infinite;
-      transition: transform $durationShort ease, opacity $durationExtraLong ease;
+      animation: scrollWheel 2s infinite 3s;
+      transition: all $durationShort $bezierEaseOut;
    }
 
     @media (max-width: $breakpointSmall) {
@@ -52,10 +60,6 @@
     }
 }
 
-.intro-arrow-hidden {
-    opacity: 0 !important;
-}
-
-.intro-arrow-loaded {
+.intro-scroll-loaded {
     opacity: 1;
 }

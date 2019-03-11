@@ -12,16 +12,14 @@
 
 .story-title {
     margin-bottom: .2em;
-    font: $medium38;
-    color: $grey400;
+    font: $heading-2;
+    color: $white;
 }
 
 .story-date {
-    font: $caption;
-    color: $grey500;
-    margin-bottom: 8em;
-    line-height: 155%;
-    margin-bottom: 2.8em;
+    font: $bodySmall;
+    color: $grey400;
+    margin-bottom: $spaceLarge;
     display: inline-block;
 
     @media (max-width: $breakpointSmall) {
@@ -42,12 +40,10 @@
 .story-section-label {
     position: absolute;
     text-align: right;
-    transform: translateX(-150%) translateY(68%);
-    font: $sectionLabel;
+    transform: translateX(-140%) translateY(-4%);
+    font: $bodyRegular;
     color: $grey500;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-	margin-bottom: 1rem;
+    margin-bottom: 1rem;
 
     @media (max-width: $breakpointSmall) {
         position: relative;
@@ -57,7 +53,7 @@
 }
 
 .story-section-paragraph {
-    font: $regular16;
+   font: $bodyRegular;
 	color: $grey400;
 	margin-bottom: .8em;
 

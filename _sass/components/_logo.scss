@@ -1,7 +1,16 @@
 .logo {
    height: 24px;
-
    position: relative;
+
+   &:hover {
+      .logo-square {
+         transform: translateX(7px) rotate(90deg);
+      }
+
+      .logo-triangle {
+         transform: translateX(26.5px) rotate(90deg);
+      }
+   }
 }
 
 .logo-circle {
@@ -12,11 +21,20 @@
    left: 0px;
 }
 
+.logo-square-bg {
+   height: 24px;
+   width: 24px;
+   background-color: $siteBackground;
+   left: 12px;
+}
+
 .logo-square {
    height: 24px;
    width: 24px;
    background-color: $grey500;
    left: 12px;
+
+   transition: all 1.2s $bezierLogo;
 }
 
 .logo-triangle {
@@ -26,8 +44,10 @@
    border-width: 0 12px 24px 12px;
    border-color: transparent transparent $white transparent;
    left: 24px;
+
+   transition: all 1.2s $bezierLogo .1s;
 }
 
-.logo-circle, .logo-square, .logo-triangle {
+.logo-circle, .logo-square, .logo-triangle, .logo-square-bg {
    position: absolute;
 }

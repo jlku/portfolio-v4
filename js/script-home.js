@@ -6,24 +6,45 @@
    //     $("html, body").animate({scrollTop: $(section).offset().top}, 5000, 'ease', function() {}});
    // });
     // variables
-    // var introArrow = $(".intro-arrow");
 
-    // scroll events
-    // $(window).on('scroll', function() {
-    //    var scrollPosition = $(this).scrollTop();
-    //
-    //    if (scrollPosition > 0) {
-    //        introArrow.addClass('intro-arrow-hidden');
-    //    } else {
-    //        introArrow.removeClass('intro-arrow-hidden');
-    //    }
-    //
-    //    // intro.css('transform', 'translateY(' + scrollPosition/-2.5 + 'px)');
-    // });
 // });
 
 $(document).ready(function(){
-  // Add smooth scrolling to all links
+
+  var introGreeting = $(".intro-greeting");
+  var introBio = $(".intro-bio");
+  var header = $(".home-header");
+  var introScroll = $(".intro-scroll");
+
+  setTimeout(function(){
+     introGreeting.addClass('intro-loaded');
+  },500)
+
+  setTimeout(function(){
+     introBio.addClass('intro-loaded');
+  },1700)
+
+  setTimeout(function(){
+     header.addClass('home-header-loaded');
+     introScroll.addClass('intro-scroll-loaded');
+  },2500)
+
+ $(window).on('scroll', function() {
+    var scrollPosition = $(this).scrollTop();
+    console.log(scrollPosition);
+
+    if (scrollPosition > 0) {
+        introScroll.removeClass('intro-scroll-loaded');
+     
+        header.addClass('home-header-scrolled');
+     } else {
+        introScroll.addClass('intro-scroll-loaded');
+        header.removeClass('home-header-scrolled');
+     }
+ });
+
+
+// Add smooth scrolling to all links
   $("nav > a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
