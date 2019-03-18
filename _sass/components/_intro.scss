@@ -1,27 +1,32 @@
 .intro {
     margin: 0 auto;
-    font: $heading-1;
     text-align: left;
-
-    @media (max-width: $breakpointSmall) {
-        width: 100%;
-    }
 }
 
 .intro-greeting {
     color: $accent;
     display: block;
     opacity: 0;
+    font: $heading-1;
 
     transition: all 1.5s ease;
+
+    @media (max-width: $breakpointSmall) {
+        font: $heading-2;
+    }
 }
 
 .intro-bio {
     color: $white;
     display: block;
     opacity: 0;
+    font: $heading-1;
 
     transition: all 1.5s ease;
+
+    @media (max-width: $breakpointSmall) {
+        font: $heading-2;
+    }
 }
 
 .intro-loaded {

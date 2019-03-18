@@ -41,6 +41,8 @@
     width: 100%;
     margin-bottom: $spaceMega;
 
+
+
     // @media (max-width: $breakpointLarge) {
     //     width: 75%;
     // }
@@ -58,9 +60,24 @@
    @extend %clearfix;
 
    margin-bottom: $spaceMega;
+
+   h3 {
+      font: $heading-3;
+      color: $white;
+   }
 }
 
 #projects, #writing, #about {
+   > h2 {
+     font: $heading-2;
+     color: $white;
+     margin-bottom: $spaceSmall;
+
+     @media (max-width: $breakpointMedium) {
+
+     }
+  }
+
    &:before {
       display: block;
       content: " ";

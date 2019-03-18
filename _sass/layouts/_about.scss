@@ -24,8 +24,20 @@
 
 .about-contact {
    float: left;
+
+   @media (max-width: $breakpointMedium) {
+      width: 100%;
+      display: block;
+      margin-bottom: 1.5em;
+   }
 }
 
 .about-site {
    float: right;
+
+   @media (max-width: $breakpointMedium) {
+      width: 100%;
+      display: block;
+      margin-bottom: 1.5em;
+   }
 }
