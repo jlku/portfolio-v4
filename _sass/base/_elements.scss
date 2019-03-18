@@ -18,6 +18,11 @@ button:focus {
     outline: none;
 }
 
+p > a {
+    text-decoration: none;
+    color: $white;
+}
+
 a {
     text-decoration: none;
     color: $grey400;

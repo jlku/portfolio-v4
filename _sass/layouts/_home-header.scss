@@ -7,11 +7,11 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    padding: 0 20% 0 20%;
+    padding: 0 23%;
     background-color: $siteBackground;
     opacity: 0;
 
-    transition: all 1.5s ease;
+    transition: opacity 1.5s ease, box-shadow $durationShort ease;
 
     @media (max-width: $breakpointLarge) {
         padding: 0 12.5% 0 12.5%;
@@ -22,8 +22,14 @@
     opacity: 1;
 }
 
+.home-header-loaded-instant {
+   opacity: 1;
+   transition: opacity 0s, box-shadow 0s;
+   box-shadow: $shadowChrome;
+
+}
+
 .home-header-scrolled {
-   background-color: $siteBackground;
    box-shadow: $shadowChrome;
 }
 

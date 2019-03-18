@@ -11,7 +11,7 @@
 }
 
 .story-title {
-    margin-bottom: .2em;
+    margin-bottom: 2em;
     font: $heading-2;
     color: $white;
 }
@@ -40,9 +40,10 @@
 .story-section-label {
     position: absolute;
     text-align: right;
-    transform: translateX(-140%) translateY(-4%);
+    width: 100px;
+    transform: translateX(-130%);
     font: $bodyRegular;
-    color: $grey500;
+    color: $white;
     margin-bottom: 1rem;
 
     @media (max-width: $breakpointSmall) {
@@ -58,11 +59,6 @@
 	margin-bottom: .8em;
 
     > a {
-        font: $medium14;
-        color: $grey400;
-
-        &:hover {
-            text-decoration: underline;
-        }
+        color: $white;
     }
 }

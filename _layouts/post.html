@@ -13,7 +13,10 @@
         <div class="wrapper-post">
             <section class="story">
                 <h1 class="story-title">{{ page.title }}</h2>
-                <span class="story-date">{{ page.shippedDate }}</span>
+                <section class="story-section">
+                    <h3 class="story-section-label">Date</h3>
+                    <p class="story-section-paragraph">{{ page.shippedDate }}</p>
+                </section>
                 <section class="story-section">
                     <h3 class="story-section-label">Overview</h3>
                     {% for paragraph in page.overview %}

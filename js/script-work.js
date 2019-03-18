@@ -1,10 +1,7 @@
 $(document).ready(function() {
 
     // variables
-    var postHeader = $('#post-header');
-    var postHeaderBack = $(".post-header-back");
-    var postHeaderBackLabel = $(".post-header-back > span");
-    var postHeaderBackIcon = $(".post-header-back-icon");
+    var postHeader = $('.post-header');
 
     var postHero = $('#post-hero');
     var story = $(".story");
@@ -12,7 +9,6 @@ $(document).ready(function() {
     // setup
     postHero.addClass("post-hero-loaded");
     story.addClass("story-loaded");
-    postHeaderBack.addClass("post-header-back-loaded");
 
     $(window).scroll(function() {
         var scrollPos = $(this).scrollTop();
@@ -20,12 +16,8 @@ $(document).ready(function() {
 
         if (scrollPos > postHeroBottom) {
             postHeader.addClass("post-header-scrolled");
-            postHeaderBackLabel.addClass('post-header-label-dark');
-            postHeaderBackIcon.attr("class", "post-header-back-icon post-header-back-icon-dark");
         } else {
             postHeader.removeClass("post-header-scrolled");
-            postHeaderBackLabel.removeClass('post-header-label-dark');
-            postHeaderBackIcon.attr("class", "post-header-back-icon");
         }
     });
 });

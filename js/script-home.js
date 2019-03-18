@@ -31,11 +31,11 @@ $(document).ready(function(){
 
  $(window).on('scroll', function() {
     var scrollPosition = $(this).scrollTop();
-    console.log(scrollPosition);
+    // console.log(scrollPosition);
 
     if (scrollPosition > 0) {
         introScroll.removeClass('intro-scroll-loaded');
-     
+
         header.addClass('home-header-scrolled');
      } else {
         introScroll.addClass('intro-scroll-loaded');
@@ -54,6 +54,7 @@ $(document).ready(function(){
 
       // Store hash
       var hash = this.hash;
+      console.log($(hash).offset().top);
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
@@ -62,7 +63,7 @@ $(document).ready(function(){
      }, 800, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+        // window.location.hash = hash;
       });
     } // End if
   });

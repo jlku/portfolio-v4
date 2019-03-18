@@ -1,5 +1,5 @@
 .wrapper-home {
-   padding: 0 20%;
+   padding: 0 23%;
 
    @media (max-width: $breakpointLarge) {
        padding: 0 12.5% 0 12.5%;
@@ -58,4 +58,15 @@
    @extend %clearfix;
 
    margin-bottom: $spaceMega;
+}
+
+#projects, #writing, #about {
+   &:before {
+      display: block;
+      content: " ";
+      margin-top: -210px;
+      height: 210px;
+      visibility: hidden;
+      pointer-events: none;
+   }
 }

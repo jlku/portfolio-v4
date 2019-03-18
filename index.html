@@ -32,23 +32,30 @@ title: Home
             <section id="projects">
                <h2>Projects</h2>
                 <ol>
+                   {% for post in site.posts limit: 10 %}
+                       {% if post.categories contains 'work' %}
+                          {% if post.type contains 'Featured' %}
+                             <li class="tile-work-featured">
+                                <a href="{{ post.url }}">
+                                    <img class= "tile-work-thumbnail-featured" src="{{ post.thumbnail }}" alt="">
+                                    <div class="tile-work-description-featured">
+                                       <h2 class="tile-work-description-title">{{ post.title }}</h2>
+                                       <p class="tile-work-description-summary">{{ post.summary }}</p>
+                                       <button class="tile-work-cta">Read More</button>
+                                    </div>
+                                </a>
+                             </li>
+                          {% else %}
+                          {% endif %}
+                       {% endif %}
+                   {% endfor %}
                     {% for post in site.posts limit: 10 %}
                         {% if post.categories contains 'work' %}
                            {% if post.type contains 'Featured' %}
-                              <li class="tile-work-featured">
-                                 <a href="">
-                                     <img class= "tile-work-thumbnail-featured" src="images/placeholder.png" alt="">
-                                     <div class="tile-work-description-featured">
-                                        <h2 class="tile-work-description-title">{{ post.title }}</h2>
-                                        <p class="tile-work-description-summary">{{ post.summary }}</p>
-                                        <button class="tile-work-cta">Read More</button>
-                                     </div>
-                                 </a>
-                              </li>
                            {% else %}
                               <li class="tile-work">
                                 <a href="{{ post.url }}">
-                                    <img class= "tile-work-thumbnail" src="images/onboarding.png" alt="{{ post.thumbnailDesc }}">
+                                    <img class= "tile-work-thumbnail" src="{{ post.thumbnail }}" alt="{{ post.thumbnailDesc }}">
                                     <div class="tile-work-description">
                                        <h2 class="tile-work-description-title">{{ post.title }}</h2>
                                        <p class="tile-work-description-summary">{{ post.summary }}</p>
@@ -69,16 +76,7 @@ title: Home
                  <a href="{{ post.url }}">
                       <div class="tile-writing-description">
                         <h2 class="tile-work-description-title">The Man Who Saved My Sister</h2>
-                        <p class="tile-work-description-summary">In October 2018, my family took a trip to and across China to trace my adopted sister’s roots. It was a remarkable trip that culminated in an experience none of us saw coming.</p>
-                        <button class="tile-work-cta">Read On Medium</button>
-                      </div>
-                 </a>
-                </li>
-                <li class="tile-writing">
-                 <a href="{{ post.url }}">
-                      <div class="tile-writing-description">
-                        <h2 class="tile-work-description-title">Using Figma At Scale</h2>
-                        <p class="tile-work-description-summary">In early 2019, the Design Systems team Dropbox migrated our entire team to Figma from Sketch. Here’s what we learned.</p>
+                        <p class="tile-work-description-summary">The story of my family's travels across China in 2018 to retrace my adopted sister's roots, which culminated in an experience none of us saw coming.</p>
                         <button class="tile-work-cta">Read On Medium</button>
                       </div>
                  </a>
@@ -88,21 +86,21 @@ title: Home
            <section id="about">
              <h2>About</h2>
              <section class="about-main">
-                <p>I’m Adam Noffsinger, a Senior Product Designer at Dropbox working on Design Systems. I’ve been with company since late 2017.</p>
-                <p>Before joining Dropbox, I was an early designer at Uber and worked on the consumer-facing Rides and Eats mobile apps for about 3 years. It was one heck of an experience.</p>
-                <p>Before getting into product design, I dabbled in creative writing (poetry, specifically) and was an Account Manager in advertising. Needless to say, it wasn;t for me.</p>
-                <p>I'm most passionate about mobile product, but have extensive experience across web and desktop as well. I'm interested in solving problems related to transportation and mapping, fitness, gaming, music, and travel. I love getting my hands dirty in code and mentoring new designers.</p>
+                <p>I’m Adam Noffsinger, a Senior Product Designer at Dropbox working on Design Systems. I’ve been at Dropbox since late 2017.</p>
+                <p>Before joining Dropbox, I was an early designer at Uber and worked on the consumer-facing Rides and Eats mobile apps for about 3 years. It was one heckuva wild ride.</p>
+                <p>Before getting into design, I pursued creative writing (poetry, if we're being specific) and was an Account Manager at an advertising agency. Variety is the spice of life, right?</p>
+                <p>I'm most passionate about mobile product, but have extensive experience across web and desktop too. I'm interested in solving problems related to transportation and mapping, fitness, gaming, music, and travel.</p>
+                <p>When I'm not designing, I love getting my hands dirty in Swift and mentoring younger designers on craft skills.</p>
              </section>
              <section class="about-contact">
                 <h3>Get In Touch</h3>
-                <p>The best way to reach me directly is via email, but Twitter is also a solid bet.</p>
-                <p>My Instagram is public, so feel free to check that out.</p>
-                <p>LinkedIn probably isn’t your best bet, but has a more thorough work history if you’re into that.</p>
+                <p>The best way to reach me is via <a href="mailto:adam.noffsinger@gmail.com" target="_blank">email</a>, although <a href="https://twitter.com/ANoffsinger" target="_blank">Twitter</a> is my one and only true love.</p>
+                <p>My <a href="https://www.instagram.com/anoffsinger/" target="_blank">Instagram</a> is public, so feel free to judge my shoe obsession there. <a href="https://www.linkedin.com/in/adam-noffsinger-46b5b61a" target="_blank">LinkedIn</a> isn’t a great bet, but has a thorough work history if that's your jam.</p>
              </section>
              <section class="about-site">
                 <h3>Colophon</h3>
-                <p>This site is built from scratch with good ‘ole fashioned HTML, CSS, and Javascript. It uses the Graphik and Arnhem font families.</p>
-                <p>Shout outs to Jekyll, the templating framework I use for posts and Design Camera, which I used for creating isometric UI shots.</p>
+                <p>This site is built from scratch with good ‘ole fashioned HTML, CSS, and Javascript. It uses both the Graphik and Arnhem font families.</p>
+                <p><a href="https://jekyllrb.com/" target="_blank">Jekyll</a> is used for components and templating, <a href="https://rotato.xyz/" target="_blank">Rotato</a> for 3D UI shots, and Stack Overflow for everything else, ever.</p>
              </section>
            </section>
            {% include footer.html %}
