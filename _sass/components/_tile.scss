@@ -44,6 +44,10 @@
 	padding-left: 2.5em;
 	width: 70%;
 
+	@media (max-width: $breakpointLarge) {
+		 width: 60%;
+	}
+
 	@media (max-width: $breakpointMedium) {
 		margin-bottom: $spaceLarge;
 		padding: 0;
@@ -79,13 +83,13 @@
 .tile-work-featured {
 	width: 100%;
 
-	.tile-work-description-summary {
-		width: 75%;
-	}
-
 	button {
 		margin-bottom: 2.22222em;
 	}
+}
+
+.tile-work-description-featured {
+	width: 60%;
 }
 
 .tile-work-thumbnail-featured {

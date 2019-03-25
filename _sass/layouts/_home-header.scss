@@ -14,7 +14,11 @@
     transition: opacity 1.5s ease, box-shadow $durationShort ease;
 
     @media (max-width: $breakpointLarge) {
-        padding: 0 12.5% 0 12.5%;
+       padding: 0 16%;
+    }
+
+    @media (max-width: $breakpointMedium) {
+       padding: 0 12.5% 0 12.5%;
     }
 }
 
