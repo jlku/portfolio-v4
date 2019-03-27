@@ -18,7 +18,11 @@
     }
 
     @media (max-width: $breakpointMedium) {
-       padding: 0 12.5% 0 12.5%;
+       padding: 0 12.5%;
+    }
+
+    @media (max-width: $breakpointSmall) {
+       padding: 0 8%;
     }
 }
 

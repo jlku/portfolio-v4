@@ -3,7 +3,6 @@
 	height: 17.5em;
 
 	@media (max-width: $breakpointMedium) {
-
 		height: 100%;
 		width: 100%;
 	}
@@ -90,6 +89,10 @@
 
 .tile-work-description-featured {
 	width: 60%;
+
+	@media (max-width: $breakpointSmall) {
+		width: 100%;
+	}
 }
 
 .tile-work-thumbnail-featured {
@@ -117,6 +120,10 @@
 		display: flex;
 		align-items: center;
 		height: 100%;
+
+		@media (max-width: $breakpointSmall) {
+			margin: 2em 0;
+		}
 	}
 
 	&:before {
@@ -133,6 +140,10 @@
 
 	@media (max-width: $breakpointMedium) {
 		width: 100%;
+	}
+
+	@media (max-width: $breakpointSmall) {
+		// margin-bottom: 2em;
 	}
 }
 

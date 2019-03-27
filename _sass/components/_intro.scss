@@ -12,7 +12,7 @@
     transition: all 1.5s ease;
 
     @media (max-width: $breakpointSmall) {
-        font: $heading-2;
+        font-size: 3rem;
     }
 }
 
@@ -25,7 +25,7 @@
     transition: all 1.5s ease;
 
     @media (max-width: $breakpointSmall) {
-        font: $heading-2;
+        font-size: 3rem;
     }
 }
 

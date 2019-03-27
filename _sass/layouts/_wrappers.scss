@@ -6,7 +6,11 @@
    }
 
    @media (max-width: $breakpointMedium) {
-       padding: 0 12.5% 0 12.5%;
+       padding: 0 12.5%;
+   }
+
+   @media (max-width: $breakpointSmall) {
+      padding: 0 8%;
    }
 }
 
@@ -15,15 +19,6 @@
     height: 100vh;
     display: flex;
     align-items: center;
-
-    // @media (max-width: $breakpointLarge) {
-    //     padding: 0 12.5% 0 12.5%;
-    // }
-    //
-    // @media (max-width: $breakpointSmall) {
-    //     padding: 12em 12.5% 7em 12.5%;
-    //     height: auto;
-    // }
 }
 
 .wrapper-post {
@@ -36,8 +31,8 @@
     }
 
     @media (max-width: $breakpointSmall) {
-        width: 90%;
-        padding-top: 7.4em;
+        width: 100%;
+        padding: 10.4em 8% 0 8%;
     }
 }
 

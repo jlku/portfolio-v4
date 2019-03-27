@@ -19,15 +19,16 @@
    @media (max-width: $breakpointMedium) {
       padding: 0 12.5% 0 12.5%;
    }
+
+   @media (max-width: $breakpointSmall) {
+      padding: 0 8.5%;
+      background-color: $siteBackground;
+   }
 }
 
 .post-header-scrolled {
     background-color: $siteBackground !important;
     box-shadow: $shadowChrome;
-
-    @media (max-width: $breakpointSmall) {
-        height: 4em;
-    }
 }
 
 
