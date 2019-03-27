@@ -22,12 +22,16 @@
 }
 
 .wrapper-post {
-    width: 50%;
+    padding: 0 23%;
     margin: 0 auto;
     position: relative;
 
     @media (max-width: $breakpointLarge) {
-        width: 75%;
+        padding: 0 16%;
+    }
+
+    @media (max-width: $breakpointMedium) {
+       padding: 0 12.5%;
     }
 
     @media (max-width: $breakpointSmall) {
