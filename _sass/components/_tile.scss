@@ -104,6 +104,17 @@
 	margin-bottom: 1.5em;
 }
 
+.tile-work-description-company-large {
+	background-color: $grey200Opacity;
+	font: $bodyRegular;
+	color: $white;
+	height: 2em;
+	border-radius: 6px;
+	display: inline-block;
+	padding: 5px 8px;
+	margin-bottom: 1em;
+}
+
 .tile-work-description-title {
 	font: $heading-3;
 	color: $white;
