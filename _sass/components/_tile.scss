@@ -185,7 +185,9 @@
 	width: 100%;
 	height: 17.5em;
 
-
+	@media (max-width: $breakpointSmall) {
+		height: auto;
+	}
 
 	> a {
 		display: flex;
