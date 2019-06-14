@@ -1,19 +1,23 @@
 <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
+    {% if page.title == "Adam Noffsinger" %}
+       <title>{{ page.title }}</title>
+       <meta property="og:title" content="{{ page.title }}"/>
+    {% else %}
+       <title>{{ page.company | append: " - " | append: page.title }}</title>
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Product designer and prototyper living in San Francisco.">
-    <meta property="og:title" content="The Portfolio of Adam Noffsinger"/>
-    <meta property="og:site_name" content="The Portfolio of Adam Noffsinger"/>
+    <meta name="description" content="{{ page.summary }}">
+    <meta property="og:site_name" content="Adam Noffsinger"/>
     <meta property="og:image" content="http://noff.me/images/opengraph.png"/>
     <meta property="og:url" content="http://noff.me"/>
-    <meta property="og:description" content="Product designer and prototyper living in San Francisco."/>
-    {% if page.title == "Home" %}
+    <meta property="og:description" content="{{ page.summary }}"/>
+    {% if page.title == "Adam Noffsinger" %}
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     {% else %}
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
     {% endif %}
-    {% if page.title == "Home" %}
+    {% if page.title == "Adam Noffsinger" %}
         <link rel="stylesheet" href="css/style.css">
     {% else %}
         <link rel="stylesheet" href="../css/style.css">
