@@ -73,7 +73,7 @@
 	display: block;
 	width: 12.5em;
 	height: 12.5em;
-	border-radius: 10px;
+	border-radius: $imageBorderRadius;
 
 	@media (max-width: $breakpointMedium) {
 		width: 100%;

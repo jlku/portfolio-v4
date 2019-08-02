@@ -1,6 +1,14 @@
 <head>
-    <meta charset="UTF-8">
-    {% if page.title == "Adam Noffsinger" %}
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53057933-2"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-53057933-2');
+   </script>
+   <meta charset="UTF-8">
+   {% if page.title == "Adam Noffsinger" %}
        <title>{{ page.title }}</title>
        <meta property="og:title" content="{{ page.title }}"/>
     {% else %}

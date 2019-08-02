@@ -1,12 +1,14 @@
 .post-image {
     width: 100%;
     margin-bottom: 1.5%;
+    border-radius: $imageBorderRadius;
 }
 
 .post-image-small-right {
     width: 49.25%;
     float: right;
     margin: 0 0 1.5% 0;
+    border-radius: $imageBorderRadius;
 
     @media (max-width: $breakpointSmall) {
         width: 100%;
@@ -18,6 +20,7 @@
     width: 49.25%;
     float: left;
     margin: 0 1.5% 1.5% 0;
+    border-radius: $imageBorderRadius;
 
     @media (max-width: $breakpointSmall) {
         width: 100%;
